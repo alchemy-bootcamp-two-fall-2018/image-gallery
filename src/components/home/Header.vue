@@ -1,8 +1,11 @@
 <template>
-    <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/teams">Teams</RouterLink>
-    </nav>
+    <header>
+        <nav>
+            Header component
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/teams">Teams</RouterLink>
+        </nav>
+    </header>
 </template>
 
 <script>

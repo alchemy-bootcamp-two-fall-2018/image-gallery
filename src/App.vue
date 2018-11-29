@@ -1,19 +1,20 @@
 <template>
   <div id="app">
+    <Header/>
     <main>
-      Hello World
-    <!-- <RouterView></RouterView> -->
+      APP
+    <RouterView></RouterView>
     </main>
   </div>
 </template>
 
 <script>
-import Header from './components/home/Header.vue'
+import Header from './components/home/Header.vue';
 
 export default { 
-  props: {
-    Header
-  }
+    components: {
+        Header
+    }
 };
 </script>
 
