@@ -1,5 +1,6 @@
 <template>
-  <div id="app">
+  <div>
+    <Header/>
     <main>
       <RouterView></RouterView>
     </main>
@@ -8,8 +9,12 @@
 
 <script>
 
-export default {
+import Header from './Header';
 
+export default {
+  components: {
+    Header
+  }
 };
 </script>
 
