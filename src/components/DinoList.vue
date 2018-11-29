@@ -1,7 +1,11 @@
 <template>
     <div>
         <h3>DinoList here</h3>
-        <DinoItem/>
+        <DinoItem
+        v-for="album in albums"
+        :key="album.id"
+        :album="album"
+        />
     </div>
 </template>
 
@@ -10,6 +14,9 @@ import DinoItem from './DinoItem.vue';
 export default {
     components: {
         DinoItem
+    },
+    props: {
+        albums: Array
     }
 }
 </script>
