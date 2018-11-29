@@ -1,11 +1,11 @@
 
 const albums = [
     { 
-        id: 'bunny', 
-        title: 'Cute Bunnies', 
+        id: 'artist-name', 
+        title: 'Funk', 
         images: [
             { 
-                title: 'so cute', 
+                title: 'Artist Name', 
                 url: 'https://static.boredpanda.com/blog/wp-content/uploads/2015/09/cute-bunnies-102__605.jpg' 
             }
         ] 
