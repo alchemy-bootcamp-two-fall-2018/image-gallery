@@ -2,6 +2,7 @@
     <header>
         <nav>
             <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/artists">Artists</RouterLink>
         </nav>
     </header>
 </template>
