@@ -2,6 +2,7 @@
     <header>
         <nav>
             <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/albums">Albums</RouterLink>
         </nav>
     </header>
 </template>
@@ -13,5 +14,7 @@ export default {
 </script>
 
 <style>
-
+    header{
+        background-color:aqua;
+    }
 </style>
