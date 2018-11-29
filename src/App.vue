@@ -1,18 +1,18 @@
 <template>
   <div id="app">
     <Header/>
-    <Dinos/>
+    <Albums/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
-import Dinos from './components/Dinos.vue';
+import Albums from './components/Albums.vue';
 export default {
   name: 'app',
   components: {
     Header,
-    Dinos
+    Albums
   }
 
 }
