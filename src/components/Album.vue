@@ -1,7 +1,6 @@
 <template>
     <li>
-        {{album.type}}
-        <img :src="album.images.url"/>
+        <RouterLink :to="`/${album.id}`">{{album.type}}</RouterLink>
     </li>
 </template>
 
