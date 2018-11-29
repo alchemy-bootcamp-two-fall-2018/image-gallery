@@ -3,7 +3,7 @@
         <h1>Hello this is the header(from header file)</h1>
         <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/">Albums</RouterLink>
+        <RouterLink to="/albums">Albums</RouterLink>
         </nav>
     </div>
 </template>
