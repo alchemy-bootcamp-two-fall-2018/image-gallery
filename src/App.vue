@@ -2,7 +2,6 @@
   <div>
     <Header/>
     <main>
-      Hello World
       <RouterView></RouterView>
     </main>
   </div>

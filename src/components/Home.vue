@@ -1,7 +1,6 @@
 <template>
     <section>
-    I am the Home component
-    
+        <h1>Fabulous Dogs</h1>
     </section>
 </template>
 
