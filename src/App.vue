@@ -1,17 +1,22 @@
 <template>
   <div id="app">
+    <Header/>
     <main>
       I am the app
-      
+      <RouterView></RouterView>
     </main>
     
   </div>
 </template>
 
 <script>
-//import from 
+import Header from './components/Header.vue'; 
 
-// export default {
+export default {
+  components: {
+    Header
+  }
+};
 
 </script>
 
