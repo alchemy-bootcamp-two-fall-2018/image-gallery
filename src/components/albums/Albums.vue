@@ -7,6 +7,7 @@
 
 <script>
 import albumsApi from '../../services/albumsApi.js';
+import AlbumList from './AlbumList';
 
 export default {
     data() {

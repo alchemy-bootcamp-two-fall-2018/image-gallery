@@ -4,6 +4,7 @@
     <main>
       App will be here
       <RouterView></RouterView>
+      
     </main>  
   </div> 
 </template>

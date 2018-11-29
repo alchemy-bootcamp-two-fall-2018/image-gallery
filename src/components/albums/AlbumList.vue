@@ -1,5 +1,6 @@
 <template>
   <ul>
+      <p>Albums list</p>
     <Album
       v-for="album in albums"
       :key="album.id"
