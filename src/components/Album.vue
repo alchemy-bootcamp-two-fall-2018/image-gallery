@@ -10,7 +10,7 @@ export default {
     props: {
         album: Object
     }
-}
+};
 </script>
 
 <style>

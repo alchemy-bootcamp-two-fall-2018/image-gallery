@@ -1,21 +1,22 @@
 <template>
   <div id="app">
     <Header/>
-    <Albums/>
+    <RouterView></RouterView>
+    <!-- <Albums /> -->
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
-import Albums from './components/Albums.vue';
+import Albums from './components/Albums';
 export default {
-  name: 'app',
-  components: {
-    Header,
-    Albums
-  }
+    name: 'app',
+    components: {
+        Header,
+        Albums
+    }
 
-}
+};
 </script>
 
 <style>

@@ -15,12 +15,12 @@ export default {
     data() {
         return {
             albums: albumApi.getAlbums()
-        }
+        };
     },
     components: {
         AlbumList
     }
-}
+};
 </script>
 
 <style>

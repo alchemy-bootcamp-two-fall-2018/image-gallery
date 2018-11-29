@@ -18,7 +18,7 @@ export default {
     props: {
         albums: Array
     }
-}
+};
 </script>
 
 <style>
