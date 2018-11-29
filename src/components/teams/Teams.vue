@@ -1,12 +1,17 @@
 <template>
     <div>
         This is the Teams component
+        <TeamList/>
     </div>
 </template>
 
 <script>
-export default {
+import TeamList from './TeamList';
 
+export default {
+    components: {
+        TeamList
+    }
 };
 </script>
 
