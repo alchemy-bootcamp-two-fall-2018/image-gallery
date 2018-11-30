@@ -47,7 +47,6 @@ export default {
     },
     methods: {
         handleAdd() {
-            // this.album.images.push(this.image);
             albumApi.addImage(this.album, this.image);
             this.onCancel();
         },
