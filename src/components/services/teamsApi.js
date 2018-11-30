@@ -1,5 +1,6 @@
+import teamsApi from './teamsApi';
 
-const teams = [
+let teams = [
     {   
         id: 'blazers',
         name: 'Blazers',
@@ -56,6 +57,19 @@ const teams = [
     }
 ];
 
+const json = window.localStorage.getItem('teams');
+
+if(json) {
+    teams = JSON.parse(json);
+}
+else {
+    teams = teamsApi;
+    save();
+}
+function save() {
+    window.localStorage.setItem('teams', JSON.stringify(teams));
+}
+
 
 export default {
     getTeams() {
@@ -68,6 +82,7 @@ export default {
         team.id = team.name.toLowerCase();
         team.players = [];
         teams.push(team);
+        save();
         return team;
     }
 };
