@@ -20,7 +20,7 @@
           </label>
           
           <button type="submit">Add</button>
-          <button @click="showModal = false">Close</button>
+          <button @click="onCancel">Close</button>
           
         </form>
       </div>
@@ -45,6 +45,10 @@ export default {
       this.album.images.push(this.image);
       this.showModal = false;
       this.image = {};
+    },
+    onCancel() {
+      this.image = {};
+      this.showModal = false;
     }
   },
   components: {
