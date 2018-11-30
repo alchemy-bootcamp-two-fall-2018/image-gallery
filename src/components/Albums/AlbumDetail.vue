@@ -3,7 +3,7 @@
    <h2> {{album.title}}</h2>
    <p>
       <button @click="showModal = true">Add Image</button>
-    </p>
+  </p>
     <div v-if="showModal" class="modal">
       <div class="content">
         
