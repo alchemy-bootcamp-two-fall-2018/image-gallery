@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>This is Christmas Albums</h2>
+    <h2>Albums</h2>
     <AlbumList v-bind:albums="albums"/>
   </section>
 </template>

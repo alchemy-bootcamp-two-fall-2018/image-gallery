@@ -2,7 +2,6 @@
   <div>
     <Header/>
     <main>
-      Hiiii
       <RouterView></RouterView>
     </main>
   </div>
