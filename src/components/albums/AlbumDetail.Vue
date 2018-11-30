@@ -12,12 +12,13 @@
         <button @click="showModal = false">Close</button>
       </div>
     </div>
-    <!-- <Thumbnails :images="album.images"/> -->
+    <Thumbnails v-bind:images="album.images"/>
   </section>
 </template>
 
 <script>
 import albumsApi from '../../albumsApi';
+import Thumbnails from './Thumbnails';
 export default {
   data() {
     return {
@@ -25,9 +26,9 @@ export default {
       showModal: false
     };
   },
-  // components: {
-  //     Thumbnails
-  // },
+  components: {
+    Thumbnails
+  },
   created() {
     this.album = albumsApi.getAlbum(this.$route.params.id);
   }
