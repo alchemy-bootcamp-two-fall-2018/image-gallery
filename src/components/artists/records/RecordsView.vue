@@ -4,8 +4,8 @@
             <li 
             v-for="album in albums"
             :key="album.title">
-            <!-- <RouterLink to="./song-list">HELLO<img :src="album.imgUrl"></RouterLink> -->
-            <img :src="album.imgUrl">
+            <RouterLink to="./song-list"><img :src="album.imgUrl"></RouterLink>
+            <!-- <img :src="album.imgUrl"> -->
             </li>
         </ul>
     </section>
