@@ -1,6 +1,18 @@
 <template>
 <div>
       <p>Albums list</p>
+      <p>
+            <button @click="showModal = true">Add a new album</button>
+        </p>
+
+        <div v-if="showModal" class="modal">
+            <div class="content">
+                I am the form. May the form be with you.
+                <input type="file" name="pic" accept="image/*">
+                <input type="submit">
+                <button @click="showModal = false">Close</button>
+            </div>
+        </div>
   <ul>
     <Album
       v-for="album in albums"
