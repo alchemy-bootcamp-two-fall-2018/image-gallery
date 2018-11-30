@@ -3,7 +3,7 @@
     <h2 class="album-title">Albums</h2>
     <button @click="showModal = true">Add New Album</button>
     <Modal class="modal" v-if="showModal" v-bind:onClose="() => showModal = false">
-      <NewAlbum/>
+      <NewAlbum class="content"/>
     </Modal>
     <AlbumList v-bind:albums="albums"/>
   </section>

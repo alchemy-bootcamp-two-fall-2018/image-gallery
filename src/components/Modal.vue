@@ -1,7 +1,8 @@
 <template>
-  <div class="modal" @click="onClose" @keyup.esc="onClose">
+  <div @click="onClose" @keyup.esc="onClose">
     <div class="content" @click.stop="">
       <button class="close" @click="onClose">X</button>
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -23,3 +24,12 @@ export default {
   }
 };
 </script>
+
+<style>
+  .content {
+    width: 50%;
+    height: 50%;
+  }
+  
+</style>
+

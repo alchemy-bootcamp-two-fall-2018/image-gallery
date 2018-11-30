@@ -12,7 +12,6 @@ export default new VueRouter({
     { path: '/albums', component: Albums },
     { path: '/albums/:id', component: AlbumDetail1 },
     { path: '/about', component: About },
-    { path: '/albums/new', component: NewAlbum },
-
+    { path: '/albums/new', component: NewAlbum }
   ]
 });
