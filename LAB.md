@@ -30,9 +30,9 @@ id, title, description, url
 
 ## Routes
 
-* `/` | Home page (provide link to `/albums`
+* ~~`/` | Home page (provide link to `/albums`~~
 * `/about` | About page (make something up)
-* `/albums` | List of albums
+* ~~`/albums` | List of albums~~
 * `/albums/:id` | Album detail
 * BONUS:`/albums/new` | Add a new album
 
