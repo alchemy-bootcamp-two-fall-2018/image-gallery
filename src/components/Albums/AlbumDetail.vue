@@ -28,7 +28,7 @@
       </div>
     </div>
     <nav>
-      <RouterLink to="./ThumbnailView">Thumbnail</RouterLink>
+      <RouterLink to="./thumbnail">Thumbnail</RouterLink>
     </nav>
    <RouterView :images="album.images">DEFAULT VIEW</RouterView>
 
@@ -37,7 +37,6 @@
 
 <script>
 import albumsApi from '../../services/albumsApi';
-import ThumbnailView from './images/ThumbnailView';
 
 export default {
   data() {
@@ -56,7 +55,7 @@ export default {
     }
   },
   components: {
-    ThumbnailView,
+  
   },
 
  

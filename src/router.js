@@ -1,7 +1,7 @@
 import VueRouter from 'vue-router';
-import Home from './components/Home.vue';
-import Albums from './components/Albums/Albums.vue';
-import AlbumDetail from './components/Albums/AlbumDetail';
+import Home from './components/Home';
+import Albums from './components/albums/Albums';
+import AlbumDetail from './components/albums/AlbumDetail';
 import ThumbnailView from './components/albums/images/ThumbnailView';
 
 
