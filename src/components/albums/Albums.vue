@@ -1,6 +1,8 @@
 <template>
   <section>
-    <h1 class="album-title">Albums</h1>
+    <h2 class="album-title">Albums</h2>
+    <!-- <button @click="showModal = true">Add New Album</button> -->
+    <NewAlbum/>
     <AlbumList v-bind:albums="albums"/>
   </section>
 </template>
