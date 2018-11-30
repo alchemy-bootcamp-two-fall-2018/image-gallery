@@ -13,11 +13,11 @@ const albums = [
   }
 ];
 
-  export default {
-    getAlbums() {
-      return albums;
-    }
+export default {
+  getAlbums() {
+    return albums;
   }
+};
 
 
 
@@ -31,4 +31,3 @@ const albums = [
 
 
 
-]
