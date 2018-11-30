@@ -18,10 +18,16 @@
                     </label>
                     <button type="submit">Add</button>
                 </form>
-            <button @click="showModal = false">Close</button>
+            <button @click="onCancel">Close</button>
             </div>
         </div>
-        <Thumbnails :images="album.images"/>
+        <nav>
+            <RouterLink to="./thumbnail">Thumbnail</RouterLink>
+            <RouterLink to="./list">List</RouterLink>
+            <RouterLink to="./gallery">Gallery</RouterLink>
+        </nav>
+
+    <RouterView :images="album.images">DEFAULT VIEW</RouterView>
     </section>
 </template>
 
@@ -46,8 +52,11 @@ export default {
     methods: {
         handleAdd() {
             this.album.images.push(this.image);
-            this.showModal = false;
+            this.onCancel();
+        },
+        onCancel() {
             this.image = {};
+            this.showModal = false;
         }
     }
     
