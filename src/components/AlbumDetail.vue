@@ -33,8 +33,6 @@
 
 <script>
 import albumApi from '../services/albumsApi.js';
-import Thumbnails from './Thumbnails';
-
 export default {
     data() {
         return {
@@ -43,15 +41,14 @@ export default {
             image: {}
         };
     },
-    components: {
-        Thumbnails
-    },
+    components: {},
     created() {
         this.album = albumApi.getAlbum(this.$route.params.id);
     },
     methods: {
         handleAdd() {
-            this.album.images.push(this.image);
+            // this.album.images.push(this.image);
+            albumApi.addImage(this.album, this.image);
             this.onCancel();
         },
         onCancel() {
