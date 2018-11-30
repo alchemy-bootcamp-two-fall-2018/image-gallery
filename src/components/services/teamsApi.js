@@ -12,6 +12,18 @@ const teams = [
             {
                 lastName: 'McCollum',
                 url: 'http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2490149.png&w=350&h=254'
+            },
+            {
+                lastName:'Harkless',
+                url: 'http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6591.png&w=350&h=254'
+            },
+            {
+                lastName: 'Aminu',
+                url: 'http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4248.png&w=350&h=254'
+            },
+            {
+                lastName: 'Nurkic',
+                url: 'http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3102530.png&w=350&h=254'
             }
         ]
     },
@@ -27,6 +39,18 @@ const teams = [
             {
                 lastName: 'Thompson',
                 url: 'http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6475.png&w=350&h=254'
+            },
+            {
+                lastName: 'Green',
+                url: 'http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6589.png&w=350&h=254'
+            },
+            {
+                lastName: 'Durant',
+                url: 'http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3202.png&w=350&h=254'
+            },
+            {
+                lastName: 'Cousins',
+                url: 'http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4258.png&w=350&h=254'
             }
         ]
     }

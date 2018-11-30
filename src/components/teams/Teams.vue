@@ -2,6 +2,7 @@
     <div>
         This is the Teams component
         <TeamList :teams="teams"/>
+        <RouterLink to="/teams/new">Add Another Team</RouterLink>
     </div>
 </template>
 
