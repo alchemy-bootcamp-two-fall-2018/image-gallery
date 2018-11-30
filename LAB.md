@@ -43,3 +43,14 @@ Your team can get a start on:
 * Add and Edit for Albums
 * List view for images
 * Gallery view for images
+
+
+## Rubric **10pts**
+
+* Vue Router setup, views, and links:
+    * Main Routes **3pts**
+* Albums displays lists **1pt**
+* Album Detail with album info (title description) **2pts**
+* Thumbnail View **2pts**
+* Idomatic Vue components **1pt**
+* Project Organization (folder structure and file and folder naming) **1pt**
