@@ -25,13 +25,22 @@
         </form>
       </div>
     </div>
-    <Thumbnails v-bind:images="album.images"/>
+
+    <nav>
+      <RouterLink to="./thumbnail">Thumbnail</RouterLink>
+      <RouterLink to="./list">List</RouterLink>
+      <RouterLink to="./gallery">Gallery</RouterLink>
+    </nav>
+
+    <RouterView v-bind:images="album.images">VIEW</RouterView>
   </section>
 </template>
 
 <script>
 import albumsApi from '../../albumsApi';
-import Thumbnails from './Thumbnails';
+// import ThumbnailView from './images/ThumbnailView';
+// import GalleryView from './images/GalleryView';
+// import ListView from './images/ListView';
 export default {
   data() {
     return {
@@ -52,10 +61,13 @@ export default {
     }
   },
   components: {
-    Thumbnails
+    
   },
   created() {
     this.album = albumsApi.getAlbum(this.$route.params.id);
+    if(!this.album) {
+      this.$router.push('/albums');
+    }
   }
 };
 </script>
