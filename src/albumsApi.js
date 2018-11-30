@@ -57,5 +57,5 @@ export default {
     album.images = [];
     albums.push(album);
     return album;
-  }
+  },
 };

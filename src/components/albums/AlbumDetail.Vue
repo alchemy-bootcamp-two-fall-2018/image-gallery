@@ -47,7 +47,7 @@ export default {
     handleAdd() {
       this.album.images.push(this.image);
       this.showModal = false;
-      this.image = {}
+      this.image = {};
     }
   },
   components: {
