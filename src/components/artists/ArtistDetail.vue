@@ -1,9 +1,14 @@
 <template>
 <div>
   <ul>
-    <li v-for="album in albums"
-        :key="album.title"><img :src="album.imgUrl"></li>
+    <li 
+      v-for="album in albums"
+      :key="album.title">
+      <!-- <RouterLink to="./song-list">HELLO<img :src="album.imgUrl"></RouterLink> -->
+      <img :src="album.imgUrl">
+    </li>
   </ul>
+  <RouterView>ROUTER-VIEW</RouterView>
 </div>
 
 </template>
