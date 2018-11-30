@@ -14,7 +14,7 @@
 
 <script>
 import albumsApi from '../../services/albumsApi.js';
-import Thumbnails from './Thumbnails';
+import Thumbnails from './images/ThumbnailView.vue';
 
 export default {
     data() {
