@@ -1,8 +1,7 @@
 <template>
     <div>
         <h2>{{team.name}}</h2>
-        <h3>{{team.players}}</h3>
-        <Thumbnails :images="team.images"/>
+        <Thumbnails :players="team.players"/>
     </div>
 
 </template>

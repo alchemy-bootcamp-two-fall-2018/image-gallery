@@ -5,7 +5,7 @@
         :key="index">
         <h4>{{player.lastName}}</h4>
         <p>
-            <img :src="player.pic">    
+            <img :src="player.url">    
         </p>
         </li>
     </ul>
@@ -14,7 +14,7 @@
 <script>
 export default {
     props: {
-        images: Array
+        players: Array
     }
 };
 </script>
