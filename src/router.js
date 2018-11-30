@@ -5,6 +5,7 @@ import AlbumDetail from './components/albums/AlbumDetail';
 import NewAlbum from './components/albums/NewAlbum.vue';
 import About from './About';
 import Thumbnails from './components/albums/Thumbnails.vue';
+import GenreList from './components/albums/GenreList.vue';
 
 export default new VueRouter({
     routes: [
@@ -16,6 +17,7 @@ export default new VueRouter({
             component: AlbumDetail,
             children: [
                 { path: 'thumbnail', component: Thumbnails },
+                { path: 'genrelist', component: GenreList },
                 { path: '', redirect: 'thumbnail' }
             ]
         },

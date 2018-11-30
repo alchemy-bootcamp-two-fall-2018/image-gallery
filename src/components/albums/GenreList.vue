@@ -3,10 +3,12 @@
         <li
             v-for="(image, index) in images"
             :key="index">
-            
-            <!-- <h4>{{image.artist}}</h4> -->
-            <p>
+
+            <p> 
                 <img :src="image.url">
+            </p>
+            <p>
+                {{image.artist}}
             </p>
         </li>
     </ul>
@@ -17,19 +19,17 @@ export default {
     props: {
         images: Array
     }
-}; 
+};
 
 </script>
 
-<style scoped>
+<style>
     li{
         list-style: none;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     }
 
     img {
-        max-height: 10vh;
-        max-width: auto;
+        max-height: auto;
+        max-width: 20vh;
     }
 </style>
