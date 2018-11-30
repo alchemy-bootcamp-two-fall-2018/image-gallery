@@ -3,7 +3,7 @@
     this is the Gallery
     {{ selectedIndex }}
     <button @click="setIndex(-1)">&lt;</button>
-
+    <img :src="images[selectedIndex].url" />
     <button @click="setIndex(1)">&gt;</button>
     </section>
 </template>
@@ -15,13 +15,13 @@ export default {
     },
     data() {
         return {
-            selectedIndex: 0
+            selectedIndex: 0,
         };
     },
     methods: {
         setIndex(index) {
             this.selectedIndex += index;
-            if(this.selectedIndex === this.images.length) {
+            if(this.selectedIndex === this.images.length - 1) {
                 this.selectedIndex = 0;
             }
             else if(this.selectedIndex < 0) {
