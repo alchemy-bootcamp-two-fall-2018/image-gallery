@@ -1,12 +1,13 @@
 <template>
     <section v-if="album">
         <h2>{{album.name}}</h2>  
-        <p>
-            <label> Photos
-                <input v-model="" required>
-            </label>
-            <button>Add</button>    
-        </p>      
+            <form @submit.prevent="handleAdd">
+                <label> Photos
+                    <input v-model="image.picture" required
+                    />
+                </label>
+                <button>Add</button> 
+            </form>       
     <Thumbnails :images="album.image"/>
     </section>
 </template>
@@ -19,15 +20,20 @@ export default {
     data() {
         return {
             album: null,
-            image: []
+            image: {
+                picture: ''
+            }
         };
     },
     components: {
         Thumbnails
     },
-    method: {
+    methods: {
         handleAdd() {
-            this.album.images.push(this.image);
+            console.log('new image', this.album.image);
+            this.album.image.push(this.image);
+            this.image = {};
+        
         }
 
     },
