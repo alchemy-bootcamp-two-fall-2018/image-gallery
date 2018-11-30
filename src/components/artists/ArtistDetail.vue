@@ -15,7 +15,7 @@ import artistsApi from '../../services/artistsApi';
 export default {
   data() {
     return {
-      albums: artistsApi.findArtist()
+      albums: artistsApi.findArtist(this.$route.params.name)
     };
   }
 };
