@@ -10,6 +10,7 @@
 <script>
 import albumsApi from '../../albumsApi.js';
 import AlbumList from './AlbumList.vue';
+import NewAlbum from './NewAlbum.vue';
 
 export default {
   data() {
@@ -18,7 +19,8 @@ export default {
     };
   },
   components: {
-    AlbumList
+    AlbumList,
+    NewAlbum
   }
 };
 </script>
