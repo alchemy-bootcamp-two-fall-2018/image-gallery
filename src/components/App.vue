@@ -2,9 +2,9 @@
   <div>
     <Header/>
     <main>
-      App will be here
-      <RouterView></RouterView>
       
+      <RouterView></RouterView>
+
     </main>  
   </div> 
 </template>

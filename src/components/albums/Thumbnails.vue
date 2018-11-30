@@ -3,7 +3,8 @@
         <li
             v-for="(image, index) in images"
             :key="index">
-            <h4>{{image.title}}</h4>
+            
+            <h4>{{image.artist}}</h4>
             <p>
                 <img :src="image.url">
             </p>
@@ -20,6 +21,8 @@ export default {
 
 </script>
 
-<style>
-
+<style scoped>
+    li{
+        list-style: none;
+    }
 </style>
