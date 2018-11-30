@@ -1,15 +1,24 @@
 <template>
     <section>
         Add new Team 
+        <form>
+            <input v-model="team.name">
+        </form>
     </section>
-    <!-- <form>
-        <input v-model="team."
-    </form> -->
 </template>
 
 <script>
 export default {
+    data() {
+        return {
+            team: {
+                name: ''
+            }
+        };
+    },
+    components: {
 
+    }
 };
 </script>
 
