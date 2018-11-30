@@ -5,6 +5,7 @@ import NewArtist from './components/artists/NewArtist';
 import ArtistDetail from './components/artists/ArtistDetail';
 import RecordsView from './components/artists/records/RecordsView';
 import SongListView from './components/artists/records/SongListView';
+import GalleryView from './components/artists/records/GalleryView';
 
 export default new VueRouter({
   routes: [
@@ -17,6 +18,7 @@ export default new VueRouter({
       children: [
         { path: 'records', component: RecordsView },
         { path: 'song-list', component: SongListView },
+        { path: 'gallery', component: GalleryView },
         { path: '', redirect: 'song-list' }
       ]
     },

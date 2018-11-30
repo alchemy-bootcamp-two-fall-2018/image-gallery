@@ -1,5 +1,6 @@
 <template>
 <div>
+  <RouterLink to="./gallery">Gallery</RouterLink>
   <RouterView :albums="albums">ROUTER-VIEW</RouterView>
 </div>
 </template>

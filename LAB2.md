@@ -12,7 +12,7 @@ This is a paired, multi-day lab. For day two, build out:
 1. Album Detail sub routes for:
     1. ~~View 1 (Thumbnail)~~
     1. View 2 (Gallery)
-    1. View 3 (List)
+    1. ~~View 3 (List)~~
 1. Save data to local storage
     1. Check on load and use if found
     1. Save when data changes
