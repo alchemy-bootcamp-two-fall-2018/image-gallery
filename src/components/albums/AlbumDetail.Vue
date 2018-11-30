@@ -7,8 +7,24 @@
     </p>
     <div v-if="showModal" class="modal">
       <div class="content">
-        <!-- <form @submit.prevent="onAdd(image)">
-        </form> -->
+        
+        <form @submit.prevent="handleAdd(image)">
+          <label>
+            <span>Title:</span>
+            <input v-model="image.title" required>
+          </label>
+
+          <label>
+            <span>Image Url:</span>
+            <input v-model="image.url" required>
+          </label>
+        
+          <label>
+            <span></span>
+            <button type="submit">Add</button>
+          </label>
+        </form>
+
         <button @click="showModal = false">Close</button>
       </div>
     </div>
@@ -23,8 +39,17 @@ export default {
   data() {
     return {
       album: null,
-      showModal: false
+      showModal: false,
+      image: {
+        title: '',
+        url: ''
+      }
     };
+  },
+  methods: {
+    handleAdd(image) {
+      this.album.images.push(image);
+    }
   },
   components: {
     Thumbnails
@@ -34,3 +59,34 @@ export default {
   }
 };
 </script>
+
+<style>
+  form {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  button {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 0.75em;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  input {
+    width: 150px;
+    height: 20px;
+  }
+
+  label {
+    display: flex;
+    padding: 5px;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+</style>
