@@ -11,6 +11,9 @@
     </div>
         <h2>{{team.name}}</h2>
         <Thumbnails :players="team.players"/>
+        <div class="modal">
+            <button class="close" @click="onClose">X</button>
+        </div>
     </div>
 
 </template>
