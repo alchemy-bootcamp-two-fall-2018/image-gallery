@@ -2,7 +2,6 @@
   <div id="app">
     <Header/>
     <main>
-      I am the app
       <RouterView></RouterView>
     </main>
     
@@ -16,6 +15,7 @@ export default {
   components: {
     Header
   }
+  
 };
 
 </script>
