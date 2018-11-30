@@ -1,5 +1,5 @@
 <template>
-    <form @sumbit.prevent="onAdd(image)">
+    <form @sumbit.prevent="handleAdd()">
         <FormControl label="name">
             <input v-model="image.name" required>
         </FormControl>
@@ -20,8 +20,7 @@ export default {
     data() {
         return {
             image: {
-                name: '', 
-                picutre: ''
+                picture: ''
             }
         };
     },
@@ -30,6 +29,14 @@ export default {
     }, 
     components: {
         FormControl
+    },
+    methods : {
+        handleAdd() {
+            console.log('new image', this.album.image);
+            this.album.image.push(this.image);
+            this.image = {};
+        
+        }
     }
 };
 </script>
