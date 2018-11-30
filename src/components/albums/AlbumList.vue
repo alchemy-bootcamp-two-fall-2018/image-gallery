@@ -27,10 +27,16 @@ import Album from './Album';
 
 export default {
     props: {
-        albums: Array
+        albums: Array,
+        images: Array
     },
     components: {
-        Album
+        Album,
+    },
+    data(){
+        return {
+            showModal: false
+        };
     }
 };
 </script>
