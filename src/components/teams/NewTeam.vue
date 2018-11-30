@@ -3,7 +3,7 @@
         Add new Team 
         <form @submit.prevent="handleSubmit">
             <input v-model="team.name">
-            <button> Add </button>
+            <button type="submit"> Add </button>
         </form>
     </section>
 </template>

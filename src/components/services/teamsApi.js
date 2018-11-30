@@ -64,4 +64,10 @@ export default {
     getTeam(id) {
         return teams.find(team => team.id === id);
     },
+    add(team) {
+        team.id = team.name.toLowerCase();
+        team.players = [];
+        teams.push(team);
+        return team;
+    }
 };
