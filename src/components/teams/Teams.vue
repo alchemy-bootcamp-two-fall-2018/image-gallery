@@ -1,6 +1,5 @@
 <template>
     <div>
-        
         This is the Teams component
         <TeamList :teams="teams"/>
     </div>
