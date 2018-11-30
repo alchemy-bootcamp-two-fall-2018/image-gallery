@@ -31,7 +31,8 @@ img {
     width: 120px; 
 }
 img:hover {
-    box-shadow: 0 0 2px 1px lightseagreen;
+    box-shadow: 0 0 2px 1px darkcyan;
 }
 
 </style>
+    
