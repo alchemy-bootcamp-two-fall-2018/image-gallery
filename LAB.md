@@ -9,10 +9,10 @@ Complete [Kata](https://www.codewars.com/kata/regex-validate-pin-code)
 
 This is a paired, multi-day lab. For day one, build out:
 
-1. Router Infrastructure
-1. Album List
+1. ~~Router Infrastructure~~
+1. ~~Album List~~
 1. Album Detail
-    1. Thumbnail view of Images
+    1. ~~Thumbnail view of Images~~
     1. Add New Image
     
 ## Data

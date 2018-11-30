@@ -1,12 +1,12 @@
 <template>
     <section>
         <h2>Artists</h2>
+        <RouterLink to="/artists/new">Add New Artist</RouterLink>
         <ArtistList :artists="artists"/>
     </section>
 </template>
 
 <script>
-
 import artistsApi from '../../services/artistsApi';
 import ArtistList from './ArtistList';
 
