@@ -29,8 +29,10 @@ const albums = [
             { 
                 title: 'Earth Wind and Fire', 
                 url: 'http://userscontent2.emaze.com/images/56f00e02-4565-4612-ae6f-1bdaf7c4d7b2/9f31f99e-f4b4-404f-898e-7b68d50bea93.jpg' 
-            },
-          {   
+            }
+        ]
+    },
+    {   
         id: 'bb-king', 
         title: 'Blues', 
         images: [
