@@ -54,9 +54,9 @@ export default {
       this.image = {};
     }
   },
-  components: {
+  // components: {
   
-  },
+  // },
 
  
   created() {

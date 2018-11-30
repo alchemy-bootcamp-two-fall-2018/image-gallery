@@ -14,6 +14,8 @@ export default new VueRouter({
       component: AlbumDetail, 
       children: [
         { path: 'thumbnail', component: ThumbnailView },
+        { path: '', redirect: 'thumbnail' },
+
       ]
     }, 
     { path: '*', redirect: '/' }
