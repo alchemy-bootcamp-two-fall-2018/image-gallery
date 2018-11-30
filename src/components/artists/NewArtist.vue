@@ -1,10 +1,14 @@
 <template>
   <form @submit.prevent="handleSubmit">
     <label>
-      <p>Artist Name: </p>
-      <input v-model="artist.name" required>
+      <p>Artist Name:</p>
+      <input v-model="newArtist.name" required>
     </label>
-    <button>Add</button>
+    <label>
+      <p>Artist Image:</p>
+      <input v-model="newArtist.image" required>
+    </label>
+    <p><button>Add</button></p>
   </form>
 </template>
 
@@ -14,12 +18,12 @@ import artistsApi from '../../services/artistsApi';
 export default {
   data() {
     return {
-      artist: {}
+      newArtist: {}
     };
   },
   methods: {
     handleSubmit() {
-      artistsApi.addArtist();
+      artistsApi.addArtist(this.newArtist);
     }
   }
 };

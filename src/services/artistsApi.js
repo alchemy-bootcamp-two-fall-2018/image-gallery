@@ -4,8 +4,10 @@ export default {
   getAll() {
     return artists;
   },
-  addArtist() {
-    console.log('added');
+  addArtist(newArtist) {
+    console.log(newArtist);
+    artists.push(newArtist);
+    console.log(artists);
   },
   findArtist(artistName) {
     return artists.find(artist => artist.name === artistName).albums;
