@@ -1,8 +1,7 @@
 <template>
     <ul>
         <li v-for="(image, index) in images"
-        :key="index"
-        >
+        :key="index">
             <h4>{{image.title}}</h4>
             <img :src="image.url"/>
         </li>
@@ -22,6 +21,10 @@ li {
     list-style-type: none;
 }
 img {
-    width: 50vw;
+    width: 25vw;
+}
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
 }
 </style>

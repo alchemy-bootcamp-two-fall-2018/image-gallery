@@ -10,7 +10,7 @@
                 <label>
                     Image URL: <input v-model="image.url" type="text" required>
                 </label>
-                <button type="submit" @submit="showModal = false">Submit</button>
+                <button type="submit" @click="showModal = false">Submit</button>
             </form>
             <button @click="showModal = false">Cancel</button>
             </span>
