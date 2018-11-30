@@ -17,14 +17,14 @@ export default {
 </script>
 
 <style>
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
+}
 li {
     list-style-type: none;
 }
 img {
     width: 25vw;
-}
-ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
 }
 </style>
