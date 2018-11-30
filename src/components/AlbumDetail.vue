@@ -1,6 +1,21 @@
 <template>
     <div v-if="album">
-        <p>This is album detail</p>
+        <button @click="showModal = true">Add image</button>
+        <div class="modal" v-if="showModal">
+            <span class="content">
+            <form @submit.prevent="onAdd">
+                <label>
+                    Title: <input v-model="image.title" type="text">
+                </label>
+                <label>
+                    Image URL: <input v-model="image.url" type="text">
+                </label>
+                <button type="submit" @click="showModal = false">Submit</button>
+            </form>
+            <button @click="showModal = false">Cancel</button>
+            </span>
+        </div>
+
         <Thumbnails
         :images="album.images"
         />
@@ -14,6 +29,11 @@ export default {
     data() {
         return {
             album: null,
+            showModal: false,
+            image: {
+                title: '',
+                url: ''
+            }
         };
     },
     components: {
@@ -21,10 +41,29 @@ export default {
     },
     created() {
         this.album = albumApi.getThisAlbum(this.$route.params.id);
+    },
+    methods: {
+        onAdd() {
+            this.album.images.push(this.image);
+        }
     }
 };
 </script>
 
 <style>
-
+.modal {
+   background-color: rgba(0,0,0,.5);
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top: 0;
+   left: 0; 
+}
+.content{
+    background: white;
+    padding: 40px;
+}
 </style>
