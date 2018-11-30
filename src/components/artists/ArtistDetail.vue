@@ -1,6 +1,6 @@
 <template>
 <div>
-  <h2>{{artist}}</h2>
+  <h2>Hello</h2>
   <!-- <button @click="blah">Route</button> -->
 </div>
 
@@ -11,9 +11,9 @@
 // import artistApi from '../../services/artistApi';
 
 export default {
-  data() {
+  // data() {
     
-  }
+  // }
 };
 </script>
 
