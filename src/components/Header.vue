@@ -4,6 +4,7 @@
         <nav>
             <RouterLink to="/"><span>Home</span></RouterLink>
             <RouterLink to="/albums"><span>Albums</span></RouterLink>
+            <RouterLink to="/about"><span>About</span></RouterLink>
         </nav>
     </header>
 </template>

@@ -40,16 +40,14 @@ export default {
     return {
       album: null,
       showModal: false,
-      image: {
-        title: '',
-        url: ''
-      }
+      image: {}
     };
   },
   methods: {
     handleAdd() {
       this.album.images.push(this.image);
       this.showModal = false;
+      this.image = {}
     }
   },
   components: {
