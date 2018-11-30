@@ -1,6 +1,6 @@
 <template>
-    <header>
-        <h1>This is Christmas</h1>
+    <header class="main">
+        <h1 class="title">This is Christmas</h1>
         <nav>
             <RouterLink to="/"><span>Home</span></RouterLink>
             <RouterLink to="/albums"><span>Albums</span></RouterLink>
@@ -18,15 +18,16 @@ export default {
 <style>
     nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        width: 100%;
     }
-    header {
+    .main {
         background: black;
         color: white;
         text-align: center;
         margin-top: 0px;
         border: 10px solid green;
-        height: 150px;
+        height: 25vh;
     }
     h1 {
         margin-top: 0px;
@@ -36,8 +37,15 @@ export default {
         text-shadow: 2px 2px 2px lightgray;
         font-weight: 400;
     }
-    span {
+    .title {
+        font-size: 5em;
+    }
+    nav span {
       text-decoration: none;
       color: red;
+      background: white;
+      padding: 5px;
+      width: 28vw;
+      border: 2px solid black;
     }
 </style>

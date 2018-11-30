@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>Albums</h2>
+    <h1 class="album-title">Albums</h1>
     <AlbumList v-bind:albums="albums"/>
   </section>
 </template>
@@ -22,5 +22,7 @@ export default {
 </script>
 
 <style>
-
+  .album-title {
+    text-align: center;
+  }
 </style>
