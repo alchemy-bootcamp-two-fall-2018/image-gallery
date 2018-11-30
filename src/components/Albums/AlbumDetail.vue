@@ -27,14 +27,17 @@
         <button @click="showModal = false">Close</button>
       </div>
     </div>
-   <Thumbnails :images="album.images"/>
+    <nav>
+      <RouterLink to="./ThumbnailView">Thumbnail</RouterLink>
+    </nav>
+   <RouterView :images="album.images">DEFAULT VIEW</RouterView>
 
   </section>
 </template>
 
 <script>
 import albumsApi from '../../services/albumsApi';
-import Thumbnails from '../Thumbnail';
+import ThumbnailView from './images/ThumbnailView';
 
 export default {
   data() {
@@ -53,7 +56,7 @@ export default {
     }
   },
   components: {
-    Thumbnails,
+    ThumbnailView,
   },
 
  
