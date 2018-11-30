@@ -1,7 +1,6 @@
 <template>
     <li>
         <RouterLink :to="`/teams/${team.id}`">{{team.name}}</RouterLink>
-        {{team.id}}
         <!-- <TeamDetail/> -->
     </li>
 </template>
