@@ -7,7 +7,7 @@ export default {
   addArtist() {
     console.log('added');
   },
-  findArtist() {
-    return artists[0].albums;
+  findArtist(artistName) {
+    return artists.find(artist => artist.name === artistName).albums;
   }
 };
