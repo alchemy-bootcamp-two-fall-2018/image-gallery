@@ -7,7 +7,7 @@ export default {
   addArtist() {
     console.log('added');
   },
-  // findArtist() {
-
-  // }
+  findArtist() {
+    return artists[0].albums;
+  }
 };

@@ -1,19 +1,23 @@
 <template>
 <div>
-  <h2>Hello</h2>
-  <!-- <button @click="blah">Route</button> -->
+  <ul>
+    <li v-for="album in albums"
+        :key="album.title"><img :src="album.imgUrl"></li>
+  </ul>
 </div>
 
 </template>
 
 <script>
 
-// import artistApi from '../../services/artistApi';
+import artistsApi from '../../services/artistsApi';
 
 export default {
-  // data() {
-    
-  // }
+  data() {
+    return {
+      albums: artistsApi.findArtist()
+    };
+  }
 };
 </script>
 
