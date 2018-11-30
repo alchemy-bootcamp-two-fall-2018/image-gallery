@@ -8,7 +8,7 @@
     <div v-if="showModal" class="modal">
       <div class="content">
         
-        <form @submit.prevent="handleAdd(image)">
+        <form @submit.prevent="handleAdd()">
           <label>
             <span>Title:</span>
             <input v-model="image.title" required>
@@ -47,8 +47,9 @@ export default {
     };
   },
   methods: {
-    handleAdd(image) {
-      this.album.images.push(image);
+    handleAdd() {
+      this.album.images.push(this.image);
+      this.showModal = false;
     }
   },
   components: {
