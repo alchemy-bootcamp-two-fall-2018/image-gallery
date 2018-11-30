@@ -1,6 +1,6 @@
 const albums = [
     {
-        id: 0,
+        id: '1',
         type: 'velociraptor',
         images: [
             {
@@ -10,12 +10,12 @@ const albums = [
         ]
     },
     {
-        id: 1,
+        id: '2',
         type: 't-rex',
         images: []
     },
     {
-        id: 2,
+        id: '3',
         type: 'long-neck',
         images: []
     }
@@ -24,5 +24,8 @@ const albums = [
 export default {
     getAlbums() {
         return albums;
+    },
+    getThisAlbum(id) {
+        return albums.find(album => album.id === id);
     }
 };

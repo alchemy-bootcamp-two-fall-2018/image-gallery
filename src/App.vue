@@ -2,18 +2,15 @@
   <div id="app">
     <Header/>
     <RouterView></RouterView>
-    <!-- <Albums /> -->
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
-import Albums from './components/Albums';
 export default {
     name: 'app',
     components: {
         Header,
-        Albums
     }
 
 };
