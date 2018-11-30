@@ -1,46 +1,56 @@
 <template>
     <section v-if="album">
-        <h2>{{album.name}}</h2>       
-            <form @submit.prevent="handleAdd">
-                <label>Photo
-                    <input v-model="image.picture" required
-                    />
-                </label>
-                <button>Add</button> 
-            </form> 
-    <Thumbnails :images="album.image"/>
+        <h2>{{album.name}}</h2>
+
+        <p>
+            <button @click="showModal = true"> Add a new Image
+            </button>
+        </p>       
+        <Modal v-if="showModal" :onClose="() => showModal = false">
+            <AddImage :onAdd="handleImageAdd"/>
+        </Modal>
+        <nav>
+            <RouterLink to="./thumbnail"> Thumbnail View </RouterLink>
+            <RouterLink to="./list"> List View </RouterLink>
+        </nav>
+        <RouterView :images="album.image"> Default View </RouterView>
     </section>
 </template>
 
 <script>
 import albumsApi from '../../services/albumsApi.js';
-import Thumbnails from './images/ThumbnailView.vue';
+import Modal from '../shared/Modal.vue';
+import AddImage from './images/AddImage.vue';
 
 export default {
     data() {
         return {
             album: null,
-            image: {
-                picture: ''
-            }
+            showModal: false
         };
     },
     components: {
-        Thumbnails
+        Modal,
+        AddImage
     },
     methods: {
-        handleAdd() {
-            console.log('new image', this.album.image);
-            this.album.image.push(this.image);
-            this.image = {};
-        
+        handleImageAdd(image) {
+            console.log('add image in modal', image);
         }
+        // handleAdd() {
+        //     console.log('new image', this.album.image);
+        //     this.album.image.push(this.image);
+        //     this.image = {};
+        
+        // }
 
     },
     created() {
         this.album = albumsApi.getAlbum(this.$route.params.id);
+        if(!this.album) {
+            this.$router.push('/albums');
+        }
     }
-
 };
 </script>
 
