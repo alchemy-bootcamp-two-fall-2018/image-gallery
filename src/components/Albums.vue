@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h2>Albums</h2>
+        <h1>Albums</h1>
         <AlbumList :albums="albums"/>
     </section>
 </template>
@@ -21,5 +21,5 @@ export default {
 </script>
 
 <style>
-
+    
 </style>

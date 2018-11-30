@@ -15,6 +15,11 @@ export default {
 <style>
     nav {
       display: flex;
-        justify-content: space-around;
-    }    
+      justify-content: space-around;
+      padding: 40px 0px;
+      
+    }
+    a {
+      text-decoration: none;
+    }   
 </style>

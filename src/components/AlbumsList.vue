@@ -18,6 +18,14 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+    li {
+        list-style: none;
+        padding: 20px;
+        font-size: 24px;
 
+    }
+    ul {
+        padding-left: 400px;
+    }
 </style>

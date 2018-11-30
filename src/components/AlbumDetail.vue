@@ -1,9 +1,8 @@
 <template>
     <section v-if="album">
-        <button ></button>
         <h2>{{album.title}}</h2>
         <h3>Images</h3>
-        <p>
+        <p class="button">
             <button @click="showModal = true">Add a new Image</button>
         </p>
         <div v-if="showModal" class="modal">
@@ -58,7 +57,7 @@ export default {
 </script>
 
 <style>
-    .modal {
+.modal {
   position: fixed;
   top: 0; left: 0;
   height: 100%;
@@ -71,5 +70,14 @@ export default {
 .content {
   background: white;
   padding: 40px;
+}
+h2, h3 {
+    text-align: center;
+}
+.button { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 </style>

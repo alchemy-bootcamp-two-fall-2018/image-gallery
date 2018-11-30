@@ -19,6 +19,16 @@ export default {
 };
 </script>
 
-<style>
-
+<style scoped>
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    img {
+        height: 200px;
+        width: 300px;
+    }
+    li {
+        list-style: none;
+    }
 </style>
