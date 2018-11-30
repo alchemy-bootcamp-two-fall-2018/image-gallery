@@ -1,8 +1,17 @@
+import shortid from 'shortid';
 const albums = [
     {
-        id: '1',
+        id: shortid.generate(),
         type: 'velociraptor',
         images: [
+            {
+                title: 'Feather Beast',
+                url: 'https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/Velociraptor_u4hjbq.jpg'
+            },
+            {
+                title: 'Feather Beast',
+                url: 'https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/Velociraptor_u4hjbq.jpg'
+            },
             {
                 title: 'Feather Beast',
                 url: 'https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/Velociraptor_u4hjbq.jpg'
@@ -10,17 +19,25 @@ const albums = [
         ]
     },
     {
-        id: '2',
+        id: shortid.generate(),
         type: 't-rex',
         images: [
             {
                 title: 'T-Rex Skeleton',
                 url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJgTYqgQX4cD1SUApQD8MCQoDBgZMX4TD0dvBlrOWgGhz-SeiF_g'
-            }
+            },
+            {
+                title: 'T-Rex Skeleton',
+                url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJgTYqgQX4cD1SUApQD8MCQoDBgZMX4TD0dvBlrOWgGhz-SeiF_g'
+            },
+            {
+                title: 'T-Rex Skeleton',
+                url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJgTYqgQX4cD1SUApQD8MCQoDBgZMX4TD0dvBlrOWgGhz-SeiF_g'
+            },
         ]
     },
     {
-        id: '3',
+        id: shortid.generate(),
         type: 'long-neck',
         images: [ 
             {
@@ -39,11 +56,24 @@ const albums = [
     }
 ];
 
+
+function save() {
+    window.localStorage.setItem('albums', JSON.stringify(albums));
+}
+
 export default {
     getAlbums() {
         return albums;
     },
     getThisAlbum(id) {
         return albums.find(album => album.id === id);
+    },
+    add(album) {
+        album.id = shortid.generate();
+        album.images = [];
+        albums.push(album);
+        save();
+        console.log(albums);
+        return album;
     }
 };
