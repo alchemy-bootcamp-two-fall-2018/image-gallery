@@ -4,6 +4,7 @@
         :key="index"
         >
             <h4>{{image.title}}</h4>
+            <img :src="image.url"/>
         </li>
     </ul>
 </template>
@@ -17,5 +18,10 @@ export default {
 </script>
 
 <style>
-
+li {
+    list-style-type: none;
+}
+img {
+    width: 50vw;
+}
 </style>

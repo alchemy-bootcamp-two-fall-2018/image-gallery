@@ -4,7 +4,6 @@
         <Thumbnails
         :images="album.images"
         />
-        {{album}}
     </div>
 </template>
 
