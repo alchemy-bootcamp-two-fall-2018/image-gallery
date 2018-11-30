@@ -5,12 +5,12 @@
             <span class="content">
             <form @submit.prevent="onAdd">
                 <label>
-                    Title: <input v-model="image.title" type="text">
+                    Title: <input v-model="image.title" type="text" required>
                 </label>
                 <label>
-                    Image URL: <input v-model="image.url" type="text">
+                    Image URL: <input v-model="image.url" type="text" required>
                 </label>
-                <button type="submit" @click="showModal = false">Submit</button>
+                <button type="submit" @submit="showModal = false">Submit</button>
             </form>
             <button @click="showModal = false">Cancel</button>
             </span>
