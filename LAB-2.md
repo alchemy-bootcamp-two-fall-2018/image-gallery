@@ -51,14 +51,12 @@ This is a paired, multi-day lab. For day two, build out:
 ## Rubric **20pts**
 
 * Vue Router setup, views, and links:
-    * Main Routes **3pts**
     * Child Routes **2pts**
-* Albums displays lists and add new Album **2pts**
-* Album Detail with album info and buttons for switching view **2pts**
-* Image views
-    * Thumbnail View **2pts**
+* Add new Album **1pt**
+* Album Detail Buttons/Links for switching view **1pts**
+* New image views:
     * List View **2pts**
-    * Gallery View **3pts**
-* Idomatic Vue components **2pts**
-* Project Organization (folder structure and file and folder naming) **2pts**
+    * Gallery View **2pts**
+* Idomatic Vue components **1pts**
+* Project Organization (folder structure and file and folder naming) **1pts**
     
