@@ -1,9 +1,11 @@
 <template>
-  <h2>Hello</h2>
-  <!-- <form @submit.prevent="handleSubmit">
-    <input v-model="artist.name" required>
+  <form @submit.prevent="handleSubmit">
+    <label>
+      <p>Artist Name: </p>
+      <input v-model="artist.name" required>
+    </label>
     <button>Add</button>
-  </form> -->
+  </form>
 </template>
 
 <script>
@@ -17,7 +19,7 @@ export default {
   },
   methods: {
     handleSubmit() {
-      console.log('added');
+      artistsApi.addArtist();
     }
   }
 };

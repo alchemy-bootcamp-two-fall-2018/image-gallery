@@ -1,10 +1,19 @@
 <template>
-  <h2>Hello</h2>
+<div>
+  <h2>{{artist}}</h2>
+  <!-- <button @click="blah">Route</button> -->
+</div>
+
 </template>
 
 <script>
-export default {
 
+// import artistApi from '../../services/artistApi';
+
+export default {
+  data() {
+    
+  }
 };
 </script>
 
