@@ -21,7 +21,7 @@ export default {
     methods: {
         setIndex(index) {
             this.selectedIndex += index;
-            if(this.selectedIndex === this.images.length - 1) {
+            if(this.selectedIndex === this.images.length) {
                 this.selectedIndex = 0;
             }
             else if(this.selectedIndex < 0) {
@@ -34,5 +34,8 @@ export default {
 </script>
 
 <style>
-
+    img {
+        width: 300px;
+        height: 200px;
+    }
 </style>
