@@ -1,5 +1,5 @@
 <template>
-    <p> This is our Home page! </p>
+    <h1 class="welcome">Welcome!</h1>
 </template>
 
 <script>
@@ -13,5 +13,10 @@ export default {
 </script>
 
 <style>
+  .welcome {
+    text-align: center;
+    padding-top: 10px;
+    color: red;
+  }
 
 </style>
