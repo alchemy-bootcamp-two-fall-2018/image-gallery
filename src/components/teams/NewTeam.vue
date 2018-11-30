@@ -1,13 +1,15 @@
 <template>
     <section>
         Add new Team 
-        <form>
+        <form @submit.prevent="handleSubmit">
             <input v-model="team.name">
+            <button> Add </button>
         </form>
     </section>
 </template>
 
 <script>
+import teamsApi from '../services/teamsApi';
 export default {
     data() {
         return {
@@ -16,9 +18,12 @@ export default {
             }
         };
     },
-    components: {
-
-    }
+    methods: {
+        handleSubmit() {
+            const saved = teamsApi.add(this.team);
+            this.$router.push(`/teams/${saved.id}`);
+        }
+    } 
 };
 </script>
 
