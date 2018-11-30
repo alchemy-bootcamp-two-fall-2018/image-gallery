@@ -28,7 +28,16 @@ export default {
 <style>
   .content {
     width: 50%;
-    height: 50%;
+    height: 30%;
+    background: white;
+  }
+
+  .close {
+    font-size: 1.2em;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    background-color: red;
   }
   
 </style>

@@ -38,9 +38,7 @@
 
 <script>
 import albumsApi from '../../albumsApi';
-// import ThumbnailView from './images/ThumbnailView';
-// import GalleryView from './images/GalleryView';
-// import ListView from './images/ListView';
+
 export default {
   data() {
     return {
