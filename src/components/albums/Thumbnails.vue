@@ -20,10 +20,18 @@ export default {
 
 <style>
 li {
-    list-style: none;
+ list-style: none;
 }
 img {
-    width:200px;
+    float:left;
+    position:relative;
+    border: 1px solid #ddd; 
+    border-radius: 3px; 
+    padding: 5px; 
+    width: 120px; 
+}
+img:hover {
+    box-shadow: 0 0 2px 1px lightseagreen;
 }
 
 </style>

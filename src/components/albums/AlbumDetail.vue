@@ -1,13 +1,13 @@
 <template>
     <section v-if="album">
-        <h2>{{album.name}}</h2>  
+        <h2>{{album.name}}</h2>       
             <form @submit.prevent="handleAdd">
-                <label> Photos
+                <label>Photo
                     <input v-model="image.picture" required
                     />
                 </label>
                 <button>Add</button> 
-            </form>       
+            </form> 
     <Thumbnails :images="album.image"/>
     </section>
 </template>
@@ -45,5 +45,11 @@ export default {
 </script>
 
 <style>
+h2 {
+    color:dimgray;
+    background-color:white;
+    padding:5px;
+    margin:10px;
+}
 
 </style>
