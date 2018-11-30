@@ -30,10 +30,7 @@ export default {
         return {
             album: null,
             showModal: false,
-            image: {
-                title: '',
-                url: ''
-            }
+            image: {}
         };
     },
     components: {
@@ -45,6 +42,8 @@ export default {
     methods: {
         onAdd() {
             this.album.images.push(this.image);
+            console.log(this.album);
+            this.image = {};
         }
     }
 };

@@ -15,6 +15,5 @@ export default {
     nav {
         display: flex;
         justify-content: space-around;
-        background-color: lightsteelblue;
     }
 </style>
