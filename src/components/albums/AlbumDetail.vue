@@ -1,6 +1,12 @@
 <template>
     <section v-if="album">
-        <h2>{{album.name}}</h2>        
+        <h2>{{album.name}}</h2>  
+        <p>
+            <label> Photos
+                <input v-model="" required>
+            </label>
+            <button>Add</button>    
+        </p>      
     <Thumbnails :images="album.image"/>
     </section>
 </template>
@@ -12,11 +18,18 @@ import Thumbnails from './Thumbnails';
 export default {
     data() {
         return {
-            album: null
+            album: null,
+            image: []
         };
     },
     components: {
         Thumbnails
+    },
+    method: {
+        handleAdd() {
+            this.album.images.push(this.image);
+        }
+
     },
     created() {
         this.album = albumsApi.getAlbum(this.$route.params.id);

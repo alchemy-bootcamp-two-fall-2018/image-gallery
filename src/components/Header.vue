@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Hello this is the header(from header file)</h1>
+        <h1>Beautiful Image Gallery</h1>
         <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/albums">Albums</RouterLink>

@@ -28,6 +28,12 @@ export default {
     }, 
     getAlbum(id) {
         return albums.find(album => album.id === id);
+    }, 
+    add(album) {
+        album.id = '', 
+        album.image = [],
+        albums.push(album);
+        return album;
     }
 
 };
