@@ -59,6 +59,7 @@ export default {
 <style>
   form {
     text-align: center;
+
     border: 5px solid black;
     background: white;
     padding: 40px;
