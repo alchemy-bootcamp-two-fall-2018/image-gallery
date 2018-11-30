@@ -1,11 +1,10 @@
 <template>
   <section>
+    <h3>Song List:</h3>
     <ul>
-      <li 
-      v-for="album in albums"
-      :key="album.title">
-      <RouterLink to="./song-list"><img :src="album.imgUrl"></RouterLink>
-      </li>
+      <li v-for="album in albums"
+          :key="album.title">{{album.title}}
+      </li>  
     </ul>
   </section>
 </template>

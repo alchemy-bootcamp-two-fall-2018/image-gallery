@@ -10,7 +10,7 @@ Complete [Kata](https://www.codewars.com/kata/alternate-capitalization/javascrip
 This is a paired, multi-day lab. For day two, build out:
 
 1. Album Detail sub routes for:
-    1. View 1 (Thumbnail)
+    1. ~~View 1 (Thumbnail)~~
     1. View 2 (Gallery)
     1. View 3 (List)
 1. Save data to local storage
@@ -26,11 +26,11 @@ This is a paired, multi-day lab. For day two, build out:
 
 ## Routes
 
-* `/` | Home page (provide link to `/albums`
+* ~~`/` | Home page (provide link to `/albums`~~
 * `/about` | About page (make something up)
-* `/albums` | List of albums
+~~* `/albums` | List of albums~~
 * `/albums/:id` | Album detail with child routes:
-    * `thumbnail` | Album detail with thumbnails of images
+    * ~~`thumbnail` | Album detail with thumbnails of images~~
     * `gallery` | Album detail with gallery image viewer
     * `list` | Album detail with text list of images
     * BONUS: Another option is to use a subroute of `new` to add a new image!
