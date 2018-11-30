@@ -15,14 +15,18 @@
             </form>
             </span>
         </div>
-            <Thumbnails
-            :images="album.images"
-            />
+        <nav>
+        <RouterLink to="./thumbnail">Thumbnails</RouterLink>
+        <RouterLink to="./gallery">Gallery</RouterLink>
+        <RouterLink to="./list">List</RouterLink>
+        </nav>
+        <RouterView :images="album.images"></RouterView>
+        <!-- <Thumbnails :images="album.images" /> -->
     </div>
 </template>
 
 <script>
-import Thumbnails from './Thumbnails';
+// import Thumbnails from './Thumbnails';
 import albumApi from '../helper/albumApi';
 export default {
     data() {
@@ -32,9 +36,9 @@ export default {
             image: {}
         };
     },
-    components: {
-        Thumbnails
-    },
+    // components: {
+    //     Thumbnails
+    // },
     created() {
         this.album = albumApi.getThisAlbum(this.$route.params.id);
     },
