@@ -1,10 +1,15 @@
 <template>
-  <h1>HELLO</h1>
+  <section>
+    <h3>Gallery View</h3>
+    {{albums[0]}}
+  </section>
 </template>
 
 <script>
 export default {
-
+  props: {
+    albums: Array
+  }
 };
 </script>
 
