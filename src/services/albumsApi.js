@@ -1,12 +1,34 @@
 
 const albums = [
     { 
-        id: 'artist-name', 
+        id: 'ParliamentFunkadelic', 
         title: 'Funk', 
         images: [
             { 
-                title: 'Artist Name', 
-                url: 'https://static.boredpanda.com/blog/wp-content/uploads/2015/09/cute-bunnies-102__605.jpg' 
+                title: 'Parliament Funkadelic', 
+                url: 'https://enjoy-napa-valley.com/wp-content/uploads/George-Clinton-Parliament-Funkadelic.jpg' 
+            }
+        ] 
+    }, 
+
+    { 
+        id: 'SlyStone', 
+        title: 'Funk', 
+        images: [
+            { 
+                title: 'Sly and the Family Stone', 
+                url: 'http://www.okayplayer.com/wp-content/uploads/2015/04/sly-and-the-family-stone-music-lover-live-1968-mp3-main.jpg' 
+            }
+        ] 
+    }, 
+
+    { 
+        id: 'EarthWindFire', 
+        title: 'Funk', 
+        images: [
+            { 
+                title: 'Earth Wind and Fire', 
+                url: 'http://userscontent2.emaze.com/images/56f00e02-4565-4612-ae6f-1bdaf7c4d7b2/9f31f99e-f4b4-404f-898e-7b68d50bea93.jpg' 
             }
         ] 
     }, 
