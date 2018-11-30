@@ -8,7 +8,7 @@
                     Title: <input v-model="image.title" type="text" required>
                 </label>
                 <label>
-                    Image URL: <input v-model="image.url" type="text" required>
+                    Image URL: <input v-model="image.url" type="url" required>
                 </label>
                 <button type="submit">Submit</button>
             <button type="reset">Cancel</button>
