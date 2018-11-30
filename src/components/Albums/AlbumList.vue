@@ -1,11 +1,23 @@
 <template>
-  
+  <ul>
+    <Album
+      v-for="album in albums"
+      :key="album.title"
+      :album="album"/>
+  </ul>
 </template>
 
 <script>
-export default {
+import Album from './Album';
 
-}
+export default {
+  props: {
+    albums: Array
+  },
+  components: {
+    Album
+  }
+};
 </script>
 
 <style>

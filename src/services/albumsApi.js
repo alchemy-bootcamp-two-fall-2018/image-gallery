@@ -1,12 +1,13 @@
 const albums = [
   { 
-    //id:
+    id: 'AstroWorld',
     title: 'AstroWorld',
-    artist: 'Travis Scott',
+    artist: 'Travis Scott'
     // images: []
 
   },
   {
+    id: 'Blah',
     title: 'BlahBlah',
     artist: 'you know'
 

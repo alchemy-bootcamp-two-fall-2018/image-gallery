@@ -2,7 +2,6 @@
   <section>
     <h2>Albums</h2>
     <AlbumList :albums="albums"/>
-    {{albums}}
   </section>
 </template>
 
