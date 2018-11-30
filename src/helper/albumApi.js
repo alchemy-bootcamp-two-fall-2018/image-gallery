@@ -30,6 +30,10 @@ const albums = [
             {
                 title: 'Long Neck Taco Holder',
                 url: 'https://images-na.ssl-images-amazon.com/images/I/714ZfW4WBEL._SX425_.jpg'
+            },
+            {
+                title: 'Long Neck Taco Holder Copy',
+                url: 'https://images-na.ssl-images-amazon.com/images/I/714ZfW4WBEL._SX425_.jpg'
             }
         ]
     }

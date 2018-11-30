@@ -15,10 +15,9 @@
             </form>
             </span>
         </div>
-
-        <Thumbnails
-        :images="album.images"
-        />
+            <Thumbnails
+            :images="album.images"
+            />
     </div>
 </template>
 
@@ -54,6 +53,7 @@ export default {
 </script>
 
 <style>
+
 .modal {
    background-color: rgba(0,0,0,.5);
    height: 100%;
