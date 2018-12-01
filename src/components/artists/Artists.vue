@@ -1,7 +1,7 @@
 <template>
     <section>
         <h2>Artists</h2>
-        <RouterLink to="/artists/new">Add New Artist</RouterLink>
+        <RouterLink to="/artists/new"><h3>Add New Artist</h3></RouterLink>
         <ArtistList :artists="artists"/>
     </section>
 </template>
