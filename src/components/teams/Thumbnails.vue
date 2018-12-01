@@ -20,7 +20,6 @@ export default {
 </script>
 
 <style scoped>
-
 ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -39,6 +38,7 @@ li {
 }
 img {
     width: 200px;
+
     
 
 
