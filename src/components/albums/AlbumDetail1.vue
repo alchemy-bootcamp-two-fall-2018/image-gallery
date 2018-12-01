@@ -33,9 +33,9 @@
     </div>
 
     <nav>
-      <RouterLink class="view-link" to="./thumbnail"><span>Thumbnail</span></RouterLink>
-      <RouterLink class="view-link" to="./list"><span>List</span></RouterLink>
-      <RouterLink class="view-link" to="./gallery"><span>Gallery</span></RouterLink>
+      <RouterLink class="view-link" to="./thumbnail"><span>Thumbnail View</span></RouterLink>
+      <RouterLink class="view-link" to="./list"><span>List View</span></RouterLink>
+      <RouterLink class="view-link" to="./gallery"><span>Gallery View</span></RouterLink>
     </nav>
 
     <RouterView v-bind:images="album.images">VIEW</RouterView>
@@ -168,11 +168,17 @@ export default {
   .view-link {
     text-decoration: none;
     color: red;
+    border: 1px solid black;
+    border-radius: 5px;
     background: white;
     padding: 6px;
     line-height: 2.5em;
     margin: 0px 5px;
-    width: 150px;
+    width: 250px;
+  }
+
+  .view-link:hover {
+    background: lightgray;
   }
 
   nav {

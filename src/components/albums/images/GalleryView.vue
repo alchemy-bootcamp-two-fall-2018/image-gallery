@@ -50,6 +50,7 @@ export default {
   .gallery-container {
     display: flex;
     justify-content: space-evenly;
+    margin: 20px 30px;
   }
   .pic {
     position: relative;
@@ -57,6 +58,7 @@ export default {
     width: 400px;
     text-align: center;
     border: 3px solid red;
+    margin: 5px;
   }
 
   .gallery {
