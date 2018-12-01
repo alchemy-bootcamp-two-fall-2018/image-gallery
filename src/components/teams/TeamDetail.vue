@@ -1,17 +1,21 @@
 <template>
-    <div>
-    <p>
-        <button @click="showModal = true">Add players</button>
-    </p>
-    <div v-if="showModal" class="modal">
-        <div class="content">
-            I am the form
-            <button @click="showModal = false">Close</button>
+    <section>
+        <p>
+            <button @click="showModal = true">Add players</button>
+        </p>
+
+        <div v-if="showModal" class="modal">
+            <div class="content">
+                I am the form
+                <button @click="showModal = false">Close</button>
+            </div>
         </div>
-    </div>
+       
+     <RouterLink to=".thumbnail">Thumbnail</RouterLink>
+        
         <h2>{{team.name}}</h2>
         <Thumbnails :players="team.players"/>
-    </div>
+    </section>
 
 </template>
 
