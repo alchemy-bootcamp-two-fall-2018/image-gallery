@@ -14,17 +14,18 @@
             <RouterLink to="./thumbnail">Thumbnail</RouterLink>
             <RouterLink to="./listview">List</RouterLink>
         </nav>
-     
+        <RouterView :teams="team.players">DEFAULT VIEW</RouterView>
+        <RouterView :team=""
         
         <h2>{{team.name}}</h2>
-        <Thumbnails :players="team.players"/>
+        <!-- <Thumbnails :players="team.players"/> -->
     </section>
 
 </template>
 
 <script>
 import teamsApi from '../services/teamsApi.js';
-import Thumbnails from './Thumbnails';
+// import Thumbnails from './Thumbnails';
 
 export default {
     data() {
@@ -33,9 +34,9 @@ export default {
             showModal: false
         };
     },
-    components: {
-        Thumbnails
-    },
+    // components: {
+    //     Thumbnails
+    // },
     created() {
         this.team = teamsApi.getTeam(this.$route.params.id);
     }

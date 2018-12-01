@@ -14,6 +14,9 @@
 
 <script>
 export default {
+    props: {
+        players: Array
+    }
 
 };
 </script>
