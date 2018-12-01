@@ -1,6 +1,7 @@
 <template>
   <section v-if="album">
     <h2>{{album.title}}</h2>
+    <p class="album-description">{{album.description}}</p>
     <p>
       <button @click="showModal = true">Add Image</button>
     </p>

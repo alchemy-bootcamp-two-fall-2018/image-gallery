@@ -2,9 +2,11 @@
   <section>
     <div class="album-list">
       <li>
-        <RouterLink :to="`/albums/${album.id}`">
-          <span>{{album.title}}</span>
-          <span>{{album.description}}</span>
+        <RouterLink class="album-link" :to="`/albums/${album.id}`">
+          <div class="album-item"> 
+            <p>{{album.title}}</p>
+            <p>{{album.description}}</p>
+          </div>
         </RouterLink>
       </li>
     </div>
@@ -20,7 +22,7 @@ export default {
 </script>
 
 <style>
-  li span {
+  .album-item {
     padding: 10px 0;
     color: green;
     border: 5px solid red; 
@@ -28,6 +30,7 @@ export default {
     font-size: 2.5em;
     margin: 0px 10px;
     width: 100%;
+    text-decoration: none;
   }
   .album-list li {
     border: none;
@@ -39,6 +42,9 @@ export default {
     text-align: center;
     width: 90vw;
     text-decoration: none;
+  }
 
+  .album-link {
+    text-decoration: none;
   }
 </style>
