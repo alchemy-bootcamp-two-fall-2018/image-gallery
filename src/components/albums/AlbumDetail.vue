@@ -18,7 +18,7 @@
                     <form @submit="handleAdd()">
                         <fieldset>
                             <legend> Add a new image </legend>
-                            Image: <input type="text" name="image" v-model="category.image" required>
+                            Image: <input type="text" name="image" v-model="category.url" required>
                             <button type="submit">Add</button>
                         </fieldset>
                     </form>
@@ -61,9 +61,9 @@ export default {
 
     methods: {
         handleAdd() {
-            // this.category.id - this.category.image;
+            // this.category.id = this.category.url;
             // console.log('image', this.images.url);
-            this.albums.push(this.url);
+            this.category.push(this.url);
         }
     }
 
