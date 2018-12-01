@@ -4,6 +4,7 @@
       <li>
         <RouterLink :to="`/albums/${album.id}`">
           <span>{{album.title}}</span>
+          <span>{{album.description}}</span>
         </RouterLink>
       </li>
     </div>

@@ -2,6 +2,7 @@ export default [
   {
     id: 'trees',
     title: 'Christmas Trees',
+    description: 'Beautifully decorated trees from all around our country.',
     images: [
       {
         title: 'Portland Christmas Tree',
@@ -28,22 +29,11 @@ export default [
   {
     id: 'helpers',
     title: 'Santa Helpers',
+    description: 'Adorable animals dressed in Christmas outfits read to help Santa!',
     images: [
       {
         title: 'Happy Christmas Cat',
         url: 'https://i.pinimg.com/originals/d0/91/1b/d0911b1e862f82ddc7f53f8265435d77.jpg'
-      },
-      {
-        title: '2 Christmas Doggos',
-        url: 'https://i.pinimg.com/originals/41/e5/06/41e5066d12099d2f3cb11cfa9b77a039.jpg'
-      },
-      {
-        title: '2 Christmas Doggos',
-        url: 'https://i.pinimg.com/originals/41/e5/06/41e5066d12099d2f3cb11cfa9b77a039.jpg'
-      },
-      {
-        title: '2 Christmas Doggos',
-        url: 'https://i.pinimg.com/originals/41/e5/06/41e5066d12099d2f3cb11cfa9b77a039.jpg'
       },
       {
         title: '2 Christmas Doggos',
@@ -60,16 +50,13 @@ export default [
       {
         title: 'Bunny Christmas',
         url: 'https://i.chzbgr.com/full/6917571840/hB361D059/'
-      },
-      {
-        title: '',
-        url: ''
       }
     ]
   },
   {
     id: 'lights',
     title: 'Christmas Lights',
+    description: 'A collection of over-the-top Christmas light displays!',
     images: [
       {
         title: 'Christmas Crazy',
@@ -80,43 +67,9 @@ export default [
         url: 'http://tarbell.com/newspress/wp-content/uploads/2015/12/christmas-lights-1.jpg'
       },
       {
-        title: 'Christmas Crazy',
-        url: 'https://happyholidaysblog.com/wp-content/uploads/Christmas-Lights-On-Houses-09.jpg'
-      },
-      {
-        title: 'Christmas Crazy',
-        url: 'https://happyholidaysblog.com/wp-content/uploads/Christmas-Lights-On-Houses-09.jpg'
-      },
-      {
         title: 'Blue Christmas',
         url: 'https://static1.squarespace.com/static/56feae0ab6aa60ebb6039bf3/t/5a3021fd0d9297e3b10d5663/1513103892821/24831355_10156064300274446_6063417990896438734_o.jpg'
       }
     ]
-  },
-  {
-    id: 'blank',
-    title: 'blank',
-    images: [
-      {
-        title: 'blank',
-        url: ''
-      },
-      {
-        title: 'blank',
-        url: ''
-      },
-      {
-        title: 'blank',
-        url: ''
-      },
-      {
-        title: 'blank',
-        url: ''
-      },
-      {
-        title: 'blank',
-        url: ''
-      }
-    ]
-  },
+  }
 ];
