@@ -2,15 +2,21 @@
     <header>
         <nav>
             Header component
-            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/">
+                <img src="http://www.stickpng.com/assets/images/58428defa6515b1e0ad75ab4.png">
+            </RouterLink>
             <RouterLink to="/teams">Teams</RouterLink>
         </nav>
     </header>
 </template>
 
 <script>
-export default {
+// import TeamsApi from './components/services/teamsApi.js';
 
+export default {
+    props: {
+        teams: Array
+    },
 };
 </script>
 
@@ -23,13 +29,18 @@ header{
 nav {
     background: #1D428A;
     color: white;
-    font-family: 
+    /* font-family:  */
     height: 54px;
     width: 100vw;
+    position: fixed;
+    top: 0;
     margin: 0;
     padding: 0;
     display: flex;
-    
+}
+img {
+    max-width: 50px;
+    height: auto;
 }
 
 </style>
