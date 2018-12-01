@@ -19,6 +19,11 @@
             <span>Image Url:</span>
             <input v-model="image.url" required>
           </label>
+
+          <label>
+            <span>Image Description:</span>
+            <input v-model="image.description" required>
+          </label>
           
           <button type="submit">Add</button>
           <button @click="onCancel">Close</button>
@@ -154,5 +159,9 @@ export default {
     font-size: 3em;
     padding: 0px;
     margin: 5px 0px 0px 0px;
+  }
+
+  span {
+    width: 150px;
   }
 </style>

@@ -4,8 +4,8 @@
       <li>
         <RouterLink class="album-link" :to="`/albums/${album.id}`">
           <div class="album-item"> 
-            <p>{{album.title}}</p>
-            <p>{{album.description}}</p>
+            <p class="album-name">{{album.title}}</p>
+            <p class="album-description">{{album.description}}</p>
           </div>
         </RouterLink>
       </li>
@@ -46,5 +46,15 @@ export default {
 
   .album-link {
     text-decoration: none;
+  }
+
+  .album-name {
+    font-size: 1em;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .album-description {
+    font-size: 0.7em;
   }
 </style>
