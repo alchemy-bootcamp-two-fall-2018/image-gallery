@@ -1,20 +1,32 @@
 <template>
+<Modal :onClose="() => this.$router.back()">
     <section>
         <h3>Gallery View</h3>
+
         <p>
             <button @click="setIndex(-1)">&lt;</button>
-            {{images.picture}}
+            <img v-bind:src="image.picture">
             <button @click="setIndex(1)">&gt;</button>
         </p>    
     </section>
+</Modal>
 </template>
 
 <script>
-export default {
+import Modal from '../../shared/Modal.vue';
 
+export default {
+    data() {
+        return {
+            selectedIndex: 0
+        };
+    },
     props: {
         images: Array
     }, 
+    components: {
+        Modal
+    },
     computed: {
         image() {
             return this.images[this.selectedIndex];
