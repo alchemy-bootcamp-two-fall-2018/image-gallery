@@ -2,7 +2,8 @@ import shortid from 'shortid';
 export default [
     {   
         id: shortid.generate(),
-        name: 'Sand',
+        name: 'Sand', 
+        //build on name and add array like below image
         image: [{ picture: 'https://images.unsplash.com/photo-1540202404-d0c7fe46a087?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6edfebe98a9c2c83f02a1be8d0aa37d3&auto=format&fit=crop&w=2980&q=80' },
             { picture: 'https://images.unsplash.com/photo-1460887290616-6ca9f38552e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6145143762480d1a94c9344258cd8c20&auto=format&fit=crop&w=800&q=60' },
             { picture: 'https://images.unsplash.com/photo-1489211914964-32c31f87e86b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3dff230b7c6971c2f1faa1172f5a869&auto=format&fit=crop&w=800&q=60' }]
