@@ -10,8 +10,11 @@
                 <button @click="showModal = false">Close</button>
             </div>
         </div>
-       
-     <RouterLink to="./thumbnail">Thumbnail</RouterLink>
+        <nav>
+            <RouterLink to="./thumbnail">Thumbnail</RouterLink>
+            <RouterLink to="./listview">List</RouterLink>
+        </nav>
+     
         
         <h2>{{team.name}}</h2>
         <Thumbnails :players="team.players"/>
