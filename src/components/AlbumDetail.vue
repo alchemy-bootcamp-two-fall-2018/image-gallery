@@ -9,6 +9,9 @@
                     <label>
                         Image URL: <input v-model="image.url" type="url" required>
                     </label>
+                    <label>
+                        Image Description: <input v-model="image.description" type="text" required>
+                    </label>
                     <button type="submit">Submit</button>
                     <button type="reset">Cancel</button>
                 </form>

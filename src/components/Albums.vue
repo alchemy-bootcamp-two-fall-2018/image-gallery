@@ -8,7 +8,10 @@
         <Modal v-if="showModal">
             <form @submit.prevent="onAdd" @reset="onCancel">
                     <label>
-                        Type: <input v-model="album.type" type="text" required>
+                        Title: <input v-model="album.type" type="text" required>
+                    </label>
+                    <label>
+                        Description: <input v-model="album.description" type="text" required>
                     </label>
                     <button type="submit">Submit</button>
                 <button type="reset">Cancel</button>

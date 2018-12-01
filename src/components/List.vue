@@ -4,7 +4,7 @@
         :key="index">
             <h4>{{image.title}}</h4>
             <img :src="image.url">
-            <h4>LIST</h4>
+            <p>{{image.description}}</p>
         </li>
     </ul>
 </template>

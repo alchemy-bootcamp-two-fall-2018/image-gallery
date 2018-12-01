@@ -2,7 +2,6 @@
     <ul>
         <li v-for="(image, index) in images"
         :key="index">
-            <h4>{{image.title}}</h4>
             <img :src="image.url"/>
         </li>
     </ul>
