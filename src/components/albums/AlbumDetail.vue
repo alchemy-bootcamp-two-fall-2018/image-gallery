@@ -38,6 +38,9 @@ export default {
         handleImageAdd(image) {
 
             this.album.image.push(image);
+        }, 
+        handleEdit(){
+            console.log();
         }
     },
     created() {

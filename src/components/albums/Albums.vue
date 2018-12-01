@@ -2,7 +2,6 @@
     <section>
         <h2>Albums</h2>
         <AlbumsList :albums="albums"/>
-        
         <RouterLink to="/albums/new">Add a new Album </RouterLink>
     </section>
 </template>
@@ -20,7 +19,6 @@ export default {
     components: {
         AlbumsList
     }
-
 };
 </script>
 

@@ -2,7 +2,6 @@
 <Modal :onClose="() => this.$router.back()">
     <section>
         <h3>Gallery View</h3>
-
         <p>
             <button @click="setIndex(-1)">&lt;</button>
             <img v-bind:src="image.picture">
@@ -16,6 +15,7 @@
 import Modal from '../../shared/Modal.vue';
 
 export default {
+
     data() {
         return {
             selectedIndex: 0
