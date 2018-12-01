@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Albums from './components/albums/Albums';
 import AlbumDetail from './components/albums/AlbumDetail';
 import ThumbnailView from './components/albums/images/ThumbnailView';
+import GalleryView from './components/albums/images/GalleryView';
 
 
 export default new VueRouter({
@@ -14,8 +15,8 @@ export default new VueRouter({
       component: AlbumDetail, 
       children: [
         { path: 'thumbnail', component: ThumbnailView },
+        { path: 'gallery', component: GalleryView },
         { path: '', redirect: 'thumbnail' },
-
       ]
     }, 
     { path: '*', redirect: '/' }

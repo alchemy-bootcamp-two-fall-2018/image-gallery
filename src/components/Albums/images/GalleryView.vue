@@ -19,6 +19,9 @@ export default {
 };
 </script>
 
-<style>
-
+<style scoped lang="postcss">
+li {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 </style>

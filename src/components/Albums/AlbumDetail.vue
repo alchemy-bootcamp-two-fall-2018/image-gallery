@@ -29,6 +29,7 @@
     </div>
     <nav>
       <RouterLink to="./thumbnail">Thumbnail</RouterLink>
+      <RouterLink to="./gallery">Gallery</RouterLink>
     </nav>
    <RouterView :images="album.images">DEFAULT VIEW</RouterView>
 
