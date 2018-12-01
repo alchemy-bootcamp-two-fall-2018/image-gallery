@@ -4,6 +4,10 @@
       Record Title:
       <input v-model="record.title" required>
     </label>
+    <label>
+      Record Image URL:
+      <input v-model="record.imgUrl" required>
+    </label>
     <button>Add</button>
   </form>
 </template>
