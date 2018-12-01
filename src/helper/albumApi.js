@@ -29,8 +29,12 @@ export default {
         album.images = [];
         albums.push(album);
         save();
-        console.log(albums);
         return album;
     },
-
+    addImage(id, image) {
+        const album = this.getThisAlbum(id);
+        album.images.push(image);
+        save();
+        return album;
+    }
 };

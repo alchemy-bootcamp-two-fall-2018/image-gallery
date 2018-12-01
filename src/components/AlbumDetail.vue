@@ -21,12 +21,10 @@
         <RouterLink to="./list">List</RouterLink>
         </nav>
         <RouterView :images="album.images"></RouterView>
-        <!-- <Thumbnails :images="album.images" /> -->
     </div>
 </template>
 
 <script>
-// import Thumbnails from './Thumbnails';
 import albumApi from '../helper/albumApi';
 export default {
     data() {
@@ -36,16 +34,12 @@ export default {
             image: {}
         };
     },
-    // components: {
-    //     Thumbnails
-    // },
     created() {
         this.album = albumApi.getThisAlbum(this.$route.params.id);
     },
     methods: {
         onAdd() {
-            this.album.images.push(this.image);
-            console.log(this.album);
+            albumApi.addImage(this.album.id, this.image);
             this.onCancel();
         },
         onCancel() {
