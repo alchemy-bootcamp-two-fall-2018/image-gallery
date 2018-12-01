@@ -6,7 +6,7 @@
         :key="index">
         <h4>{{image.name}}</h4>
         <p>
-            <img :src="image.picture"/>
+            <img class="thumb-images" :src="image.picture"/>
         </p> 
         </li>
     </ul>
@@ -26,13 +26,17 @@ export default {
 li {
  list-style: none;
 }
-img {
+.thumb-images {
     float:left;
     position:relative;
-    border: 1px solid #ddd; 
+    border: 1px solid white; 
     border-radius: 3px; 
+    margin: 5px;
     padding: 5px; 
     width: 120px; 
+    height:80px;
+    background-color:grey;
+
 }
 img:hover {
     box-shadow: 0 0 2px 1px darkcyan;

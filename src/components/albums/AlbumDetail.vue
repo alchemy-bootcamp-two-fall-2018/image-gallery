@@ -9,9 +9,9 @@
             <AddImage :onAdd="handleImageAdd"/>
         </Modal>
         <nav>
-            <RouterLink to="./thumbnail"> Thumbnail View </RouterLink>
-            <RouterLink to="./list"> List View </RouterLink>
-            <RouterLink to="./gallery"> Gallery View </RouterLink>
+            <RouterLink class="thumb" to="./thumbnail"> Thumbnail View </RouterLink>
+            <RouterLink class="list" to="./list"> List View </RouterLink>
+            <RouterLink class="gallery"  to="./gallery"> Gallery View </RouterLink>
 
         </nav>
         <RouterView :images="album.image"> Default View </RouterView>
@@ -50,6 +50,15 @@ export default {
 </script>
 
 <style>
+.thumb {
+    color:black;
+}
+.list {
+    color:black;
+}
+.gallery {
+    color:black;
+}
 h2 {
     color:dimgray;
     background-color:white;

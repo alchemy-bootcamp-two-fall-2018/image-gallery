@@ -1,7 +1,7 @@
 <template>
     <section>
         <h2>Albums</h2>
-        <AlbumsList :albums="albums"/>
+        <AlbumsList class="albums" :albums="albums"/>
         <RouterLink to="/albums/new">Add a new Album </RouterLink>
     </section>
 </template>
@@ -23,5 +23,8 @@ export default {
 </script>
 
 <style>
+h2 {
+    color:black;
+}
 
 </style>

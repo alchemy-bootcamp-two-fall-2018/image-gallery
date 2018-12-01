@@ -7,7 +7,7 @@
         :key="index">
         <h4>{{image.name}}</h4>
         <p>
-            <img :src="image.picture"/>
+            <img class="list-images" :src="image.picture"/>
         </p> 
         </li>
     </ul>
@@ -23,5 +23,14 @@ export default {
 </script>
 
 <style>
-
+.list-images     {
+    float:left;
+    position:relative;
+    border: 1px solid white; 
+    border-radius: 3px; 
+    margin: 5px;
+    padding: 5px; 
+    width: 120px; 
+    height:80px;
+}
 </style>

@@ -1,10 +1,10 @@
 <template>
 <Modal :onClose="() => this.$router.back()">
     <section>
-        <h3>Gallery View</h3>
+        <h3 class="gallery-view">Gallery View</h3>
         <p>
             <button @click="setIndex(-1)">&lt;</button>
-            <img v-bind:src="image.picture">
+            <img class= "gallery-images" v-bind:src="image.picture">
             <button @click="setIndex(1)">&gt;</button>
         </p>    
     </section>
@@ -47,5 +47,16 @@ export default {
 </script>
 
 <style>
-
+img {
+float:left;
+}
+.gallery-images {
+    position:relative;
+    border: 1px solid white; 
+    border-radius: 3px; 
+    margin: 5px;
+    padding: 5px; 
+    width: 120px; 
+    height:80px;
+}
 </style>
