@@ -5,14 +5,18 @@ export default {
     return artists;
   },
   addArtist(newArtist) {
+    newArtist.albums = [];
     artists.push(newArtist);
+    this.store();
   },
   addRecord(newRecord, record) {
-    console.log(newRecord, record);
     record.push(newRecord);
-    console.log(artists);
+    this.store();
   },
   findArtist(artistName) {
     return artists.find(artist => artist.name === artistName).albums;
+  },
+  store() {
+    localStorage.setItem('artists', JSON.stringify(artists));
   }
 };
