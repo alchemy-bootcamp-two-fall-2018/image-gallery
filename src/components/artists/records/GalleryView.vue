@@ -9,18 +9,25 @@
 </template>
 
 <script>
+import artistsApi from '../../../services/artistsApi';
+
+
 export default {
   data() {
     return {
-      index: 0
+      index: 0,
+      albums: artistsApi.getAll()
     };
-  },
-  props: {
-    albums: Array,
   },
   methods: {
     setIndex(amount) {
       this.index += amount;
+      if(this.index === this.albums.length) {
+        this.index = 0;
+      }
+      else if(this.index < 0) {
+        this.index = this.albums.length - 1;
+      }
     }
   }
 };

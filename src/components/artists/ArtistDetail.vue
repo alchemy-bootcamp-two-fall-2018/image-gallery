@@ -6,7 +6,6 @@
 </template>
 
 <script>
-
 import artistsApi from '../../services/artistsApi';
 
 export default {
