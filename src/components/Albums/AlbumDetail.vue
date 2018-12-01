@@ -27,6 +27,7 @@
         <button @click="showModal = false">Close</button>
       </div>
     </div>
+    
     <nav>
       <RouterLink to="./thumbnail">Thumbnail</RouterLink>
       <RouterLink to="./gallery">Gallery</RouterLink>

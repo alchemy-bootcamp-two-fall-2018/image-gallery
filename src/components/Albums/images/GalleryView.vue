@@ -1,5 +1,5 @@
 <template>
-<Modal :onClose="() => this.$router.back()">
+<!-- <Modal :onClose="() => this.$router.back()">
   <section>
       <h3>Gallery View</h3>
       {{selectedIndex}}
@@ -9,27 +9,35 @@
         {{color}}
         <button @click="setIndex(1)">&gt;</button>
       </p>
+    </section> -->
+ <Modal :onClose="() => this.$router.back()">
+   <section>   
+      <ul>
+        <li 
+          v-for="(image, index) in images"
+          :key="index">
+          <h4>{{image.title}}</h4>
+          <p>
+            <img :src="image.url">
+          </p>
+        </li>
+      </ul>
     </section>
-  <ul>
-    <li 
-      v-for="(image, index) in images"
-      :key="index">
-      <h4>{{image.title}}</h4>
-      <p>
-        <img :src="image.url">
-      </p>
-    </li>
-  </ul>
+  </Modal>
 </template>
 
 <script>
+import Modal from './Modal';
+
 export default {
   props: {
     images: Array
+  },
+  component: {
+    Modal
   }
 };
 </script>
-
 <style scoped lang="postcss">
 li {
   display: grid;
