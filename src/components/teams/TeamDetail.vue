@@ -14,10 +14,10 @@
             <RouterLink to="./thumbnail">Thumbnail</RouterLink>
             <RouterLink to="./listview">List</RouterLink>
         </nav>
-        <RouterView :teams="team.players">DEFAULT VIEW</RouterView>
-        <RouterView :team=""
-        
+
         <h2>{{team.name}}</h2>
+        <RouterView :players="team.players">DEFAULT VIEW</RouterView>
+
         <!-- <Thumbnails :players="team.players"/> -->
     </section>
 
