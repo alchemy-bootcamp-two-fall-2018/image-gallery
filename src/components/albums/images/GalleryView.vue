@@ -92,4 +92,5 @@ export default {
     width: 40px;
     font-size: 1.5em;
   }
+
 </style>

@@ -28,8 +28,6 @@ export default {
 <style>
   .content {
     width: 50%;
-    height: 30%;
-    background: white;
   }
 
   .close {
