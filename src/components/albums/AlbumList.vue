@@ -2,15 +2,21 @@
 <div>
       <p>Albums list</p>
       <p>
-            <button @click="showModal = true">Add a new album</button>
+            <button @click="showModal = true">Add a new genre</button>
         </p>
 
         <div v-if="showModal" class="modal">
             <div class="content">
-                I am the form. May the form be with you.
-                <input type="file" name="pic" accept="image/*">
-                <input type="submit">
-                <button @click="showModal = false">Close</button>
+                <fieldset>
+                    <legend> Add a new genre </legend>
+                    Artist: <input type="text" name="artist" required>
+                    Genre: <input type="text" name="genre"  required>
+                    Image URL: <input type="text" name="url" required>
+                    
+                    
+                    <input type="submit">
+                    <button @click="showModal = false">Close</button>
+                </fieldset>
             </div>
         </div>
   <ul>
