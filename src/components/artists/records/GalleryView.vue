@@ -4,7 +4,7 @@
     <button @click="setIndex(-1)">&lt;</button>
     <button @click="setIndex(1)">&gt;</button>
     <p>{{albumsArray[index].title}}</p>
-    <p><img src="albumsArray[index].imgUrl"></p>
+    <p><img :src="albumsArray[index].imgUrl"></p>
   </section>
 </template>
 
@@ -16,22 +16,18 @@ export default {
   data() {
     return {
       index: 0,
-      albumsArray: artistsApi.getAll().albums[0]
+      albumsArray: artistsApi.findArtist(this.$route.params.name)
     };
   },
-  // props: {
-  //   albumsArray: Array
-  // },
   methods: {
     setIndex(amount) {
-      console.log(this.albumsArray);
       this.index += amount;
-      // if(this.index === this.albumsArray.length) {
-      //   this.index = 0;
-      // }
-      // else if(this.index < 0) {
-      //   this.index = this.albumsArray.length - 1;
-      // }
+      if(this.index === this.albumsArray.length) {
+        this.index = 0;
+      }
+      else if(this.index < 0) {
+        this.index = this.albumsArray.length - 1;
+      }
     }
   }
 };
