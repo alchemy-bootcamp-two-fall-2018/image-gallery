@@ -1,4 +1,3 @@
-import teamsApi from './teamsApi';
 
 let teams = [
     {   
@@ -63,7 +62,6 @@ if(json) {
     teams = JSON.parse(json);
 }
 else {
-    teams = teamsApi;
     save();
 }
 function save() {
