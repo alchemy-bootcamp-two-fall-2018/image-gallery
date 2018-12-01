@@ -1,7 +1,7 @@
 <template>
-<div>
-      <p>Albums list</p>
-      <p>
+    <div>
+        <p>Albums list</p>
+        <p>
             <button @click="showModal = true">Add a new genre</button>
         </p>
 
@@ -11,20 +11,19 @@
                     <fieldset>
                         <legend> Add a new genre </legend>
                         Genre: <input type="text" name="genre"  v-model="category.genre" required>
-                        
                         <button type="submit">Add</button>
-                        
                     </fieldset>
                 </form>
             </div>
         </div>
-  <ul>
-    <Album
-      v-for="album in albums"
-      :key="album.id"
-      :album="album" />
-  </ul>
-</div>
+
+        <ul>
+            <Album
+            v-for="album in albums"
+            :key="album.id"
+            :album="album" />
+        </ul>
+    </div>
 </template>
 
 <script>
