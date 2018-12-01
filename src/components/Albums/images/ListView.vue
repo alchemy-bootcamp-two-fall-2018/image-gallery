@@ -20,9 +20,13 @@ export default {
 </script>
 
 <style scoped lang="postcss">
+li {
+  color: blue;
+}
 img {
   width: 200px;
   
 }
+
 
 </style>

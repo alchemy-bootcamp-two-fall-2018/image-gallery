@@ -1,4 +1,15 @@
 <template>
+<Modal :onClose="() => this.$router.back()">
+  <section>
+      <h3>Gallery View</h3>
+      {{selectedIndex}}
+      <p>
+        <button @click="setIndex(-1)" :disabled="selectedIndex === 0">&lt;</button>
+        <button @click="setIndex(-1)">&lt;</button>
+        {{color}}
+        <button @click="setIndex(1)">&gt;</button>
+      </p>
+    </section>
   <ul>
     <li 
       v-for="(image, index) in images"
@@ -23,5 +34,11 @@ export default {
 li {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+}
+
+img {
+  width: 200px;
+
 }
 </style>
