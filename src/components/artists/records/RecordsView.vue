@@ -13,6 +13,7 @@
 
 <script>
 import AddRecord from './AddRecord';
+import artistsApi from '../../../services/artistsApi';
 
 export default {
   props: {
@@ -23,7 +24,7 @@ export default {
   },
   methods: {
     handleAdd(newRecord) {
-      console.log(newRecord);
+      artistsApi.addRecord(newRecord, artistsApi.findArtist(this.$route.params.name));
     }
   }
 };
