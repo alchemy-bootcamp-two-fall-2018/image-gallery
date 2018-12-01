@@ -1,4 +1,9 @@
-import artists from './artists-data.js';
+import artistsData from './artists-data.js';
+
+const json = JSON.parse(localStorage.getItem('artists'));
+let artists = [];
+
+json ? artists = json : artists = artistsData;
 
 export default {
   getAll() {
