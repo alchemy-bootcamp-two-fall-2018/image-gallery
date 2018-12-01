@@ -38,15 +38,12 @@ export default {
         handleImageAdd(image) {
 
             this.album.image.push(image);
-        }, 
-        handleEdit(){
-            console.log();
-        }
-    },
-    created() {
-        this.album = albumsApi.getAlbum(this.$route.params.id);
-        if(!this.album) {
-            this.$router.push('/albums');
+        },
+        created() {
+            this.album = albumsApi.getAlbum(this.$route.params.id);
+            if(!this.album) {
+                this.$router.push('/albums');
+            }
         }
     }
 };
