@@ -6,6 +6,7 @@
         <div>
           <h3>{{image.title}}</h3>
           <p><a v-bind:href="image.url" target="_blank">{{image.url}}</a></p> 
+          <p>{{image.description}}</p>
         </div>
     </li>
   </ul>

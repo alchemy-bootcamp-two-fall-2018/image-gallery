@@ -6,7 +6,8 @@ export default [
     images: [
       {
         title: 'Portland Christmas Tree',
-        url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsWrxXcUUOISDzAP18z2J_5pm7OUPDmc-LIi8MyXhv4TUKAInn'
+        url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsWrxXcUUOISDzAP18z2J_5pm7OUPDmc-LIi8MyXhv4TUKAInn',
+        description: 'Portland\'s beautiful tree in Pioneer Square'
       },
       {
         title: 'NY Christmas Tree',

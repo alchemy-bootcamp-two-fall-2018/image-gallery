@@ -2,8 +2,8 @@
   <ul>
     <Album 
       v-for="album in albums"
-      :key="album.id"
-      :album="album"/>
+      v-bind:key="album.id"
+      v-bind:album="album"/>
   </ul>
 </template>
 

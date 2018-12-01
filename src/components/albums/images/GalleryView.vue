@@ -53,8 +53,8 @@ export default {
   }
   .pic {
     position: relative;
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     text-align: center;
     border: 3px solid red;
   }
@@ -77,7 +77,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
     z-index: 20;
   }
 
@@ -87,10 +87,11 @@ export default {
   }
 
   .gallery-button {
-    margin-top: 50%;
+    margin-top: 35%;
     height: 40px;
     width: 40px;
     font-size: 1.5em;
+    border: 4px solid black;
   }
 
 </style>
