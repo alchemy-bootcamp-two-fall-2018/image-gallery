@@ -5,8 +5,7 @@
         <AlbumList
         :albums="albums"
         />
-        <div class="modal" v-if="showModal">
-            <span class="content">
+        <Modal v-if="showModal">
             <form @submit.prevent="onAdd" @reset="onCancel">
                     <label>
                         Type: <input v-model="album.type" type="text" required>
@@ -14,14 +13,14 @@
                     <button type="submit">Submit</button>
                 <button type="reset">Cancel</button>
                 </form>
-            </span>
-        </div>
+        </Modal>
     </div>
 </template>
 
 <script>
 import AlbumList from './AlbumList.vue';
 import albumApi from '../helper/albumApi.js';
+import Modal from './shared/Modal';
 
 export default {
     data() {
@@ -33,6 +32,7 @@ export default {
     },
     components: {
         AlbumList,
+        Modal
     },
     methods: {
         onAdd() {

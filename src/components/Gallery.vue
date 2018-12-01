@@ -1,18 +1,25 @@
 <template>
-    <ul>
-        <li v-for="(image, index) in images"
-        :key="index">
-            <h4>{{image.title}}</h4>
-            <img :src="image.url">
-            <h4>akl;</h4>
-        </li>
-    </ul>
+        <section>
+            <h3>Gallery</h3>
+            <!-- <p v-for="(image, index) in images" :key="index"><img :src="image.url"></p> -->
+            <img :src="images[selectedIndex].url">        
+        </section>
 </template>
 
 <script>
 export default {
+    data() {
+        return {
+            selectedIndex: 0
+        };
+    },
     props: {
         images: Array
+    },
+    computed: {
+        image() {
+            return this.images[this.selectedIndex];
+        }
     }
 };
 </script>
