@@ -5,7 +5,7 @@ import Home from './home/Home';
 import About from './home/About';
 import Thumbnails from './components/Thumbnails';
 import Gallery from './components/Gallery';
-import List from './components/List';
+import List from './components/shared/List';
 
 export default new VueRouter ({
     routes: [
