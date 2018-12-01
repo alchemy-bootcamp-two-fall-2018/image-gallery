@@ -1,8 +1,9 @@
 <template>
         <section>
             <h3>Gallery</h3>
-            <!-- <p v-for="(image, index) in images" :key="index"><img :src="image.url"></p> -->
-            <img :src="images[selectedIndex].url">        
+            <button @click="setIndex(-1)">&lt;</button>
+            <img :src="images[selectedIndex].url">
+            <button @click="setIndex(1)">&gt;</button>        
         </section>
 </template>
 
@@ -19,6 +20,17 @@ export default {
     computed: {
         image() {
             return this.images[this.selectedIndex];
+        }
+    },
+    methods: {
+        setIndex(amt) {
+            this.selectedIndex += amt;
+            if(this.selectedIndex === this.images.length) {
+                this.selectedIndex = 0;
+            }
+            else if(this.selectedIndex < 0){
+                this.selectedIndex = this.images.length - 1;
+            }
         }
     }
 };
