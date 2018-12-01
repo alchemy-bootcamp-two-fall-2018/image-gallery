@@ -7,16 +7,15 @@
 
         <div v-if="showModal" class="modal">
             <div class="content">
-                <fieldset>
-                    <legend> Add a new genre </legend>
-                    Artist: <input type="text" name="artist" required>
-                    Genre: <input type="text" name="genre"  required>
-                    Image URL: <input type="text" name="url" required>
-                    
-                    
-                    <input type="submit">
-                    <button @click="showModal = false">Close</button>
-                </fieldset>
+                <form @submit="handleAdd()">
+                    <fieldset>
+                        <legend> Add a new genre </legend>
+                        Genre: <input type="text" name="genre"  v-model="category.genre" required>
+                        
+                        <button type="submit">Add</button>
+                        
+                    </fieldset>
+                </form>
             </div>
         </div>
   <ul>
@@ -33,6 +32,16 @@ import Album from './Album';
 
 
 export default {
+    data(){
+        return {
+            showModal: false,
+            category: {
+                id: '',
+                genre: '',
+                images: []
+            }
+        };
+    },
     props: {
         albums: Array,
         images: Array
@@ -41,10 +50,12 @@ export default {
         Album,
         
     },
-    data(){
-        return {
-            showModal: false
-        };
+    methods: {
+        handleAdd() {
+            this.category.id = this.category.genre.toLowerCase();
+            console.log(this.category);
+            this.albums.push(this.category);
+        }
     }
 };
 </script>
