@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
   ul {
     list-style-type: none;
     width: 90vw;
@@ -27,5 +27,6 @@ export default {
   li {
     padding-bottom: 60px;
   }
+  
   
 </style>

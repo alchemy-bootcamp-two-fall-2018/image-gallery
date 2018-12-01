@@ -1,7 +1,7 @@
 <template>
   <section>
     <header>
-      <h1>About</h1>
+      <h2>About</h2>
       <p>Enjoy This Is Christmas!</p>
       <p class="mini">
         This is a website filled with images of different holiday categories. 

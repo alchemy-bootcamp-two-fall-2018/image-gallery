@@ -1,7 +1,9 @@
 <template>
   <section>
-    <h2 class="album-title">Albums</h2>
-    <button @click="showModal = true">Add New Album</button>
+    <div>
+      <h2 class="album-title">Albums</h2>
+      <button class="add-album" @click="showModal = true">Add New Album</button>
+    </div>
     <Modal class="modal" v-if="showModal" v-bind:onClose="() => showModal = false">
       <NewAlbum class="content"/>
     </Modal>
@@ -30,8 +32,27 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
   .album-title {
     text-align: center;
   }
+
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  button {
+    border: 2px solid green;
+    border-radius: 5px; 
+    width: 12vw;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  button:hover {
+    background: lightgreen;
+  }
+
 </style>

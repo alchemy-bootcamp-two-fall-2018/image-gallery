@@ -33,9 +33,9 @@
     </div>
 
     <nav>
-      <RouterLink to="./thumbnail"><span class="link">Thumbnail</span></RouterLink>
-      <RouterLink to="./list"><span class="link">List</span></RouterLink>
-      <RouterLink to="./gallery"><span class="link">Gallery</span></RouterLink>
+      <RouterLink class="view-link" to="./thumbnail"><span>Thumbnail</span></RouterLink>
+      <RouterLink class="view-link" to="./list"><span>List</span></RouterLink>
+      <RouterLink class="view-link" to="./gallery"><span>Gallery</span></RouterLink>
     </nav>
 
     <RouterView v-bind:images="album.images">VIEW</RouterView>
@@ -76,7 +76,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
   form {
     text-align: center;
     border: 5px solid black;
@@ -120,14 +120,14 @@ export default {
     text-align: center;
   }
 
-  .link {
+  /* .link {
     display: inline-block;
     width: 250px;
     text-align: center;
     border-radius: 5px;
     font-weight: 600;
     font-size: 2em;
-  }
+  } */
 
   input {
     width: 250px;
@@ -140,6 +140,10 @@ export default {
     font-size: 1.1em;
     font-weight: 500;
     margin-bottom: 10px;
+  }
+
+  label span {
+    width: 150px;
   }
 
   .modal {
@@ -161,7 +165,21 @@ export default {
     margin: 5px 0px 0px 0px;
   }
 
-  span {
+  .view-link {
+    text-decoration: none;
+    color: red;
+    background: white;
+    padding: 6px;
+    line-height: 2.5em;
+    margin: 0px 5px;
     width: 150px;
   }
+
+  nav {
+    margin: 0px 10px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+
 </style>
