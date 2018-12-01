@@ -19,19 +19,16 @@ export default {
 };
 </script>
 
-<style>
-section {
-    padding: 0px 50px;
-    margin: 0px;
-  }
+<style scoped>
   ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-row-gap: 25px;
     grid-column-gap: 15px; 
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding: 0px 50px;
+    margin: 0px;
   }
 
   li {
@@ -40,6 +37,7 @@ section {
     width: 300px;
     text-align: center;
     border: 3px solid red;
+    margin-top: 30px;
   }
 
   img {

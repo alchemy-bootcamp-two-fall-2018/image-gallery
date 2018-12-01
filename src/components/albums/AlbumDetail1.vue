@@ -27,9 +27,9 @@
     </div>
 
     <nav>
-      <RouterLink to="./thumbnail">Thumbnail</RouterLink>
-      <RouterLink to="./list">List</RouterLink>
-      <RouterLink to="./gallery">Gallery</RouterLink>
+      <RouterLink to="./thumbnail"><span class="link">Thumbnail</span></RouterLink>
+      <RouterLink to="./list"><span class="link">List</span></RouterLink>
+      <RouterLink to="./gallery"><span class="link">Gallery</span></RouterLink>
     </nav>
 
     <RouterView v-bind:images="album.images">VIEW</RouterView>
@@ -73,7 +73,6 @@ export default {
 <style>
   form {
     text-align: center;
-
     border: 5px solid black;
     background: white;
     padding: 40px;
@@ -115,9 +114,13 @@ export default {
     text-align: center;
   }
 
-  span {
+  .link {
     display: inline-block;
-    width: 90px;
+    width: 250px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 2em;
   }
 
   input {

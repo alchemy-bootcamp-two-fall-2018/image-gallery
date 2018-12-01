@@ -19,6 +19,13 @@ export default {
 };
 </script>
 
-<style >
+<style>
+  ul {
+    list-style-type: none;
+    width: 90vw;
+  }
+  li {
+    padding-bottom: 60px;
+  }
   
 </style>

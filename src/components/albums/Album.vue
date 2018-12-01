@@ -20,7 +20,7 @@ export default {
 
 <style>
   li span {
-    padding-top: 5%;
+    padding: 10px 0;
     color: green;
     border: 5px solid red; 
     border-radius: 10px;
@@ -31,5 +31,13 @@ export default {
   .album-list li {
     border: none;
     margin: 0px;
+  }
+
+  li{
+    padding-bottom: 20px;
+    text-align: center;
+    width: 90vw;
+    text-decoration: none;
+
   }
 </style>

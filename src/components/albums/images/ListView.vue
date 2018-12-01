@@ -1,9 +1,12 @@
 <template>
   <ul>
-    <li v-for="image in images"
+    <li class="list" v-for="image in images"
         v-bind:key="image.title">
-        <h3>{{image.title}}</h3>
-        <p>url: {{image.url}} </p> 
+        <img v-bind:src="image.url">
+        <div>
+          <h3>{{image.title}}</h3>
+          <p><a v-bind:href="image.url" target="_blank">{{image.url}}</a></p> 
+        </div>
     </li>
   </ul>
 </template>
@@ -15,3 +18,19 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+  li {
+    list-style-type: none;
+    border: 2px solid red;
+    display: flex;
+  }
+
+  img {
+    height: 300px;
+    width: 200px;
+    padding-right: 20px;
+  }
+
+ 
+</style>
