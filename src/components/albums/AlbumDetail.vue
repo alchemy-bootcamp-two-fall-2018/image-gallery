@@ -1,7 +1,6 @@
 <template>
     <section v-if="album">
         <h2>{{album.name}}</h2>
-
         <p>
             <button @click="showModal = true"> Add a new Image
             </button>
@@ -12,6 +11,8 @@
         <nav>
             <RouterLink to="./thumbnail"> Thumbnail View </RouterLink>
             <RouterLink to="./list"> List View </RouterLink>
+            <RouterLink to="./gallery"> Gallery View </RouterLink>
+
         </nav>
         <RouterView :images="album.image"> Default View </RouterView>
     </section>
@@ -35,15 +36,9 @@ export default {
     },
     methods: {
         handleImageAdd(image) {
-            console.log('add image in modal', image);
-        }
-        // handleAdd() {
-        //     console.log('new image', this.album.image);
-        //     this.album.image.push(this.image);
-        //     this.image = {};
-        
-        // }
 
+            this.album.image.push(image);
+        }
     },
     created() {
         this.album = albumsApi.getAlbum(this.$route.params.id);
