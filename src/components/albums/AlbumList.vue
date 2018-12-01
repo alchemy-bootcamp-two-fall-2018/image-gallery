@@ -25,6 +25,7 @@
 <script>
 import Album from './Album';
 
+
 export default {
     props: {
         albums: Array,
@@ -32,6 +33,7 @@ export default {
     },
     components: {
         Album,
+        
     },
     data(){
         return {

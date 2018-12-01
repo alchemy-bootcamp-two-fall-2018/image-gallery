@@ -3,9 +3,9 @@
         <h2>{{album.title}}</h2>
         <h3>Images</h3>
         <nav>
-            <RouterLink to="/thumbnail">Thumbnail View</RouterLink>
-            <RouterLink to="/genrelist">List View</RouterLink>
-            <RouterLink to="/gallery">Gallery View</RouterLink>
+            <RouterLink to="./thumbnail">Thumbnail View</RouterLink>
+            <RouterLink to="./genrelist">List View</RouterLink>
+            <RouterLink to="./gallery">Gallery View</RouterLink>
         </nav>
         
         
