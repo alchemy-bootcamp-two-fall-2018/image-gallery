@@ -3,7 +3,7 @@ import Home from './components/home/Home';
 import Teams from './components/teams/Teams';
 import TeamDetail from './components/teams/TeamDetail';
 import NewTeam from './components/teams/NewTeam';
-import ThumbnailView from './components/teams/Thumbnails';
+import Thumbnails from './components/teams/Thumbnails';
 
 export default new VueRouter({
     routes: [
@@ -14,7 +14,7 @@ export default new VueRouter({
             path: '/teams/:id', 
             component: TeamDetail,
             children: [
-                { path: 'thumbnail', component: ThumbnailView },
+                { path: 'thumbnail', component: Thumbnails },
                 { path: '', redirect: 'thumbnail' }
             ]
         },

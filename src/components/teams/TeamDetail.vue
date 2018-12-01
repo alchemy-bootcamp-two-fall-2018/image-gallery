@@ -11,7 +11,7 @@
             </div>
         </div>
        
-     <RouterLink to=".thumbnail">Thumbnail</RouterLink>
+     <RouterLink to="./thumbnail">Thumbnail</RouterLink>
         
         <h2>{{team.name}}</h2>
         <Thumbnails :players="team.players"/>
