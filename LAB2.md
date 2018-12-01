@@ -16,10 +16,10 @@ This is a paired, multi-day lab. For day two, build out:
 1. Save data to local storage
     1. Check on load and use if found
     1. Save when data changes
-1. Add Album
-    1. You will need to tell api so it can save data
-1. Add Image
-    1. You will need to tell api so it can save data
+1. ~~Add Album~~
+    1. ~~You will need to tell api so it can save data~~
+1. ~~Add Image~~
+    1. ~~You will need to tell api so it can save data~~
 1. BONUS:
     1. Edit Album (change title and/or description)
     1. Edit Image (change title, description, and/or url)
