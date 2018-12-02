@@ -6,7 +6,6 @@
 
         <div v-if="showModal" class="modal">
             <div class="content">
-                I am the form
                 <button @click="showModal = false">Close</button>
             </div>
         </div>
@@ -19,7 +18,6 @@
         <h2>{{team.name}}</h2>
         <RouterView :players="team.players">DEFAULT VIEW</RouterView>
 
-        <!-- <Thumbnails :players="team.players"/> -->
     </section>
 
 </template>
