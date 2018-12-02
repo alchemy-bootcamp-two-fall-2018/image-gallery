@@ -1,11 +1,21 @@
 <template>
     <header>
         <nav>
-            Header component
-            <RouterLink to="/">
-                <img src="http://www.stickpng.com/assets/images/58428defa6515b1e0ad75ab4.png">
-            </RouterLink>
-            <RouterLink to="/teams">Teams</RouterLink>
+            <li>
+                <RouterLink to="/">
+                    <span>HOME</span>
+                </RouterLink>
+            </li>
+            <li>
+                <RouterLink to="/">
+                    <img src="https://diylogodesigns.com/wp-content/uploads/2016/06/nba-logo-transparent-png-logo-download-768x768.png">
+                </RouterLink>
+            </li>
+            <li>
+                <RouterLink to="/teams">
+                    <span>TEAMS</span>
+                </RouterLink>
+            </li>
         </nav>
     </header>
 </template>
@@ -24,7 +34,6 @@ export default {
 header{
     margin: 0;
     padding: 0;
-    
 }
 nav {
     background: #1D428A;
@@ -37,14 +46,22 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
+    align-content: center
+    
 }
 img {
     max-width: 50px;
     height: auto;
 }
-
+li {
+    list-style: none;
+}
+/* RouterLink.link {
+    color: white;
+    &:hover,
+    &:active {
+        background-color: indianred;
+        cursor: pointer;
+} */
 </style>
->
 
-
-</style>
