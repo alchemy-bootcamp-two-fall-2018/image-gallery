@@ -5,15 +5,18 @@ export default [
     albums: [
       {
         title: 'So Bad',
-        imgUrl: 'https://cdn.tinybuddha.com/wp-content/uploads/2018/03/Rainy-day-man.png'
+        imgUrl: 'https://cdn.tinybuddha.com/wp-content/uploads/2018/03/Rainy-day-man.png',
+        songs: ['Song A', 'Song B', 'Song C', 'Song D']
       },
       {
         title: 'So Good',
-        imgUrl: 'https://www.sogood.fr/img/sogood-1453998661.jpg?1464770694'
+        imgUrl: 'https://www.sogood.fr/img/sogood-1453998661.jpg?1464770694',
+        songs: ['Song A', 'Song B', 'Song C', 'Song D']
       },
       {
         title: 'So Bad It\'s Good',
-        imgUrl: 'http://travel.spotcoolstuff.com/wp-content/uploads/2008/04/moba-m.jpg'
+        imgUrl: 'http://travel.spotcoolstuff.com/wp-content/uploads/2008/04/moba-m.jpg',
+        songs: ['Song A', 'Song B', 'Song C', 'Song D']
       }
     ]
 
@@ -24,15 +27,18 @@ export default [
     albums: [
       {
         title: 'Too Bad',
-        imgUrl: 'https://cdn.tinybuddha.com/wp-content/uploads/2018/03/Rainy-day-man.png'
+        imgUrl: 'https://cdn.tinybuddha.com/wp-content/uploads/2018/03/Rainy-day-man.png',
+        songs: ['Song A', 'Song B', 'Song C', 'Song D']
       },
       {
         title: 'Too Good',
-        imgUrl: 'https://www.sogood.fr/img/sogood-1453998661.jpg?1464770694'
+        imgUrl: 'https://www.sogood.fr/img/sogood-1453998661.jpg?1464770694',
+        songs: ['Song A', 'Song B', 'Song C', 'Song D']
       },
       {
         title: 'Too Bad It\'s Good',
-        imgUrl: 'http://travel.spotcoolstuff.com/wp-content/uploads/2008/04/moba-m.jpg'
+        imgUrl: 'http://travel.spotcoolstuff.com/wp-content/uploads/2008/04/moba-m.jpg',
+        songs: ['Song A', 'Song B', 'Song C', 'Song D']
       }
     ]
 

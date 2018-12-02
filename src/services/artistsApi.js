@@ -19,7 +19,7 @@ export default {
     this.store();
   },
   findArtist(artistName) {
-    return artists.find(artist => artist.name === artistName).albums;
+    return artists.find(artist => artist.name === artistName);
   },
   store() {
     localStorage.setItem('artists', JSON.stringify(artists));

@@ -3,7 +3,7 @@
     <h3>Song List:</h3>
     <ul>
       <li v-for="album in albums"
-          :key="album.title">{{album.title}}
+          :key="album.title">{{album.songs}}
       </li>  
     </ul>
   </section>

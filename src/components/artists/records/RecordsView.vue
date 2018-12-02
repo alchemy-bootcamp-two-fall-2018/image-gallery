@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     handleAdd(newRecord) {
-      artistsApi.addRecord(newRecord, artistsApi.findArtist(this.$route.params.name));
+      artistsApi.addRecord(newRecord, artistsApi.findArtist(this.$route.params.name).albums);
     }
   }
 };

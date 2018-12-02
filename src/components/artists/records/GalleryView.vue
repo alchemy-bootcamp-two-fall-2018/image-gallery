@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       index: 0,
-      albumsArray: artistsApi.findArtist(this.$route.params.name)
+      albumsArray: artistsApi.findArtist(this.$route.params.name).albums
     };
   },
   methods: {
