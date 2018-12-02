@@ -1,13 +1,7 @@
 <template>
     <section>
-        <p>
-            <button @click="showModal = true">Add players</button>
-        </p>
-
-        <div v-if="showModal" class="modal">
-            <div class="content">
-                <button @click="showModal = false">Close</button>
-            </div>
+        <div>
+            <AddPlayer/>
         </div>
         <nav>
             <RouterLink to="./thumbnail">Thumbnail</RouterLink>
@@ -24,7 +18,7 @@
 
 <script>
 import teamsApi from '../services/teamsApi.js';
-// import Thumbnails from './Thumbnails';
+import AddPlayer from './AddPlayer.vue';
 
 export default {
     data() {
@@ -33,9 +27,9 @@ export default {
             showModal: false
         };
     },
-    // components: {
-    //     Thumbnails
-    // },
+    components: {
+        AddPlayer
+    },
     created() {
         this.team = teamsApi.getTeam(this.$route.params.id);
     }

@@ -1,34 +1,39 @@
 <template>
-    <form @submit.prevent="onAdd(player)">
-        <FormControl label="lastName">
-            <input v-model="player.lastName" required>
-        </FormControl>
-        <FormControl label="Url">
-            <input v-model="player.url" required>
-        </FormControl>
-        <FormControl>
-            <button>Add</button>
-        </FormControl>
-    </form>
+    <section>
+        <form @submit.prevent="handleSubmit">
+            <label>
+                <span>Last Name:</span>
+                <input v-model="players.lastName" required>
+            </label>
+            <label>
+                <span>Headshot:</span>
+                <input v-model="players.url" required>
+            </label>
+            <button type="submit"> Add </button>
+        </form>
+    </section>
 </template>
 
 <script>
-import FormControl from '../shared/FormControl';
-
+import teamsApi from '../services/teamsApi';
 export default {
     data() {
         return {
-            player: {
+            players: {
                 lastName: '',
                 url: ''
             }
         };
     },
     props: {
-        onAdd: Function
+        team: Array,
     },
-    components: {
-        FormControl
+    methods: {
+        handleSubmit() {
+            const saved = teamsApi.add(this.player);
+            console.log(saved);
+            // return teamsApi;
+        }
     }
 };
 </script>
