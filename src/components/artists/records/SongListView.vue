@@ -23,5 +23,8 @@ export default {
 </script>
 
 <style>
-
+li {
+  list-style: none;
+  /* text-align: left; */
+}
 </style>

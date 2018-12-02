@@ -2,7 +2,7 @@
   <section>
     <AddRecord :onAdd="handleAdd"></AddRecord>
     <ul>
-      <li 
+      <li class="content"
       v-for="album in albums"
       :key="album.title">
       <RouterLink :to="`./song-list/${album.title}`"><img :src="album.imgUrl"><p>{{album.title}}</p></RouterLink>

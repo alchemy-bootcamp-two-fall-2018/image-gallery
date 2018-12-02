@@ -15,5 +15,8 @@ export default {
 </script>
 
 <style>
-
+li a {
+    text-decoration: none;
+    color: rgb(233, 69, 69);
+}
 </style>
