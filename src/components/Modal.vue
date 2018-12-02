@@ -27,7 +27,6 @@ export default {
 
 <style>
   .content {
-    width: 50%;
     background: white;
     padding: 10px;
   }

@@ -8,7 +8,7 @@
 </template>
 
 
-<style>
+<style scoped>
   .welcome {
     text-align: center;
     padding-top: 10px;
