@@ -13,6 +13,7 @@
         <nav>
             <RouterLink to="./thumbnail">Thumbnail</RouterLink>
             <RouterLink to="./listview">List</RouterLink>
+            <RouterLink to="./gallery">Gallery</RouterLink>
         </nav>
 
         <h2>{{team.name}}</h2>

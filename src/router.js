@@ -5,6 +5,7 @@ import TeamDetail from './components/teams/TeamDetail';
 import NewTeam from './components/teams/NewTeam';
 import Thumbnails from './components/teams/Thumbnails';
 import ListView from './components/teams/ListView';
+import GalleryView from './components/teams/GalleryView';
 
 export default new VueRouter({
     routes: [
@@ -16,6 +17,7 @@ export default new VueRouter({
             component: TeamDetail,
             children: [
                 { path: 'thumbnail', component: Thumbnails },
+                { path: 'gallery', component: GalleryView },
                 { path: 'listview', component: ListView },
                 { path: '', redirect: 'thumbnail' }
             ]
