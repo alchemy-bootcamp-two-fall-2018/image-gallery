@@ -1,7 +1,7 @@
 <template>
     <div class="welcome-image">
     <p class="welcome"> Welcome to our image gallery. Please click on Albums to view some beautiful pictures! </p>
-        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53b711edbf0f887b5de376f91052d8f8&auto=format&fit=crop&w=800&q=60">
+        <img src="https://images.unsplash.com/photo-1529827990740-49b40ca46116?ixlib=rb-0.3.5&s=ebd557e1eac587bb16ca8fbac9731ae4&auto=format&fit=crop&w=1568&q=80" alt="rocky water">
     </div>
 </template>
 

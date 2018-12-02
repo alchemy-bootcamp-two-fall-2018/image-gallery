@@ -56,7 +56,7 @@ float:left;
     border-radius: 3px; 
     margin: 5px;
     padding: 5px; 
-    width: 120px; 
-    height:80px;
+    width: 420px; 
+    height:300px;
 }
 </style>
