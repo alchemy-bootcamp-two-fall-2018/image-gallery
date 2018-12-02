@@ -23,6 +23,7 @@ export default {
     ul {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        padding: 0px 40px;
     }
     img {
         height: 200px;

@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h1>Albums</h1>
+        <h1 class="title">Albums</h1>
         <NewAlbum/>
         <AlbumList :albums="albums"/>
     </section>
@@ -24,5 +24,12 @@ export default {
 </script>
 
 <style>
-
+    .title {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    section {
+        background-color: #FBCC34;
+        height: 100vh; 
+    }
 </style>

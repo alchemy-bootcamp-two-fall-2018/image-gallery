@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <section>
      <p class="num">There are {{images.length}} image(s)</p>
         <li 
             v-for="(image, index) in images"
@@ -8,9 +8,10 @@
             <div class="info">
                 <h4>{{image.title}}</h4>
                 <p>{{image.url}}</p>
+                <p><i>{{image.description}}</i></p>
             </div>
         </li>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -22,6 +23,9 @@ export default {
 </script>
 
 <style scoped>
+    section {
+        height: 100vh;
+    }
     li {
         list-style: none;
         display: flex;

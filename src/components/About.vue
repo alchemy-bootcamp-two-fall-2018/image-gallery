@@ -27,22 +27,25 @@ export default {
 </script>
 
 <style scoped>
+    h1 {
+        margin: 0px;
+        padding-top: 20px;
+    }
     .aaron-dog {
         display: block;
         height: 300px;
         width: 100%;
         height: auto;
-        filter: grayscale(100%);
     }
     .christina-dog {
         display: block;
         height: 300px;
         width: 100%;
         height: auto;
-        filter: grayscale(100%);
     }
     section {
-        background-color: lightgray;
+        background-color: #FBCC34;
+        height: 100vh;
     }
     .aaron-text {
         color: white;
@@ -115,6 +118,7 @@ export default {
     .wrapper {
         display: flex;
         justify-content: space-around;
+        padding-top: 40px;
     }
     
 </style>

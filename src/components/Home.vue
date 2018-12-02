@@ -1,8 +1,6 @@
 <template>
-    <section>
-        <hr>
+    <section class="home-background">
         <h1>Fabulous Dogs</h1>
-        <hr>
     </section>
 </template>
 
@@ -16,10 +14,14 @@ export default {
 h1 {
     text-align: center;
     font-size: 52px;
+    padding-top: 20px;
 }
-section {
+.home-background {
     width: 100vw;
-    height: 100vh;
+    background-size: 100%;
     background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('http://intl.petsafe.net/intl/blog/wp-content/uploads/2013/05/lots-of-happy-dogs.jpg');
 }
 </style>

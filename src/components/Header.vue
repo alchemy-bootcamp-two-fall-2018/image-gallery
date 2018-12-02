@@ -15,13 +15,16 @@ export default {
 </script>
 
 <style>
-    nav {
-      display: flex;
-      justify-content: space-around;
-      padding: 40px 0px;
-      
-    }
-    a {
-      text-decoration: none;
-    }   
+  nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px;
+    
+  }
+  a {
+    text-decoration: none;
+  }
+  header {
+    background-color: #FEE134;
+  }
 </style>
