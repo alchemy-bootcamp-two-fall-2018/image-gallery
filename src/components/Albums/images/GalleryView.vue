@@ -2,15 +2,16 @@
 <Modal :onClose="() => this.$router.back()">
   <section>
       <h3>Gallery View</h3>
-      {{selectedIndex}}
       <p>
         <button @click="setIndex(-1)">&lt;</button>
-        {{color}}
+        <img v-bind:src = "imagesDisplay.url">
         <button @click="setIndex(1)">&gt;</button>
       </p>
     </section>
   </Modal>  
 </template>
+
+
 
 <script>
 import Modal from './Modal';
