@@ -56,12 +56,13 @@ img {
 li {
     list-style: none;
 }
-/* RouterLink.link {
+nav a {
     color: white;
     &:hover,
     &:active {
         background-color: indianred;
         cursor: pointer;
-} */
+    } 
+}
 </style>
 
