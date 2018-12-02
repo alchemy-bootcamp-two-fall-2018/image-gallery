@@ -3,7 +3,7 @@
     <h3>Gallery View</h3>
     <button @click="setIndex(-1)">&lt;</button>
     <button @click="setIndex(1)">&gt;</button>
-    <p>{{albumsArray[index].title}}</p>
+    <h4>{{albumsArray[index].title}}</h4>
     <p><img :src="albumsArray[index].imgUrl"></p>
   </section>
 </template>

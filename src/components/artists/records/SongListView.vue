@@ -23,6 +23,9 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: green;
+}
 li {
   list-style: none;
   /* text-align: left; */
