@@ -10,18 +10,22 @@
                 <button @click="showModal = false">Close</button>
             </div>
         </div>
-       
-     <RouterLink to="./thumbnail">Thumbnail</RouterLink>
-        
+        <nav>
+            <RouterLink to="./thumbnail">Thumbnail</RouterLink>
+            <RouterLink to="./listview">List</RouterLink>
+        </nav>
+
         <h2>{{team.name}}</h2>
-        <Thumbnails :players="team.players"/>
+        <RouterView :players="team.players">DEFAULT VIEW</RouterView>
+
+        <!-- <Thumbnails :players="team.players"/> -->
     </section>
 
 </template>
 
 <script>
 import teamsApi from '../services/teamsApi.js';
-import Thumbnails from './Thumbnails';
+// import Thumbnails from './Thumbnails';
 
 export default {
     data() {
@@ -30,9 +34,9 @@ export default {
             showModal: false
         };
     },
-    components: {
-        Thumbnails
-    },
+    // components: {
+    //     Thumbnails
+    // },
     created() {
         this.team = teamsApi.getTeam(this.$route.params.id);
     }
