@@ -1,19 +1,18 @@
 <template>
     <li>
-        <RouterLink :to="`/teams/${team.id}`">{{team.name}}</RouterLink>
-        <!-- <TeamDetail/> -->
+        <RouterLink :to="`/teams/${team.id}`">
+            <img :src="team.logo">
+            <!-- {{team.name}} -->
+        </RouterLink>
     </li>
 </template>
 
 <script>
-// import TeamDetail from './TeamDetail';
+
 export default {
     props: {
         team: Object
-    },
-    // components: {
-    //     TeamDetail
-    // }
+    }
 };
 </script>
 
