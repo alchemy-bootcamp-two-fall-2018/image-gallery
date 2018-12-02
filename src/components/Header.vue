@@ -15,50 +15,36 @@ export default {
 </script>
 
 <style scoped>
-    .main {
-        background: black;
-        color: white;
-        text-align: center;
-        margin-top: 0px;
-        border: 10px solid green;
-    }
-    h2 {
-        margin-top: 0px;
-        margin-bottom: 5px;
-        padding: 10px;
-        font-size: 3rem;
-        text-shadow: 2px 2px 2px lightgray;
-        font-weight: 400;
-    }
-
-    h1 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 10px;
-        font-size: 5rem;
-        text-shadow: 2px 2px 2px lightgray;
-        font-weight: 400;
-        line-height: 0.8;
-    }
-    
-    nav span {
-      text-decoration: none;
-      color: red;
-      background: white;
-      border-top: 2px solid gray;
-      border-right: 2px solid gray;
-      padding: 6px;
-      background-color: white;
-      line-height: 2.5em;
-      border-radius: 5px;
-
-    }
-
-    .nav {
-        margin: 0px 10px;
-        text-decoration: none;
-        text-align: center;
-        
-    }
-    
+  .main {
+    background: black;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    border: 10px solid green;
+  }
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 5rem;
+    text-shadow: 2px 2px 2px lightgray;
+    font-weight: 400;
+    line-height: 0.8;
+  }
+  nav span {
+    text-decoration: none;
+    color: red;
+    background: white;
+    border-top: 2px solid gray;
+    border-right: 2px solid gray;
+    padding: 6px;
+    background-color: white;
+    line-height: 2.5em;
+    border-radius: 5px;
+  }
+  .nav {
+    margin: 0px 10px;
+    text-decoration: none;
+    text-align: center;
+  }
 </style>

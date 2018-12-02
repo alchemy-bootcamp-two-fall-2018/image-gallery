@@ -60,7 +60,6 @@ export default {
     border: 3px solid red;
     margin: 5px;
   }
-
   .gallery {
     position: absolute;
     top: 0;
@@ -70,7 +69,6 @@ export default {
     z-index: 1;
     object-fit: cover;
   }
-
   .modal {
     position: fixed;
     top: 0; left: 0;
@@ -82,12 +80,10 @@ export default {
     background-color: rgba(0, 0, 0, .7);
     z-index: 20;
   }
-
   section h3 {
     text-align: center;
     font-size: 3em;
   }
-
   .gallery-button {
     margin-top: 35%;
     height: 40px;
@@ -95,5 +91,4 @@ export default {
     font-size: 1.5em;
     border: 4px solid black;
   }
-
 </style>

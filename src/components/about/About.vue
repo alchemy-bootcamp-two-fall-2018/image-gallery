@@ -31,20 +31,21 @@
   </section>
 </template>
 
-<script>
-export default {
-
-};
-</script>
-
 <style scoped>
   section {
     padding: 0px 30px;
-
   }
   h1 {
     text-align: center;
     padding-top: 20px;
   }
-
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px lightgray;
+    font-weight: 400;
+    color: red;
+  }
 </style>

@@ -27,6 +27,4 @@ export default {
   li {
     padding-bottom: 60px;
   }
-  
-  
 </style>

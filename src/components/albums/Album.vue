@@ -36,24 +36,20 @@ export default {
     border: none;
     margin: 0px;
   }
-
   li{
     padding-bottom: 20px;
     text-align: center;
     width: 90vw;
     text-decoration: none;
   }
-
   .album-link {
     text-decoration: none;
   }
-
   .album-name {
     font-size: 1em;
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
-
   .album-description {
     font-size: 0.7em;
   }

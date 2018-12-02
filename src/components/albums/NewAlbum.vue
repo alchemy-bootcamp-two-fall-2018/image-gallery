@@ -38,7 +38,6 @@ export default {
 </script>
 
 <style scoped>
-
   .album-form {
     text-align: center;
     border: 5px solid black;
@@ -47,15 +46,12 @@ export default {
     height: 300px;
     width: 500px;
   }
-
   .form-title {
     margin: 0px;
     padding-bottom: 20px;
     font-size: 2em;    
   }
-
   span {
     width: 150px;
   }
-
 </style>

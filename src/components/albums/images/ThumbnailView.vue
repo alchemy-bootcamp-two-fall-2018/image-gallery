@@ -30,7 +30,6 @@ export default {
     padding: 0px 50px;
     margin: 0px;
   }
-
   li {
     position: relative;
     height: 300px;
@@ -39,7 +38,6 @@ export default {
     border: 3px solid red;
     margin-top: 30px;
   }
-
   img {
     position: absolute;
     top: 0;
@@ -49,7 +47,6 @@ export default {
     z-index: 1;
     object-fit: cover;
   }
-
   h4 {
     position: absolute;
     padding: 7px 0px 0px 0px;

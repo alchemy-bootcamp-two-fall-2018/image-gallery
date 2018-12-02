@@ -85,13 +85,11 @@ export default {
     height: 300px;
     width: 400px;
   }
-
   .form-title {
     margin: 0px;
     padding-bottom: 20px;
     font-size: 2em;    
   }
-
   form button {
     margin: 5px;
     font-size: 1.2em;
@@ -99,11 +97,9 @@ export default {
     border: 1px solid black;
     padding: 5px;
   }
-
   form button:hover {
     background: lightgreen;
   }
-
   p button {
     border-radius: 5px;
     margin: 5px;
@@ -111,29 +107,16 @@ export default {
     padding-bottom: 5px;
     border: 2px solid black;
   }
-
   p button:hover {
     background: rgb(244, 37, 37);
   }
-
   section p {
     text-align: center;
   }
-
-  /* .link {
-    display: inline-block;
-    width: 250px;
-    text-align: center;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 2em;
-  } */
-
   input {
     width: 250px;
     height: 20px;
   }
-
   label {
     display: flex;
     padding: 5px;
@@ -141,11 +124,9 @@ export default {
     font-weight: 500;
     margin-bottom: 10px;
   }
-
   label span {
     width: 150px;
   }
-
   .modal {
     position: fixed;
     top: 0; left: 0;
@@ -157,14 +138,12 @@ export default {
     background-color: rgba(0, 0, 0, .5);
     z-index: 20;
   }
-
   h2 {
     text-align: center;
     font-size: 3em;
     padding: 0px;
     margin: 5px 0px 0px 0px;
   }
-
   .view-link {
     text-decoration: none;
     color: red;
@@ -176,16 +155,12 @@ export default {
     margin: 0px 5px;
     width: 250px;
   }
-
   .view-link:hover {
     background: lightgray;
   }
-
   nav {
     margin: 0px 10px;
     text-decoration: none;
     text-align: center;
   }
-
-
 </style>

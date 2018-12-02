@@ -34,17 +34,13 @@ export default {
     padding: 0px;
     justify-content: flex-start;
   }
-
   img {
     height: 250px;
     width: 200px;
     padding-right: 50px;
     margin: 0px;
   }
-
   div {
     text-align: center;
   }
-
- 
 </style>

@@ -36,13 +36,11 @@ export default {
   .album-title {
     text-align: center;
   }
-
   div {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-
   button {
     border: 2px solid green;
     border-radius: 5px; 
@@ -50,9 +48,15 @@ export default {
     text-align: center;
     padding: 5px 0;
   }
-
   button:hover {
     background: lightgreen;
   }
-
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px lightgray;
+    font-weight: 400;
+  }
 </style>
