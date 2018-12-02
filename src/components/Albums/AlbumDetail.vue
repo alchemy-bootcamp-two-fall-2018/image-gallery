@@ -1,5 +1,6 @@
 <template>
  <section>
+   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
    <h2> {{album.title}}</h2>
    <p>
       <button @click="showModal = true">Add Image</button>
@@ -20,6 +21,7 @@
         
           <label>
             <span></span>
+
             <button type="submit">Add</button>
           </label>
         </form>
@@ -28,7 +30,7 @@
       </div>
     </div>
     
-    <nav>
+    <nav class="nav">
       <RouterLink to="./thumbnail">Thumbnail</RouterLink>
       <RouterLink to="./gallery">Gallery</RouterLink>
       <RouterLink to="./list">List</RouterLink>
@@ -70,5 +72,21 @@ export default {
 </script>
 
 <style>
+section {
+font-family: 'Source Sans Pro', sans-serif;
+}
 
+li {
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+}
+
+.nav {
+  font-size: 20px;
+  margin-top: 100px;
+  background-color: lightgray;
+}
 </style>
