@@ -15,15 +15,16 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px;
 }
 li {
     list-style-type: none;
 }
 img {
-    width: 25vw;
+    width: 10vw;
 }
 </style>

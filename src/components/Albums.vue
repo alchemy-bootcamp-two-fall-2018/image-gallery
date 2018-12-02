@@ -1,10 +1,11 @@
 <template>
-    <div>
-        <h2>This is Albums</h2>
-        <button @click="showModal = true">Add Album</button>
+<section>
+    <div id="album-list">
         <AlbumList
         :albums="albums"
         />
+        <button @click="showModal = true" id="add-album">Add Your Own Album</button>
+    </div>
         <Modal v-if="showModal">
             <form @submit.prevent="onAdd" @reset="onCancel">
                     <label>
@@ -17,7 +18,7 @@
                 <button type="reset">Cancel</button>
                 </form>
         </Modal>
-    </div>
+</section>
 </template>
 
 <script>
@@ -51,6 +52,41 @@ export default {
 };
 </script>
 
-<style>
-
+<style scoped>
+#add-album {
+    padding: 20px;
+    margin: auto;
+    font-size: 16px;
+}
+button:hover {
+    font-weight: bold;
+}
+label {
+    display: block;
+    margin: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+input {
+    margin: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+form button {
+    margin: 10px;
+    text-transform: uppercase;
+    width: 100px;
+    font-size: 14px;
+}
+section {
+    background-image: url('https://img1.akspic.com/image/22079-mountain-dinosaur-hill-landscape-1920x1080.jpg');
+    height: 100vh;
+}
+#album-list {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+}
 </style>
