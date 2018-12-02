@@ -28,5 +28,14 @@ export default {
 </script>
 
 <style>
-
+.modal{
+  position: fixed;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .5);
+}
 </style>

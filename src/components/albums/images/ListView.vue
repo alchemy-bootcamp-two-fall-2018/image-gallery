@@ -24,7 +24,6 @@ export default {
 
 <style>
 .list-pictures {
-    list-style-type: square;
     width:100px;
 }
 .list-images     {
