@@ -21,6 +21,9 @@ export default {
   findArtist(artistName) {
     return artists.find(artist => artist.name === artistName);
   },
+  findAlbum(albumTitle) {
+    return artists.find(artist => artist.albums.find(album => album.title === albumTitle)).albums.find(album => album.title === albumTitle);
+  },
   store() {
     localStorage.setItem('artists', JSON.stringify(artists));
   }
