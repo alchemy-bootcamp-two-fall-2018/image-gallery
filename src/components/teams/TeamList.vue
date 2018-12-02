@@ -21,5 +21,11 @@ export default {
 </script>
 
 <style>
-
+ul {
+    list-style: none;
+}
+img {
+    max-height: 100px;
+    width: auto;
+}
 </style>
