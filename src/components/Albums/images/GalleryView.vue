@@ -4,7 +4,7 @@
       <h3>Gallery View</h3>
       <p>
         <button @click="setIndex(-1)">&lt;</button>
-        <img v-bind:src = "imagesDisplay.url">
+        <img v-bind:src ="imagesDisplay.url">
         <button @click="setIndex(1)">&gt;</button>
       </p>
     </section>

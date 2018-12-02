@@ -1,21 +1,27 @@
 <template>
+<section>
+  <h3>
+  List of image links:
+  </h3>
   <ul>
     <li 
-      v-for="(image, index) in images"
-      :key="index">
-      <h4>{{image.title}}</h4>
-      <p>
-        <img :src="image.url">
+    v-for="(image, index) in images"
+    :key="index">
+      <p> 
+        
+        <a :href="image.url">{{image.title}}</a>
       </p>
     </li>
   </ul>
+</section>
 </template>
 
 <script>
 export default {
   props: {
     images: Array
-  }
+  },
+  
 };
 </script>
 
