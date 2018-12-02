@@ -1,5 +1,5 @@
 <template>
-    <section v-if="album">
+    <section class="album-name" v-if="album">
         <h2>{{album.name}}</h2>
         <p>
             <button @click="showModal = true"> Add a new Image
@@ -51,17 +51,19 @@ export default {
 
 <style>
 .thumb {
-    color:black;
+    color:grey;
+    text-decoration: none;
 }
 .list {
-    color:black;
+    color:grey;
+    text-decoration: none;
 }
 .gallery {
-    color:black;
+    color:grey;
+    text-decoration: none;
 }
 h2 {
-    color:dimgray;
-    background-color:white;
+    color: white;
     padding:5px;
     margin:10px;
 }

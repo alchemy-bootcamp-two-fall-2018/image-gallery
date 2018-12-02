@@ -12,5 +12,8 @@ export default {
 </script>
 
 <style>
+h1 {
+    color:gray;
+}
 
 </style>

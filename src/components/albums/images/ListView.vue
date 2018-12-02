@@ -3,9 +3,9 @@
         <h3>List View</h3>
         <p>There are {{images.length}} images</p>
         <ul>
-        <li v-for="(image, index) in images"
+        <li class= "list-pictures" v-for="(image, index) in images"
         :key="index">
-        <h4>{{image.name}}</h4>
+        <p>{{image.title}}</p>
         <p>
             <img class="list-images" :src="image.picture"/>
         </p> 
@@ -23,14 +23,11 @@ export default {
 </script>
 
 <style>
+.list-pictures {
+    list-style-type: square;
+    width:100px;
+}
 .list-images     {
-    float:left;
-    position:relative;
-    border: 1px solid white; 
-    border-radius: 3px; 
-    margin: 5px;
-    padding: 5px; 
-    width: 120px; 
-    height:80px;
+   width:100px
 }
 </style>

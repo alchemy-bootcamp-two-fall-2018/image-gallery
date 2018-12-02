@@ -29,14 +29,10 @@ li {
 .thumb-images {
     float:left;
     position:relative;
-    border: 1px solid white; 
-    border-radius: 3px; 
     margin: 5px;
     padding: 5px; 
     width: 120px; 
     height:80px;
-    background-color:grey;
-
 }
 img:hover {
     box-shadow: 0 0 2px 1px darkcyan;

@@ -17,19 +17,26 @@ export default {
 
 <style>
 h1 {
-color:black;
+color:grey;
+opacity: 0.8;
 font-size:2rem;
 }
 nav {
     display: flex;
     justify-content: space-around;
-    opacity:0.9;
- 
+    opacity:0.9; 
+    opacity: 0.8;
 }
 .home {
-    color:black;
+    color:gray;
+    text-decoration: none;
 }
 .albums {
-    color:black;
+    color:gray;
+    text-decoration: none;
+}
+.about {
+    color:rgb(126, 121, 121);
+    text-decoration: none;
 }
 </style>
