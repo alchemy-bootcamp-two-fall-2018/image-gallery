@@ -61,7 +61,7 @@ export default {
 
     methods: {
         handleAdd() {
-            // this.category.id = this.category.url;
+            //this.category.id = this.category.url;
             // console.log('image', this.images.url);
             this.category.push(this.url);
         }
