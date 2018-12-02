@@ -31,6 +31,5 @@ export default [
       }
     ]
   },
-  { id: shortid.generate(), title: '', images: [] },
-  { id: shortid.generate(), title: 'Cute Puppies', images: [] },
+  
 ];
