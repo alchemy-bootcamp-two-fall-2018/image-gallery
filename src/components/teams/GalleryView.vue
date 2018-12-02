@@ -26,6 +26,7 @@ export default {
             return this.players[this.selectedIndex];
         }
     },
+
     methods: {
         setIndex(amt) {
             this.selectedIndex += amt;

@@ -9,10 +9,6 @@
                 <span>Logo:</span>
                 <input v-model="team.logo" required>    
             </label>
-            <label>
-                <span>Players:</span>
-                <input v-model="team.players" required>    
-            </label>
             <button type="submit"> Add </button>
         </form>
     </section>
@@ -25,10 +21,7 @@ export default {
         return {
             team: {
                 name: '',
-                players: {
-                    lastName: '',
-                    url: ''
-                }
+                logo: ''
             }
         };
     },
