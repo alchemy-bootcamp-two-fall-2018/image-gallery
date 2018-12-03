@@ -30,7 +30,7 @@ export default {
       artistsApi.addRecord(newRecord, artistsApi.findArtist(this.$route.params.name).albums);
     },
     handleUpdateArt(updateArtist) {
-      console.log(updateArtist);
+      artistsApi.updateArtist(updateArtist, artistsApi.findArtist(this.$route.params.name));
     }
   }
 };
