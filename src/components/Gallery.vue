@@ -35,11 +35,8 @@ export default {
 };
 </script>
 
-<style>
-    section {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-        width: 100%
+<style scoped>
+    img {
+        width: 40vw;
     }
 </style>
