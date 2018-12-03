@@ -2,7 +2,6 @@
     <ul>
         <li v-for="(image, index) in images"
         :key="index">
-            <h4>{{image.title}}</h4>
             <img :src="image.url"/>
         </li>
     </ul>
@@ -16,15 +15,16 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px;
+}
 li {
     list-style-type: none;
 }
 img {
-    width: 25vw;
-}
-ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
+    width: 10vw;
 }
 </style>

@@ -1,12 +1,14 @@
 <template>
-    <ul>
-        <h3>DinoList here</h3>
-        <Album
-        v-for="album in albums"
-        :key="album.id"
-        :album="album"
-        />
-    </ul>
+    <div>
+        <ul>
+            <h3>Check out these Albums!</h3>
+            <Album
+            v-for="album in albums"
+            :key="album.id"
+            :album="album"
+            />
+        </ul>
+    </div>
 </template>
 
 <script>
@@ -21,6 +23,20 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+li {
+    list-style: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: auto;
+}
+h3 {
+    font-size: 2.5em;
+    color: black;
+}
+div {
+    margin-top: 50px;
+}
 
 </style>
