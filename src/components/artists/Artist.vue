@@ -1,7 +1,7 @@
 <template>
     <section>
         <li>
-            <RouterLink :to="`/artists/${artist.name}`"><img :src="artist.image"></RouterLink>
+            <RouterLink :to="`/artists/${artist.name}/records`"><img :src="artist.image"><p>{{artist.name}}</p></RouterLink>
         </li>
     </section>
 </template>
@@ -15,5 +15,8 @@ export default {
 </script>
 
 <style>
-
+li a {
+    text-decoration: none;
+    color: rgb(233, 69, 69);
+}
 </style>

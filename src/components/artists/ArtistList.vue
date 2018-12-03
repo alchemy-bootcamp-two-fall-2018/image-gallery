@@ -1,6 +1,6 @@
 <template>
     <u>
-        <Artist v-for="artist in artists"
+        <Artist class="content" v-for="artist in artists"
             :key="artist.name"
             :artist="artist"/>
     </u>
@@ -21,5 +21,6 @@ export default {
 </script>
 
 <style>
+
 
 </style>

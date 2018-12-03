@@ -1,11 +1,11 @@
 <template>
   <form @submit.prevent="handleSubmit">
     <label>
-      <p>Artist Name:</p>
+      <h4>Artist Name:</h4>
       <input v-model="newArtist.name" required>
     </label>
     <label>
-      <p>Artist Image:</p>
+      <h4>Artist Image:</h4>
       <input v-model="newArtist.image" required>
     </label>
     <p><button>Add</button></p>

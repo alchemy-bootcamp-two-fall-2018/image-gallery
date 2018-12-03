@@ -14,5 +14,14 @@ export default {
 </script>
 
 <style>
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(130, 130, 202);
+}
 
+nav a {
+    color: rgb(227, 231, 238);
+    text-decoration: none;
+}
 </style>

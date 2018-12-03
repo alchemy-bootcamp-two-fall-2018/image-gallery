@@ -581,7 +581,6 @@ export default [
         ]
       }
     ]
-
   },
   {
     name: 'Michael Jackson',
