@@ -1,238 +1,5 @@
 export default [
   {
-    name: 'Halsey',
-    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Halsey_-_Badlands.png/220px-Halsey_-_Badlands.png',
-    albums: [
-      {
-        title: 'Hopeless Fountain Kingdom',
-        released: 'June 2, 2017',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Halsey_-_Hopeless_Fountain_Kingdom.png/220px-Halsey_-_Hopeless_Fountain_Kingdom.png',
-        songs: [
-          'The Prologue',
-          '100 Letters', 
-          'Eyes Closed', 
-          'Alone', 
-          'Now or Never', 
-          'Sorry', 
-          'Good Mourning', 
-          'Lie', 
-          'Walls Could Talk', 
-          'Bad at Love',
-          'Strangers',
-          'Devil in Me',
-          'Hopeless'
-        ]
-      },
-      {
-        title: 'Badlands',
-        released: 'August 28, 2015',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Halsey_-_Badlands.png/220px-Halsey_-_Badlands.png',
-        songs: [
-          'Castle',
-          'Hold Me Down',
-          'New Americana',
-          'Drive',
-          'Roman Holiday',
-          'Colors',
-          'Coming Down',
-          'Haunting',
-          'Control',
-          'Young God',
-          'Ghost'
-        ]
-      }
-    ]
-  },
-  {
-    name: 'Michael Jackson',
-    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Mj1971-got-to-be-there.jpg/220px-Mj1971-got-to-be-there.jpg',
-    albums: [
-      {
-        title: 'Dangerous',
-        released: 'November 26, 1991',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Michaeljacksondangerous.jpg/220px-Michaeljacksondangerous.jpg',
-        songs: [
-          'Jam',
-          'Why You Wanna Trip On Me',
-          'In The Closet',
-          'She Drives Me Wild',
-          'Remember The Time',
-          'Can\'t Let Her Get Away',
-          'Heal The World',
-          'Black Or White',
-          'Who Is It',
-          'Give In To Me',
-          'Will You Be There',
-          'Keep The Faith',
-          'Gone Too Soon',
-          'Dangerous'
-        ]
-      },
-      {
-        title: 'Bad',
-        released: 'August 31, 1987',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Michael_Jackson_-_Bad.png/220px-Michael_Jackson_-_Bad.png',
-        songs: [
-          'Bad',
-          'The Way You Make Me Feel',
-          'Speed Demon',
-          'Liberian Girl',
-          'Just Good Friends',
-          'Another Part Of Me',
-          'Man In The Mirror',
-          'I Just Can\'t Stop Loving You',
-          'Dirty Diana',
-          'Smooth Criminal'
-        ]
-      },
-      {
-        title: 'Thriller',
-        released: 'November 30, 1982',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/55/Michael_Jackson_-_Thriller.png/220px-Michael_Jackson_-_Thriller.png',
-        songs: [
-          'Wanna Be Startin\' Something\'',
-          'The Girl Is Mine',
-          'Thriller',
-          'Beat It',
-          'Billie Jean',
-          'Human Nature',
-          'P.Y.T. (Pretty Young Thing)',
-          'The Lady In My Life'
-        ]
-      },
-      {
-        title: 'Off The Wall',
-        released: 'August 10, 1979',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Off_the_wall.jpg/220px-Off_the_wall.jpg',
-        songs: [
-          'Don\'t Stop \'Til You Get Enough',
-          'Rock With You',
-          'Working Day And Night',
-          'Get On The Floor',
-          'Off The Wall',
-          'Girlfriend',
-          'She\'s Out Of My Life',
-          'I Can\'t Help It',
-          'It\'s The Falling In Love',
-          'Burn This Disco Out'
-        ]
-      },
-      {
-        title: 'Got To Be There',
-        released: 'January 24, 1972',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Mj1971-got-to-be-there.jpg/220px-Mj1971-got-to-be-there.jpg',
-        songs: [
-          'Ain\'t No Sunshine',
-          'I Wanna Be Where You Are',
-          'Girl Don\'t Take Your Love From Me',
-          'In Our Small Way',
-          'Got To Be There',
-          'Rockin\' Robin',
-          'Wings Of My Love',
-          'Maria (You Were The Only One)',
-          'Love Is Here And Now You\'re Gone',
-          'You\'ve Got A Friend'
-        ]
-      }
-    ]
-  },
-  {
-    name: 'Stevie Wonder',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Stevie_Wonder_1973.JPG/220px-Stevie_Wonder_1973.JPG',
-    albums: [
-      {
-        title: 'Songs In The Key Of Life',
-        released: 'September 28, 1976',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Songs_in_the_key_of_life.jpg/220px-Songs_in_the_key_of_life.jpg',
-        songs: [
-          'Love\'s In Need Of Love Today',
-          'Have A Talk With God',
-          'Village Ghetto Land',
-          'Contusion',
-          'Sir Duke',
-          'I Wish',
-          'Knocks Me Off My Feet',
-          'Pastime Paradise',
-          'Summer Soft',
-          'Ordinary Pain',
-          'Isn\'t She Lovely',
-          'Joy Inside My Tears',
-          'Black man',
-          'Ngiculela – Es Una Historia – I Am Singing',
-          'If It\'s Magic',
-          'As',
-          'Another Star'
-        ]
-      },
-      {
-        title: 'Fulfillingness\' First Finale',
-        released: 'July 22, 1974',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Fulfillingness%27_First_Finale.jpg/220px-Fulfillingness%27_First_Finale.jpg',
-        songs: [
-          'Smile Please',
-          'Heaven Is 10 Zillion Light Years Away',
-          'Too Shy To Say',
-          'Boogie On Reggae Woman',
-          'Creepin\'',
-          'You Haven\'t Done Nothin\'',
-          'It Ain\'t No Use',
-          'They Won\'t Go When I Go',
-          'Bird Of Beauty',
-          'Please Don\'t Go'
-        ]
-      },
-      {
-        title: 'Innervisions',
-        released: 'August 3, 1973',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Steviewonder_innervisions.jpg/220px-Steviewonder_innervisions.jpg',
-        songs: [
-          'Too High',
-          'Visions',
-          'Living For The City',
-          'Golden Lady',
-          'Higher Ground',
-          'Jesus Children Of America',
-          'All In Love Is Fair',
-          'Don\'t You Worry \'bout A Thing',
-          'He\'s Misstra Know-It-All'
-        ]
-      },
-      {
-        title: 'Talking Book',
-        released: 'October 28, 1972',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Talking_Book.jpg/220px-Talking_Book.jpg',
-        songs: [
-          'You Are The Sunshine Of My Life',
-          'Maybe Your Baby',
-          'You And I (We Can Conquer The World)',
-          'Tuesday Heartbreak',
-          'You\'ve Got It Bad Girl',
-          'Superstition',
-          'Big Brother',
-          'Blame It On The Sun',
-          'Lookin\' For Another Pure Love',
-          'I Believe (When I Fall In Love It Will Be Forever)'
-        ]
-      },
-      {
-        title: 'Music Of My Mind',
-        released: 'March 3, 1972',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Stevie_Wonder_-_Music_of_My_Mind.png/220px-Stevie_Wonder_-_Music_of_My_Mind.png',
-        songs: [
-          'Love Having You Around',
-          'Superwoman (Where Were You When I needed You)',
-          'I Love Every Little Thing About You',
-          'Sweet Little Girl',
-          'Happier Than The Morning Sun',
-          'Girl Blue',
-          'Seems So Long',
-          'Keep On Running',
-          'Evil'
-        ]
-      }
-    ]
-  },
-  {
     name: 'Ani Difranco',
     image: 'https://upload.wikimedia.org/wikipedia/en/e/e8/Knuckle_down-cover.jpg',
     albums: [
@@ -366,198 +133,6 @@ export default [
           'Going Down',
           'Adam and Eve',
           'Joyful Girl'
-        ]
-      }
-    ]
-  },
-  {
-    name: 'Lily Allen',
-    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Lily_Allen_-_No_Shame.png/220px-Lily_Allen_-_No_Shame.png',
-    albums: [
-      {
-        title: 'No Shame',
-        released: 'June 8, 2018',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Lily_Allen_-_No_Shame.png/220px-Lily_Allen_-_No_Shame.png',
-        songs: [
-          'Come on Then',
-          'Trigger Bang',
-          'What You Waiting For?',
-          'Your Choice',
-          'Lost My Mind',
-          'Higher',
-          'Family Man',
-          'Apples',
-          'Three',
-          'Everything to Feel Something',
-          'Waste',
-          'My One',
-          'Pushing Up Daisies',
-          'Cake'
-        ]
-      },
-      {
-        title: 'Sheezus',
-        released: 'May 2, 2014',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Lily_Allen_-_Sheezus.png/220px-Lily_Allen_-_Sheezus.png',
-        songs: [
-          'Sheezus',
-          'L8 CMMR',
-          'Air Balloon',
-          'Our Time',
-          'Insincerely Yours',
-          'Take My Place',
-          'As Long As I Got You',
-          'Close Your Eyes',
-          'URL Badman',
-          'Silver Spoon',
-          'Life for Me',
-          'Hard Out Here',
-          'Interlude',
-          'Somewhere Only We Know'
-        ]
-      },
-      {
-        title: 'It\'s Not Me, It\'s You',
-        released: 'February 4, 2009',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Lily_Allen_-_It%27s_Not_Me%2C_It%27s_You.png/220px-Lily_Allen_-_It%27s_Not_Me%2C_It%27s_You.png',
-        songs: [
-          'Everyone\'s at it',
-          'the Fear',
-          'Not Fair',
-          '22',
-          'I Could Say',
-          'Back to the Start',
-          'Never Gonna Happen',
-          'Fuck You',
-          'Who\'d Have Known',
-          'Chinese',
-          'Him',
-          'He Wasn\'t There'
-        ]
-      },
-      {
-        title: 'Alright, Still',
-        released: 'July 13, 2006',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Lily_Allen_-_Alright%2C_Still.png/220px-Lily_Allen_-_Alright%2C_Still.png',
-        songs: [
-          'Smile',
-          'Knock \'Em Out',
-          'LDN',
-          'Everything\'s Just Wonderful',
-          'Not Big',
-          'Friday Night',
-          'Shame for You',
-          'Littlest Things',
-          'Take What You Take',
-          'Friend of Mine',
-          'Alfie'
-        ]
-      }
-    ]
-
-  },
-  {
-    name: 'Tinariwen',
-    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Tassili_album.jpg/220px-Tassili_album.jpg',
-    albums: [
-      {
-        title: 'Elwan',
-        released: 'February 10, 2017',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Tinariwen_Elwan.jpg/220px-Tinariwen_Elwan.jpg',
-        songs: [
-          'Tiwàyyen',
-          'Sastanàqqàm',
-          'Nizzagh Ijbal',
-          'Hayati',
-          'Ittus',
-          'Ténéré Tàqqàl',
-          'Imidiwàn n-àkall-in',
-          'Talyat',
-          'Assàwt',
-          'Arhegh ad annàgh',
-          'Nànnuflày',
-          'Intro Flute Fog Edaghàn',
-          'Fog Edaghàn'
-        ]
-      },
-      {
-        title: 'Emmaar',
-        released: 'February 10, 2014',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/af/Tinariwen_Emmaar.jpg/220px-Tinariwen_Emmaar.jpg',
-        songs: [
-          'Toumast Tincha',
-          'Chaghaybou',
-          'Arhegh Danagh',
-          'Timadrit In Sahara',
-          'Imidiwan Ahi Sigdim',
-          'Tahalamot',
-          'Sendad Eghlalan',
-          'Imidiwanin Ahi Tifhamam',
-          'Koud Edhaz Emin',
-          'Emajer',
-          'Aghregh Medin',
-          'Adounia Ti Chidjret',
-          'Islegh Taghram Tifhamam',
-          'Tin Ihlan'
-        ]
-      },
-      {
-        title: 'Tassili',
-        released: 'August 29, 2011',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Tassili_album.jpg/220px-Tassili_album.jpg',
-        songs: [
-          'Imidiwan Ma Tenam',
-          'Asuf D Alwa',
-          'Tenere Taqhim Tossam',
-          'Ya Messinagh',
-          'Walla Illa',
-          'Tameyawt',
-          'Imidiwan Win Sahara',
-          'Tamiditin Tan Ufrawan',
-          'Tiliaden Osamant',
-          'Djeredjere',
-          'Iswegh Attay',
-          'Takest Tamidaret'
-        ]
-      },
-      {
-        title: 'Imidiwan: Companions',
-        released: 'June 29, 2009',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/Tinariwen_Imidwan.jpeg/220px-Tinariwen_Imidwan.jpeg',
-        songs: [
-          'Imidiwan Afrik Tendam',
-          'Lulla',
-          'Tenhert',
-          'Enseqi Ehad Didagh',
-          'Tahult In',
-          'Tamudjeras Assis',
-          'Intitlayaghen',
-          'Imazaghen N Adagh',
-          'Tenalle Chegret',
-          'Kel Tamashek',
-          'Assuf Ag Assuf',
-          'Chabiba',
-          'Ere Tasfata Adounia',
-          'Desert Wind'
-        ]
-      },
-      {
-        title: 'Aman Iman: Water is Life',
-        released: 'March 13, 2007',
-        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/63/AmanIman.jpg/220px-AmanIman.jpg',
-        songs: [
-          'Cler Achel',
-          'Mano Dayak',
-          'Matadjem Yinmixan',
-          'Ahimana',
-          'Soixante Trois',
-          'Toumast',
-          'Imidiwan Winakalin',
-          'Awa Didjen',
-          'Ikyadarh Dim',
-          'Tamatant Tilay',
-          'Assouf',
-          'Izarharh Tenere'
         ]
       }
     ]
@@ -785,6 +360,50 @@ export default [
     ]
   },
   {
+    name: 'Halsey',
+    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Halsey_-_Badlands.png/220px-Halsey_-_Badlands.png',
+    albums: [
+      {
+        title: 'Hopeless Fountain Kingdom',
+        released: 'June 2, 2017',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Halsey_-_Hopeless_Fountain_Kingdom.png/220px-Halsey_-_Hopeless_Fountain_Kingdom.png',
+        songs: [
+          'The Prologue',
+          '100 Letters', 
+          'Eyes Closed', 
+          'Alone', 
+          'Now or Never', 
+          'Sorry', 
+          'Good Mourning', 
+          'Lie', 
+          'Walls Could Talk', 
+          'Bad at Love',
+          'Strangers',
+          'Devil in Me',
+          'Hopeless'
+        ]
+      },
+      {
+        title: 'Badlands',
+        released: 'August 28, 2015',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Halsey_-_Badlands.png/220px-Halsey_-_Badlands.png',
+        songs: [
+          'Castle',
+          'Hold Me Down',
+          'New Americana',
+          'Drive',
+          'Roman Holiday',
+          'Colors',
+          'Coming Down',
+          'Haunting',
+          'Control',
+          'Young God',
+          'Ghost'
+        ]
+      }
+    ]
+  },
+  {
     name: 'Journey',
     image: 'data:image/jpeg;base64,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',
     albums: [
@@ -874,6 +493,387 @@ export default [
           'Winds Of March',
           'Can Do',
           'Opened The Door'
+        ]
+      }
+    ]
+  },
+  {
+    name: 'Lily Allen',
+    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Lily_Allen_-_No_Shame.png/220px-Lily_Allen_-_No_Shame.png',
+    albums: [
+      {
+        title: 'No Shame',
+        released: 'June 8, 2018',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Lily_Allen_-_No_Shame.png/220px-Lily_Allen_-_No_Shame.png',
+        songs: [
+          'Come on Then',
+          'Trigger Bang',
+          'What You Waiting For?',
+          'Your Choice',
+          'Lost My Mind',
+          'Higher',
+          'Family Man',
+          'Apples',
+          'Three',
+          'Everything to Feel Something',
+          'Waste',
+          'My One',
+          'Pushing Up Daisies',
+          'Cake'
+        ]
+      },
+      {
+        title: 'Sheezus',
+        released: 'May 2, 2014',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Lily_Allen_-_Sheezus.png/220px-Lily_Allen_-_Sheezus.png',
+        songs: [
+          'Sheezus',
+          'L8 CMMR',
+          'Air Balloon',
+          'Our Time',
+          'Insincerely Yours',
+          'Take My Place',
+          'As Long As I Got You',
+          'Close Your Eyes',
+          'URL Badman',
+          'Silver Spoon',
+          'Life for Me',
+          'Hard Out Here',
+          'Interlude',
+          'Somewhere Only We Know'
+        ]
+      },
+      {
+        title: 'It\'s Not Me, It\'s You',
+        released: 'February 4, 2009',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Lily_Allen_-_It%27s_Not_Me%2C_It%27s_You.png/220px-Lily_Allen_-_It%27s_Not_Me%2C_It%27s_You.png',
+        songs: [
+          'Everyone\'s at it',
+          'the Fear',
+          'Not Fair',
+          '22',
+          'I Could Say',
+          'Back to the Start',
+          'Never Gonna Happen',
+          'Fuck You',
+          'Who\'d Have Known',
+          'Chinese',
+          'Him',
+          'He Wasn\'t There'
+        ]
+      },
+      {
+        title: 'Alright, Still',
+        released: 'July 13, 2006',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Lily_Allen_-_Alright%2C_Still.png/220px-Lily_Allen_-_Alright%2C_Still.png',
+        songs: [
+          'Smile',
+          'Knock \'Em Out',
+          'LDN',
+          'Everything\'s Just Wonderful',
+          'Not Big',
+          'Friday Night',
+          'Shame for You',
+          'Littlest Things',
+          'Take What You Take',
+          'Friend of Mine',
+          'Alfie'
+        ]
+      }
+    ]
+
+  },
+  {
+    name: 'Michael Jackson',
+    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Mj1971-got-to-be-there.jpg/220px-Mj1971-got-to-be-there.jpg',
+    albums: [
+      {
+        title: 'Dangerous',
+        released: 'November 26, 1991',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Michaeljacksondangerous.jpg/220px-Michaeljacksondangerous.jpg',
+        songs: [
+          'Jam',
+          'Why You Wanna Trip On Me',
+          'In The Closet',
+          'She Drives Me Wild',
+          'Remember The Time',
+          'Can\'t Let Her Get Away',
+          'Heal The World',
+          'Black Or White',
+          'Who Is It',
+          'Give In To Me',
+          'Will You Be There',
+          'Keep The Faith',
+          'Gone Too Soon',
+          'Dangerous'
+        ]
+      },
+      {
+        title: 'Bad',
+        released: 'August 31, 1987',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Michael_Jackson_-_Bad.png/220px-Michael_Jackson_-_Bad.png',
+        songs: [
+          'Bad',
+          'The Way You Make Me Feel',
+          'Speed Demon',
+          'Liberian Girl',
+          'Just Good Friends',
+          'Another Part Of Me',
+          'Man In The Mirror',
+          'I Just Can\'t Stop Loving You',
+          'Dirty Diana',
+          'Smooth Criminal'
+        ]
+      },
+      {
+        title: 'Thriller',
+        released: 'November 30, 1982',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/55/Michael_Jackson_-_Thriller.png/220px-Michael_Jackson_-_Thriller.png',
+        songs: [
+          'Wanna Be Startin\' Something\'',
+          'The Girl Is Mine',
+          'Thriller',
+          'Beat It',
+          'Billie Jean',
+          'Human Nature',
+          'P.Y.T. (Pretty Young Thing)',
+          'The Lady In My Life'
+        ]
+      },
+      {
+        title: 'Off The Wall',
+        released: 'August 10, 1979',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Off_the_wall.jpg/220px-Off_the_wall.jpg',
+        songs: [
+          'Don\'t Stop \'Til You Get Enough',
+          'Rock With You',
+          'Working Day And Night',
+          'Get On The Floor',
+          'Off The Wall',
+          'Girlfriend',
+          'She\'s Out Of My Life',
+          'I Can\'t Help It',
+          'It\'s The Falling In Love',
+          'Burn This Disco Out'
+        ]
+      },
+      {
+        title: 'Got To Be There',
+        released: 'January 24, 1972',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Mj1971-got-to-be-there.jpg/220px-Mj1971-got-to-be-there.jpg',
+        songs: [
+          'Ain\'t No Sunshine',
+          'I Wanna Be Where You Are',
+          'Girl Don\'t Take Your Love From Me',
+          'In Our Small Way',
+          'Got To Be There',
+          'Rockin\' Robin',
+          'Wings Of My Love',
+          'Maria (You Were The Only One)',
+          'Love Is Here And Now You\'re Gone',
+          'You\'ve Got A Friend'
+        ]
+      }
+    ]
+  },
+  {
+    name: 'Stevie Wonder',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Stevie_Wonder_1973.JPG/220px-Stevie_Wonder_1973.JPG',
+    albums: [
+      {
+        title: 'Songs In The Key Of Life',
+        released: 'September 28, 1976',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Songs_in_the_key_of_life.jpg/220px-Songs_in_the_key_of_life.jpg',
+        songs: [
+          'Love\'s In Need Of Love Today',
+          'Have A Talk With God',
+          'Village Ghetto Land',
+          'Contusion',
+          'Sir Duke',
+          'I Wish',
+          'Knocks Me Off My Feet',
+          'Pastime Paradise',
+          'Summer Soft',
+          'Ordinary Pain',
+          'Isn\'t She Lovely',
+          'Joy Inside My Tears',
+          'Black man',
+          'Ngiculela – Es Una Historia – I Am Singing',
+          'If It\'s Magic',
+          'As',
+          'Another Star'
+        ]
+      },
+      {
+        title: 'Fulfillingness\' First Finale',
+        released: 'July 22, 1974',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Fulfillingness%27_First_Finale.jpg/220px-Fulfillingness%27_First_Finale.jpg',
+        songs: [
+          'Smile Please',
+          'Heaven Is 10 Zillion Light Years Away',
+          'Too Shy To Say',
+          'Boogie On Reggae Woman',
+          'Creepin\'',
+          'You Haven\'t Done Nothin\'',
+          'It Ain\'t No Use',
+          'They Won\'t Go When I Go',
+          'Bird Of Beauty',
+          'Please Don\'t Go'
+        ]
+      },
+      {
+        title: 'Innervisions',
+        released: 'August 3, 1973',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Steviewonder_innervisions.jpg/220px-Steviewonder_innervisions.jpg',
+        songs: [
+          'Too High',
+          'Visions',
+          'Living For The City',
+          'Golden Lady',
+          'Higher Ground',
+          'Jesus Children Of America',
+          'All In Love Is Fair',
+          'Don\'t You Worry \'bout A Thing',
+          'He\'s Misstra Know-It-All'
+        ]
+      },
+      {
+        title: 'Talking Book',
+        released: 'October 28, 1972',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Talking_Book.jpg/220px-Talking_Book.jpg',
+        songs: [
+          'You Are The Sunshine Of My Life',
+          'Maybe Your Baby',
+          'You And I (We Can Conquer The World)',
+          'Tuesday Heartbreak',
+          'You\'ve Got It Bad Girl',
+          'Superstition',
+          'Big Brother',
+          'Blame It On The Sun',
+          'Lookin\' For Another Pure Love',
+          'I Believe (When I Fall In Love It Will Be Forever)'
+        ]
+      },
+      {
+        title: 'Music Of My Mind',
+        released: 'March 3, 1972',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Stevie_Wonder_-_Music_of_My_Mind.png/220px-Stevie_Wonder_-_Music_of_My_Mind.png',
+        songs: [
+          'Love Having You Around',
+          'Superwoman (Where Were You When I needed You)',
+          'I Love Every Little Thing About You',
+          'Sweet Little Girl',
+          'Happier Than The Morning Sun',
+          'Girl Blue',
+          'Seems So Long',
+          'Keep On Running',
+          'Evil'
+        ]
+      }
+    ]
+  },
+  {
+    name: 'Tinariwen',
+    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Tassili_album.jpg/220px-Tassili_album.jpg',
+    albums: [
+      {
+        title: 'Elwan',
+        released: 'February 10, 2017',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Tinariwen_Elwan.jpg/220px-Tinariwen_Elwan.jpg',
+        songs: [
+          'Tiwàyyen',
+          'Sastanàqqàm',
+          'Nizzagh Ijbal',
+          'Hayati',
+          'Ittus',
+          'Ténéré Tàqqàl',
+          'Imidiwàn n-àkall-in',
+          'Talyat',
+          'Assàwt',
+          'Arhegh ad annàgh',
+          'Nànnuflày',
+          'Intro Flute Fog Edaghàn',
+          'Fog Edaghàn'
+        ]
+      },
+      {
+        title: 'Emmaar',
+        released: 'February 10, 2014',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/af/Tinariwen_Emmaar.jpg/220px-Tinariwen_Emmaar.jpg',
+        songs: [
+          'Toumast Tincha',
+          'Chaghaybou',
+          'Arhegh Danagh',
+          'Timadrit In Sahara',
+          'Imidiwan Ahi Sigdim',
+          'Tahalamot',
+          'Sendad Eghlalan',
+          'Imidiwanin Ahi Tifhamam',
+          'Koud Edhaz Emin',
+          'Emajer',
+          'Aghregh Medin',
+          'Adounia Ti Chidjret',
+          'Islegh Taghram Tifhamam',
+          'Tin Ihlan'
+        ]
+      },
+      {
+        title: 'Tassili',
+        released: 'August 29, 2011',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Tassili_album.jpg/220px-Tassili_album.jpg',
+        songs: [
+          'Imidiwan Ma Tenam',
+          'Asuf D Alwa',
+          'Tenere Taqhim Tossam',
+          'Ya Messinagh',
+          'Walla Illa',
+          'Tameyawt',
+          'Imidiwan Win Sahara',
+          'Tamiditin Tan Ufrawan',
+          'Tiliaden Osamant',
+          'Djeredjere',
+          'Iswegh Attay',
+          'Takest Tamidaret'
+        ]
+      },
+      {
+        title: 'Imidiwan: Companions',
+        released: 'June 29, 2009',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/Tinariwen_Imidwan.jpeg/220px-Tinariwen_Imidwan.jpeg',
+        songs: [
+          'Imidiwan Afrik Tendam',
+          'Lulla',
+          'Tenhert',
+          'Enseqi Ehad Didagh',
+          'Tahult In',
+          'Tamudjeras Assis',
+          'Intitlayaghen',
+          'Imazaghen N Adagh',
+          'Tenalle Chegret',
+          'Kel Tamashek',
+          'Assuf Ag Assuf',
+          'Chabiba',
+          'Ere Tasfata Adounia',
+          'Desert Wind'
+        ]
+      },
+      {
+        title: 'Aman Iman: Water is Life',
+        released: 'March 13, 2007',
+        imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/63/AmanIman.jpg/220px-AmanIman.jpg',
+        songs: [
+          'Cler Achel',
+          'Mano Dayak',
+          'Matadjem Yinmixan',
+          'Ahimana',
+          'Soixante Trois',
+          'Toumast',
+          'Imidiwan Winakalin',
+          'Awa Didjen',
+          'Ikyadarh Dim',
+          'Tamatant Tilay',
+          'Assouf',
+          'Izarharh Tenere'
         ]
       }
     ]
