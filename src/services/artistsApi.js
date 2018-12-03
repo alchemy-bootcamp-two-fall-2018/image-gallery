@@ -27,6 +27,7 @@ export default {
   updateArtist(updatedInfo, artist) {
     artist.name = updatedInfo.name;
     artist.image = updatedInfo.image;
+    this.store();
   },
   store() {
     localStorage.setItem('artists', JSON.stringify(artists));
