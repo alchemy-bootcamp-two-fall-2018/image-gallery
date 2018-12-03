@@ -1,6 +1,5 @@
 <template>
         <section>
-            <h3>Gallery</h3>
             <button @click="setIndex(-1)">&lt;</button>
             <img :src="images[selectedIndex].url">
             <button @click="setIndex(1)">&gt;</button>        
@@ -37,5 +36,10 @@ export default {
 </script>
 
 <style>
-
+    section {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        width: 100%
+    }
 </style>

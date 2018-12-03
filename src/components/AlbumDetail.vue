@@ -15,12 +15,12 @@
                     <button type="reset">Cancel</button>
                 </form>
         </Modal>
-        <button @click="showModal = true" id="add-image">Add an image</button>
-        <nav>
+        <nav id="detail">
         <RouterLink to="./thumbnail">Thumbnails</RouterLink>
         <RouterLink to="./gallery">Gallery</RouterLink>
         <RouterLink to="./list">List</RouterLink>
         </nav>
+        <button @click="showModal = true" id="add-image">Add an image</button>
         <RouterView :images="album.images"></RouterView>
     </div>
 </template>
@@ -56,11 +56,6 @@ export default {
 </script>
 
 <style scoped>
-nav {
-    padding: 20px;
-    font-size: 18px;
-    font-weight: bold;
-}
 button:hover {
     font-weight: bold;
 }
@@ -88,5 +83,14 @@ form button {
     width: 100px;
     font-size: 14px;
 }
-
+#detail {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    background-color: rgb(143,132,119);
+}
+#detail a {
+    text-decoration: none;
+    color: white;
+}
 </style>

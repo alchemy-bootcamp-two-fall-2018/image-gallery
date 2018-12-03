@@ -5,7 +5,7 @@ import Home from './home/Home';
 import About from './home/About';
 import Thumbnails from './components/Thumbnails';
 import Gallery from './components/Gallery';
-import AlbumList from './components/AlbumList';
+import List from './components/List';
 
 export default new VueRouter ({
     routes: [
@@ -18,7 +18,7 @@ export default new VueRouter ({
             children: [
                 { path: 'thumbnail', component: Thumbnails },
                 { path: 'gallery', component: Gallery },
-                { path: 'list', component: AlbumList },
+                { path: 'list', component: List },
                 { path: '', redirect: 'thumbnail' }
             ]   
         },
