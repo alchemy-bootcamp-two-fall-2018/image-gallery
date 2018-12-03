@@ -1,21 +1,11 @@
 <template>
     <header>
         <nav>
-            <li>
-                <RouterLink to="/">
-                    <span>HOME</span>
-                </RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/">
-                    <img src="https://diylogodesigns.com/wp-content/uploads/2016/06/nba-logo-transparent-png-logo-download-768x768.png">
-                </RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/teams">
-                    <span>TEAMS</span>
-                </RouterLink>
-            </li>
+            <RouterLink to="/" class="link"> HOME</RouterLink>
+            <RouterLink to="/" class="link">
+                <img src="https://diylogodesigns.com/wp-content/uploads/2016/06/nba-logo-transparent-png-logo-download-768x768.png">
+            </RouterLink>
+            <RouterLink to="/teams" class="link">TEAMS</RouterLink>
         </nav>
     </header>
 </template>
@@ -45,17 +35,14 @@ nav {
     top: 0;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-content: center
-    
+    display:flex;
+    justify-content: center;
 }
 img {
     max-width: 50px;
     height: auto;
 }
-li {
-    list-style: none;
-}
+
 nav a {
     color: white;
     &:hover,
@@ -63,6 +50,10 @@ nav a {
         background-color: indianred;
         cursor: pointer;
     } 
+}
+.link {
+    display: flex;
+    margin-right: 20px;
 }
 </style>
 

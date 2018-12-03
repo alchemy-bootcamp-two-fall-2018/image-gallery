@@ -40,12 +40,6 @@ li {
     margin: 5px;
 }
 img {
-    width: 200px;
-
-    
-
-
+    max-width: 500px;
 }
-
-
 </style>
