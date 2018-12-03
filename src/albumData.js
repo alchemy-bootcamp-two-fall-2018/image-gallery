@@ -6,7 +6,7 @@ export default [
     images: [
       {
         title: 'Portland Christmas Tree',
-        url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsWrxXcUUOISDzAP18z2J_5pm7OUPDmc-LIi8MyXhv4TUKAInn',
+        url: 'https://www.portlandbridges.com/photoimagefiles/portland-christmas-pictures-m25d0img11225-s.jpg',
         description: 'Portland\'s beautiful tree in Pioneer Square'
       },
       {
@@ -17,7 +17,7 @@ export default [
       {
         title: 'Dollywood Tree',
         url: 'https://localtvwreg.files.wordpress.com/2012/12/11.jpg?quality=85&strip=all&w=750',
-        description: 'Not a clue what this is'
+        description: 'Dolly Parton Christmas'
       },
       {
         title: 'London Tree',
@@ -28,6 +28,11 @@ export default [
         title: 'Paris Tree',
         url: 'http://nebula.wsimg.com/d0e8f3a6b56054a499137a4c322969bf?AccessKeyId=AF03068AF07D0672358A&disposition=0&alloworigin=1',
         description: 'The City of Love does Christmas'
+      },
+      {
+        title: 'North Pole Tree',
+        url: 'https://s3-media3.fl.yelpcdn.com/bphoto/08ZNPAS8qy5binJOJCsGDg/ls.jpg',
+        description: 'Santa has a tree'
       }
     ]
   },
@@ -54,12 +59,22 @@ export default [
       {
         title: 'Reindeer Lights',
         url: 'http://images2.fanpop.com/images/photos/2700000/Christmas-Reindeer-Christnas-2008-christmas-2783191-445-301.jpg',
-        description: 'Just some festive reindeer'
+        description: 'Reindeer in lights'
       },
       {
         title: 'Bunny Christmas',
         url: 'https://i.chzbgr.com/full/6917571840/hB361D059/',
         description: 'So darn cute'
+      }
+      {
+        title: 'Ferret Elf',
+        url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCFo6mM4cT0tRdlS0IENlmcCKiBdvtxX4fPqtIOmKaln8M5IOc5A',
+        description: 'Ferret in Christmas gear'
+      }
+      {
+        title: 'Christmas Sloth',
+        url: "https://www.lifestyle.com.au/content/Petx.jpg",
+        description: 'Take it easy'
       }
     ]
   },
@@ -82,6 +97,21 @@ export default [
         title: 'Blue Christmas',
         url: 'https://static1.squarespace.com/static/56feae0ab6aa60ebb6039bf3/t/5a3021fd0d9297e3b10d5663/1513103892821/24831355_10156064300274446_6063417990896438734_o.jpg',
         description: 'So much blue'
+      },
+      {
+        title: 'Light Up',
+        url: 'https://s.abcnews.com/images/WNT/141208_wn_wright0_16x9_992.jpg',
+        description: 'Christmas wonderland'
+      },
+      {
+        title: 'House Lights',
+        url: 'http://1.bp.blogspot.com/-695PvZ7y-IY/VFqi64TnvVI/AAAAAAAAAR4/laYdX_a53_U/s1600/g.jpg',
+        description: 'So many lights'
+      },
+      {
+        title: 'Peacock Lane',
+        url: 'https://portlandrealestateblog.com/wp-content/uploads/2015/12/bigstock-Beautiful-Christmas-lights-dis-15284504.jpg',
+        description: 'Peacock Lane Portland'
       }
     ]
   }
