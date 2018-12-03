@@ -3,6 +3,7 @@
         <nav>
             <span><RouterLink to="/">HOME</RouterLink></span>
             <span><RouterLink to="/albums">ALBUMS</RouterLink></span> 
+            <span><RouterLink to="/about">ABOUT</RouterLink></span> 
         </nav>
     </header>    
 </template>

@@ -1,35 +1,36 @@
-const albums = [
-  { id: 'bats', title: 'Bats', images: [
-    { 
-      title: 'A bat', 
-      url: 'https://images.boredomfiles.com/wp-content/uploads/2016/03/03-cute-bats.jpg' 
-    }, 
-    {
-      title: 'Another bat', 
-      url: 'https://images.boredomfiles.com/wp-content/uploads/2016/03/03-cute-bats.jpg' 
-    }, 
-    {
-      title: 'Another bat', 
-      url: 'https://images.boredomfiles.com/wp-content/uploads/2016/03/03-cute-bats.jpg' 
-    }
-  ] },
-  { id: 'spiders', title: 'Spiders', images: [    
-    { 
-      title: 'A spider', 
-      url: 'http://www.bendbulletin.com/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=mhcJCVJ8KKHRPwwqAnbx98$daE2N3K4ZzOUsqbU5sYuoqiCu3qMqMhalP7QIUjCsWCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&CONTENTTYPE=image/jpeg' 
-    },
-    { 
-      title: 'Another spider', 
-      url: 'http://www.bendbulletin.com/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=mhcJCVJ8KKHRPwwqAnbx98$daE2N3K4ZzOUsqbU5sYuoqiCu3qMqMhalP7QIUjCsWCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&CONTENTTYPE=image/jpeg' 
-    }] },
-];
+import albumData from './albumData';
+import shortid from 'shortid';
 
+
+const json = window.localStorage.getItem('albums');
+let albums = null;
+if(json) {
+  albums = JSON.parse(json);
+}
+else {
+  albums = albumData;
+  save();
+}
+function save() {
+  window.localStorage.setItem('albums', JSON.stringify(albums));
+}
 export default {
   getAlbums() {
     return albums;
   },
   getAlbum(id) {
     return albums.find(album => album.id === id);
+  },
+  add(album) {
+    album.id = shortid.generate();
+    album.images = [];
+    albums.push(album);
+    save();
+    return album;
+  },
+  addImage(image, album) {
+    album.images.push(image);
+    save();
   }
 };
 
