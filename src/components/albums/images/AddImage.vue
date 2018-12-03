@@ -1,9 +1,9 @@
 <template>
     <form @submit.prevent="onAdd(image)">
-        <FormControl label="name">
+        <FormControl class="labels" label="name">
             <input v-model="image.name" required>
         </FormControl>
-        <FormControl label="picture">
+        <FormControl class="labels" label="picture">
             <input v-model="image.picture" required>
         </FormControl>
         <FormControl>
@@ -35,5 +35,8 @@ export default {
 </script>
 
 <style>
+.labels {
+    color:white;
+}
 
 </style>
