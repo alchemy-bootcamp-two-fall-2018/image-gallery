@@ -19,7 +19,20 @@ export default {
     this.store();
   },
   findArtist(artistName) {
-    return artists.find(artist => artist.name === artistName).albums;
+    return artists.find(artist => artist.name === artistName);
+  },
+  findAlbum(albumTitle) {
+    return artists.find(artist => artist.albums.find(album => album.title === albumTitle)).albums.find(album => album.title === albumTitle);
+  },
+  updateArtist(updatedInfo, artist) {
+    artist.name = updatedInfo.name;
+    artist.image = updatedInfo.image;
+    this.store();
+  },
+  updateRec(updatedInfo, record) {
+    record.title = updatedInfo.title;
+    record.imgUrl = updatedInfo.imgUrl;
+    this.store();
   },
   store() {
     localStorage.setItem('artists', JSON.stringify(artists));

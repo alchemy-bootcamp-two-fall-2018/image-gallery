@@ -17,7 +17,7 @@ export default new VueRouter({
       component: ArtistDetail,
       children: [
         { path: 'records', component: RecordsView },
-        { path: 'song-list', component: SongListView },
+        { path: 'song-list/:title', component: SongListView },
         { path: 'gallery', component: GalleryView },
         { path: '', redirect: 'song-list' }
       ]

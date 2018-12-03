@@ -1,6 +1,6 @@
 <template>
   <section>
-  <h3>Add a Record</h3>
+    <h3>Add a Record</h3>
     <form @submit.prevent="onAdd(record)">
       <label>
         Record Title:
@@ -11,7 +11,7 @@
         <input v-model="record.imgUrl" required>
       </label>
       <button>Add</button>
-  </form>
+    </form>
   </section>
 </template>
 
@@ -19,7 +19,7 @@
 export default {
   data() {
     return {
-      record: {}
+      record: { songs: [] }
     };
   },
   props: {
