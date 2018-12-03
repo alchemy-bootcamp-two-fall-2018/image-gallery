@@ -27,6 +27,7 @@ export default {
   methods: {
     handleUpdateRec(updateRec) {
       artistsApi.updateRec(updateRec, artistsApi.findAlbum(this.$route.params.title));
+      this.$router.replace({ path: `/artists/${this.$route.params.name}/song-list/${updateRec.title}` });
     }
   }
 };
@@ -38,6 +39,5 @@ body {
 }
 li {
   list-style: none;
-  /* text-align: left; */
 }
 </style>

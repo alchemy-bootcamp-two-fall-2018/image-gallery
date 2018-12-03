@@ -31,6 +31,7 @@ export default {
     },
     handleUpdateArt(updateArtist) {
       artistsApi.updateArtist(updateArtist, artistsApi.findArtist(this.$route.params.name));
+      this.$router.replace({ path: `/artists/${updateArtist.name}/records` });
     }
   }
 };
