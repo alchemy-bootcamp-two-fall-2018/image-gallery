@@ -3,9 +3,6 @@
     <label>Album Name
         <input v-model="album.name" required>
     </label>
-    <label> Photos
-        <input v-model="album.image" required>
-    </label>
     <button>Add</button>
 </form>
 </template>
@@ -18,7 +15,6 @@ export default {
         return {
             album: {
                 name: '',
-                image: []
             } 
         };
     },

@@ -1,6 +1,6 @@
 <template>
     <li>
-        <RouterLink :to="`/albums/${album.id}`"> {{album.name}} </RouterLink>
+        <RouterLink class="albums" :to="`/albums/${album.id}`"> {{album.name}} </RouterLink>
     </li>
 </template>
 
@@ -15,5 +15,9 @@ export default {
 
 
 <style>
+.albums {
+    color:grey;
+    font-size: 1.2rem;
+}
 
 </style>
