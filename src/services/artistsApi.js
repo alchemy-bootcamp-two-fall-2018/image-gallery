@@ -29,6 +29,11 @@ export default {
     artist.image = updatedInfo.image;
     this.store();
   },
+  updateRec(updatedInfo, record) {
+    record.title = updatedInfo.title;
+    record.imgUrl = updatedInfo.imgUrl;
+    this.store();
+  },
   store() {
     localStorage.setItem('artists', JSON.stringify(artists));
   }
