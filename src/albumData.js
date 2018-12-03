@@ -65,15 +65,15 @@ export default [
         title: 'Bunny Christmas',
         url: 'https://i.chzbgr.com/full/6917571840/hB361D059/',
         description: 'So darn cute'
-      }
+      },
       {
         title: 'Ferret Elf',
         url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCFo6mM4cT0tRdlS0IENlmcCKiBdvtxX4fPqtIOmKaln8M5IOc5A',
         description: 'Ferret in Christmas gear'
-      }
+      },
       {
         title: 'Christmas Sloth',
-        url: "https://www.lifestyle.com.au/content/Petx.jpg",
+        url: 'https://www.lifestyle.com.au/content/Petx.jpg',
         description: 'Take it easy'
       }
     ]
