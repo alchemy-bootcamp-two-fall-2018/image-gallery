@@ -73,7 +73,7 @@ export default [
       },
       {
         title: 'Christmas Sloth',
-        url: "https://www.lifestyle.com.au/content/Petx.jpg",
+        url: 'https://www.lifestyle.com.au/content/Petx.jpg',
         description: 'Take it easy'
       }
     ]
