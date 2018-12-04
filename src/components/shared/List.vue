@@ -2,12 +2,12 @@
     <ul>
         <li v-for="(image, index) in images"
         :key="index">
-            <img :src="image.url"/>
-            {{image.title}}
+            <h4>{{image.title}}</h4>
+            <img :src="image.url">
+            <p>{{image.description}}</p>
         </li>
     </ul>
 </template>
-
 <script>
 export default {
     props: {
@@ -15,17 +15,11 @@ export default {
     }
 };
 </script>
-
-<style scoped>
+ <style scoped>
 ul {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 10px;
-}
-li {
     list-style-type: none;
 }
 img {
-    width: 10vw;
+    width: 12vw;
 }
-</style>
+ </style>
