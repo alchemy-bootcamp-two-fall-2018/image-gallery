@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import albumsApi from '../services/albumsApi';
+import albumsApi from '../../services/albumsApi';
 export default {
     data() {
         return {

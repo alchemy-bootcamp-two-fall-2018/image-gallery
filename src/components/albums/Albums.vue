@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import albumsApi from '../services/albumsApi.js';
+import albumsApi from '../../services/albumsApi.js';
 import AlbumList from './AlbumsList';
 import NewAlbum from './NewAlbum';
 export default {

@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import albumApi from '../services/albumsApi.js';
+import albumApi from '../../services/albumsApi.js';
 export default {
     data() {
         return {
