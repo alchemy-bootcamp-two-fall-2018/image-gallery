@@ -159,11 +159,10 @@ export default [
         ]
       },
       {
-        title: 'Who\'s Zommin\' Who?',
+        title: 'Whos Zoomin Who',
         released: 'July 9, 1985',
         imgUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Who%27s_Zoomin_Who_album.jpg/220px-Who%27s_Zoomin_Who_album.jpg',
         songs: [
-          
           'Freeway Of Love',
           'Another Night',
           'Sweet Bitter Love',
@@ -444,7 +443,7 @@ export default [
       {
         title: 'Departure',
         released: 'February 29, 1980',
-        imgUrl: '',
+        imgUrl: 'https://i.iheart.com/v3/re/new_assets/59f34eb4c823880e3cebc057?ops=max(750,0),quality(80)',
         songs: [
           'Any Way You Want It',
           'Walks Like A Lady',
