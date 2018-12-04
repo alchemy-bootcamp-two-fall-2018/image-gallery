@@ -1,6 +1,7 @@
 <template>
     <section v-if="album">
         <h1 class="detail-title">{{album.title}}</h1>
+        <p class="description">{{album.description}}</p>
         <p class="button">
             <button @click="showModal = true" class="image-add">Add a new Image</button>
         </p>
@@ -109,6 +110,10 @@ input {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .detail-title {
+    padding: 20px;
+}
+.description {
+    text-align: center;
     padding: 20px;
 }
 </style>
