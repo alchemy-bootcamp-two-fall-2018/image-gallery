@@ -5,7 +5,7 @@
         <img v-bind:src="image.url">
         <div>
           <h3>{{image.title}}</h3>
-          <p><a v-bind:href="image.url" target="_blank">Image Link</a></p> 
+          <p>{{image.url}}</p> 
           <p>{{image.description}}</p>
         </div>
     </li>
