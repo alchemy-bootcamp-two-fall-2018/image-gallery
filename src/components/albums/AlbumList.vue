@@ -2,8 +2,8 @@
   <ul>
     <Album 
       v-for="album in albums"
-      :key="album.id"
-      :album="album"/>
+      v-bind:key="album.id"
+      v-bind:album="album"/>
   </ul>
 </template>
 
@@ -19,6 +19,12 @@ export default {
 };
 </script>
 
-<style >
-  
+<style scoped>
+  ul {
+    list-style-type: none;
+    width: 90vw;
+  }
+  li {
+    padding-bottom: 60px;
+  }
 </style>

@@ -1,6 +1,7 @@
 <template>
   <section v-if="album">
     <h2>{{album.title}}</h2>
+    <p class="album-description">{{album.description}}</p>
     <p>
       <button @click="showModal = true">Add Image</button>
     </p>
@@ -18,20 +19,32 @@
             <span>Image Url:</span>
             <input v-model="image.url" required>
           </label>
+
+          <label>
+            <span>Image Description:</span>
+            <input v-model="image.description" required>
+          </label>
           
           <button type="submit">Add</button>
-          <button @click="showModal = false">Close</button>
+          <button @click="onCancel">Close</button>
           
         </form>
       </div>
     </div>
-    <Thumbnails v-bind:images="album.images"/>
+
+    <nav>
+      <RouterLink class="view-link" to="./thumbnail"><span>Thumbnail View</span></RouterLink>
+      <RouterLink class="view-link" to="./list"><span>List View</span></RouterLink>
+      <RouterLink class="view-link" to="./gallery"><span>Gallery View</span></RouterLink>
+    </nav>
+
+    <RouterView v-bind:images="album.images">VIEW</RouterView>
   </section>
 </template>
 
 <script>
 import albumsApi from '../../albumsApi';
-import Thumbnails from './Thumbnails';
+
 export default {
   data() {
     return {
@@ -45,34 +58,38 @@ export default {
       this.album.images.push(this.image);
       this.showModal = false;
       this.image = {};
+    },
+    onCancel() {
+      this.image = {};
+      this.showModal = false;
     }
   },
   components: {
-    Thumbnails
+    
   },
   created() {
     this.album = albumsApi.getAlbum(this.$route.params.id);
+    if(!this.album) {
+      this.$router.push('/albums');
+    }
   }
 };
 </script>
 
-<style>
+<style scoped>
   form {
     text-align: center;
-
     border: 5px solid black;
     background: white;
     padding: 40px;
     height: 300px;
     width: 400px;
   }
-
   .form-title {
     margin: 0px;
     padding-bottom: 20px;
     font-size: 2em;    
   }
-
   form button {
     margin: 5px;
     font-size: 1.2em;
@@ -80,11 +97,9 @@ export default {
     border: 1px solid black;
     padding: 5px;
   }
-
   form button:hover {
     background: lightgreen;
   }
-
   p button {
     border-radius: 5px;
     margin: 5px;
@@ -92,25 +107,16 @@ export default {
     padding-bottom: 5px;
     border: 2px solid black;
   }
-
   p button:hover {
     background: rgb(244, 37, 37);
   }
-
   section p {
     text-align: center;
   }
-
-  span {
-    display: inline-block;
-    width: 90px;
-  }
-
   input {
     width: 250px;
     height: 20px;
   }
-
   label {
     display: flex;
     padding: 5px;
@@ -118,7 +124,9 @@ export default {
     font-weight: 500;
     margin-bottom: 10px;
   }
-
+  label span {
+    width: 150px;
+  }
   .modal {
     position: fixed;
     top: 0; left: 0;
@@ -130,11 +138,29 @@ export default {
     background-color: rgba(0, 0, 0, .5);
     z-index: 20;
   }
-
   h2 {
     text-align: center;
     font-size: 3em;
     padding: 0px;
     margin: 5px 0px 0px 0px;
+  }
+  .view-link {
+    text-decoration: none;
+    color: red;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    padding: 6px;
+    line-height: 2.5em;
+    margin: 0px 5px;
+    width: 250px;
+  }
+  .view-link:hover {
+    background: lightgray;
+  }
+  nav {
+    margin: 0px 10px;
+    text-decoration: none;
+    text-align: center;
   }
 </style>

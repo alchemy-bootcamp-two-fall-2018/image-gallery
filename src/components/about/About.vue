@@ -1,7 +1,7 @@
 <template>
   <section>
     <header>
-      <h1>About</h1>
+      <h2>About</h2>
       <p>Enjoy This Is Christmas!</p>
       <p class="mini">
         This is a website filled with images of different holiday categories. 
@@ -31,20 +31,21 @@
   </section>
 </template>
 
-<script>
-export default {
-
-};
-</script>
-
 <style scoped>
   section {
     padding: 0px 30px;
-
   }
   h1 {
     text-align: center;
     padding-top: 20px;
   }
-
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px lightgray;
+    font-weight: 400;
+    color: red;
+  }
 </style>
