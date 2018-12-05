@@ -1,13 +1,13 @@
 <template>
     <section>
-        <form @submit.prevent="handleSubmit">
+        <form @submit.prevent="onAdd(player)">
             <label>
                 <span>Last Name:</span>
-                <input v-model="players.lastName" required>
+                <input v-model="player.lastName" required>
             </label>
             <label>
                 <span>Headshot:</span>
-                <input v-model="players.url" required>
+                <input v-model="player.url" required>
             </label>
             <button type="submit"> Add </button>
         </form>
@@ -15,11 +15,10 @@
 </template>
 
 <script>
-import teamsApi from '../services/teamsApi';
 export default {
     data() {
         return {
-            players: {
+            player: {
                 lastName: '',
                 url: ''
             }
@@ -27,13 +26,7 @@ export default {
     },
     props: {
         team: Array,
-    },
-    methods: {
-        handleSubmit() {
-            const saved = teamsApi.add(this.player);
-            console.log(saved);
-            // return teamsApi;
-        }
+        onAdd: Function
     }
 };
 </script>

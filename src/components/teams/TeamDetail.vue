@@ -1,7 +1,7 @@
 <template>
     <section>
         <div>
-            <AddPlayer/>
+            <AddPlayer :onAdd="handleAdd"/>
         </div>
         <nav>
             <RouterLink to="./thumbnail" class="spacing">Thumbnail</RouterLink>
@@ -32,6 +32,11 @@ export default {
     },
     created() {
         this.team = teamsApi.getTeam(this.$route.params.id);
+    },
+    methods: {
+        handleAdd(player) {
+            teamsApi.addPlayer(this.team, player);
+        }
     }
 };
 </script>

@@ -82,5 +82,12 @@ export default {
         teams.push(team);
         save();
         return team;
+    },
+    addPlayer(team, player) {
+        team.players.push(player);
+        save();
+        return team;
+        
     }
+
 };
