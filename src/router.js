@@ -1,5 +1,6 @@
 import VueRouter from 'vue-router';
 import Home from './components/home/Home';
+import About from './components/about/About';
 import Artists from './components/artists/Artists';
 import NewArtist from './components/artists/NewArtist';
 import ArtistDetail from './components/artists/ArtistDetail';
@@ -10,6 +11,7 @@ import GalleryView from './components/artists/records/GalleryView';
 export default new VueRouter({
   routes: [
     { path: '/', component: Home },
+    { path: '/about', component: About },
     { path: '/artists', component: Artists },
     { path: '/artists/new', component: NewArtist },
     { 
