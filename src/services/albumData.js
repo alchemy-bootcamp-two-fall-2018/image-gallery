@@ -4,6 +4,7 @@ export default [
     {
         id: shortid.generate(),
         title: 'Dachsunds',
+        description: 'Dachsund pictures',
         images: [
             {
                 title: 'Dachsund on the beach',
@@ -21,6 +22,7 @@ export default [
     {
         id: shortid.generate(),
         title: 'Beagles',
+        description: 'Beagle pictures',
         images: [
             {
                 title: 'Beagle puppy',

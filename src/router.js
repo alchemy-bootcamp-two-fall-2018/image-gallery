@@ -1,12 +1,12 @@
 
 import VueRouter from 'vue-router';
-import Home from './components/Home';
-import Albums from './components/Albums';
+import Home from './components/home/Home';
+import Albums from './components/albums/Albums';
 import About from './components/About';
-import AlbumDetail from './components/AlbumDetail';
-import Thumbnails from './components/Thumbnails';
-import ListView from './components/ListView';
-import GalleryView from './components/GalleryView';
+import AlbumDetail from './components/albums/AlbumDetail';
+import Thumbnails from './components/albums/Thumbnails';
+import ListView from './components/albums/ListView';
+import GalleryView from './components/albums/GalleryView';
 
 
 export default new VueRouter({
