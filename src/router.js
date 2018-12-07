@@ -6,9 +6,11 @@ import NewTeam from './components/teams/NewTeam';
 import Thumbnails from './components/teams/Thumbnails';
 import ListView from './components/teams/ListView';
 import GalleryView from './components/teams/GalleryView';
+import About from './About';
 
 export default new VueRouter({
     routes: [
+        { path: '/About', component: About },
         { path: '/', component: Home },
         { path: '/teams', component: Teams },
         { path: '/teams/new', component: NewTeam },

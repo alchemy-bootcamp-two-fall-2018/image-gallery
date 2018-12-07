@@ -6,6 +6,7 @@
                 <img src="https://diylogodesigns.com/wp-content/uploads/2016/06/nba-logo-transparent-png-logo-download-768x768.png">
             </RouterLink>
             <RouterLink to="/teams" class="link">TEAMS</RouterLink>
+            <RouterLink to="/About" class="link"> ABOUT</RouterLink>
         </nav>
     </header>
 </template>
