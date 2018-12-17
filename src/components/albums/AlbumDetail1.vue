@@ -44,6 +44,7 @@
 
 <script>
 import albumsApi from '../../albumsApi';
+import shortid from 'shortid';
 
 export default {
   data() {
@@ -57,6 +58,7 @@ export default {
     handleAdd() {
       this.album.images.push(this.image);
       this.showModal = false;
+      this.image.id = shortid.generate();
       this.image = {};
     },
     onCancel() {

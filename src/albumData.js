@@ -1,3 +1,5 @@
+import shortid from 'shortid';
+
 export default [
   {
     id: 'trees',
@@ -7,32 +9,39 @@ export default [
       {
         title: 'Portland Christmas Tree',
         url: 'https://www.portlandbridges.com/photoimagefiles/portland-christmas-pictures-m25d0img11225-s.jpg',
-        description: 'Portland\'s beautiful tree in Pioneer Square'
+        description: 'Portland\'s beautiful tree in Pioneer Square',
+        id: shortid.generate()
+
       },
       {
         title: 'NY Christmas Tree',
         url: 'http://blog.redcarpets.com/wp-content/blogs.dir/21/files/2014/12/use-blog.jpg',
-        description: 'Rockefellar Center does Christmas'
+        description: 'Rockefellar Center does Christmas',
+        id: shortid.generate()
       },
       {
         title: 'Dollywood Tree',
         url: 'https://localtvwreg.files.wordpress.com/2012/12/11.jpg?quality=85&strip=all&w=750',
-        description: 'Dolly Parton Christmas'
+        description: 'Dolly Parton Christmas',
+        id: shortid.generate()
       },
       {
         title: 'London Tree',
         url: 'http://nebula.wsimg.com/0503318d3a008b0e6d5124b8f7c24768?AccessKeyId=AF03068AF07D0672358A&disposition=0&alloworigin=1',
-        description: 'Christmas with the Brits'
+        description: 'Christmas with the Brits',
+        id: shortid.generate()
       },
       {
         title: 'Paris Tree',
         url: 'http://nebula.wsimg.com/d0e8f3a6b56054a499137a4c322969bf?AccessKeyId=AF03068AF07D0672358A&disposition=0&alloworigin=1',
-        description: 'The City of Love does Christmas'
+        description: 'The City of Love does Christmas',
+        id: shortid.generate()
       },
       {
         title: 'North Pole Tree',
         url: 'https://s3-media3.fl.yelpcdn.com/bphoto/08ZNPAS8qy5binJOJCsGDg/ls.jpg',
-        description: 'Santa has a tree'
+        description: 'Santa has a tree',
+        id: shortid.generate()
       }
     ]
   },
@@ -44,37 +53,44 @@ export default [
       {
         title: 'Happy Christmas Cat',
         url: 'https://i.pinimg.com/originals/d0/91/1b/d0911b1e862f82ddc7f53f8265435d77.jpg',
-        description: 'Kittums is ready for Christmas!'
+        description: 'Kittums is ready for Christmas!',
+        id: shortid.generate()
       },
       {
         title: '2 Christmas Doggos',
         url: 'https://i.pinimg.com/originals/41/e5/06/41e5066d12099d2f3cb11cfa9b77a039.jpg',
-        description: 'Cuteness overload'
+        description: 'Cuteness overload',
+        id: shortid.generate()
       },
       {
         title: 'Cat Sweater',
         url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQcwDL5B1xN9Amtq350OQVLSdCy9iA_RRYhvsmwF6Lk5LF_59jpQ',
-        description: 'Cutest cat in a sweater you\'ve ever seen'
+        description: 'Cutest cat in a sweater you\'ve ever seen',
+        id: shortid.generate()
       },
       {
         title: 'Reindeer Lights',
         url: 'http://images2.fanpop.com/images/photos/2700000/Christmas-Reindeer-Christnas-2008-christmas-2783191-445-301.jpg',
-        description: 'Reindeer in lights'
+        description: 'Reindeer in lights',
+        id: shortid.generate()
       },
       {
         title: 'Bunny Christmas',
         url: 'https://i.chzbgr.com/full/6917571840/hB361D059/',
-        description: 'So darn cute'
+        description: 'So darn cute',
+        id: shortid.generate()
       },
       {
         title: 'Ferret Elf',
         url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCFo6mM4cT0tRdlS0IENlmcCKiBdvtxX4fPqtIOmKaln8M5IOc5A',
-        description: 'Ferret in Christmas gear'
+        description: 'Ferret in Christmas gear',
+        id: shortid.generate()
       },
       {
         title: 'Christmas Sloth',
         url: 'https://www.lifestyle.com.au/content/Petx.jpg',
-        description: 'Take it easy'
+        description: 'Take it easy',
+        id: shortid.generate()
       }
     ]
   },
@@ -86,32 +102,38 @@ export default [
       {
         title: 'Christmas Crazy',
         url: 'https://happyholidaysblog.com/wp-content/uploads/Christmas-Lights-On-Houses-09.jpg',
-        description: 'No words for this'
+        description: 'No words for this',
+        id: shortid.generate()
       },
       {
         title: 'Light Overload',
         url: 'http://tarbell.com/newspress/wp-content/uploads/2015/12/christmas-lights-1.jpg',
-        description: 'How is this even possible'
+        description: 'How is this even possible',
+        id: shortid.generate()
       },
       {
         title: 'Blue Christmas',
         url: 'https://static1.squarespace.com/static/56feae0ab6aa60ebb6039bf3/t/5a3021fd0d9297e3b10d5663/1513103892821/24831355_10156064300274446_6063417990896438734_o.jpg',
-        description: 'So much blue'
+        description: 'So much blue',
+        id: shortid.generate()
       },
       {
         title: 'Light Up',
         url: 'https://s.abcnews.com/images/WNT/141208_wn_wright0_16x9_992.jpg',
-        description: 'Christmas wonderland'
+        description: 'Christmas wonderland',
+        id: shortid.generate()
       },
       {
         title: 'House Lights',
         url: 'http://1.bp.blogspot.com/-695PvZ7y-IY/VFqi64TnvVI/AAAAAAAAAR4/laYdX_a53_U/s1600/g.jpg',
-        description: 'So many lights'
+        description: 'So many lights',
+        id: shortid.generate()
       },
       {
         title: 'Peacock Lane',
         url: 'https://portlandrealestateblog.com/wp-content/uploads/2015/12/bigstock-Beautiful-Christmas-lights-dis-15284504.jpg',
-        description: 'Peacock Lane Portland'
+        description: 'Peacock Lane Portland',
+        id: shortid.generate()
       }
     ]
   }

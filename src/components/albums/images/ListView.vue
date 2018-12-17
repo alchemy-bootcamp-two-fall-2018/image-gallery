@@ -1,11 +1,11 @@
 <template>
   <ul>
     <li class="list" v-for="image in images"
-        v-bind:key="image.title">
+        v-bind:key="image.id">
         <img v-bind:src="image.url">
         <div>
           <h3>{{image.title}}</h3>
-          <p><a v-bind:href="image.url" target="_blank">Image Link</a></p> 
+          <p>{{image.url}}</p> 
           <p>{{image.description}}</p>
         </div>
     </li>
